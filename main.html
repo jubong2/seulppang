@@ -47,7 +47,12 @@
       rel="stylesheet"
     />
     <!-- AOS적용 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="css/normalize.css" />
 
     <!-- *제이쿼리 연결은 제일 위쪽* -->
@@ -76,12 +81,56 @@
     <script src="js/loginpage.js"></script>
     <script src="js/subpage.js"></script>
     <script src="js/detailpage.js"></script>
+    <script src="js/swiper.js"></script>
   </head>
   <body>
     <div class="warp">
       <section class="header"></section>
-      <section class="banner"></section>
-      <section class="best5"></section>
+      <section class="banner">
+        <div class="banner-warp">
+          <img
+            src="images/banner-bg.png"
+            alt="배너배경이미지"
+            class="banner-bg"
+          />
+        </div>
+      </section>
+      <!-- 베스트 5 -->
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <section class="best5">
+          <div class="best5-inner">
+            <!-- 배스트 5이름 -->
+            <div class="best5-title">이번주 베스트 TOP 5</div>
+            <div class="best5-button">
+              <h3>Party</h3>
+              <h3>Vegan</h3>
+              <h3>Home Cafe</h3>
+              <h3>Meal</h3>
+            </div>
+            <div class="best5-swiper">
+              <div class="party">
+                <div class="swiper bestSwiper">
+                  <div class="swiper-wrapper bestSwiper-wapper">
+                    <div class="swiper-slide best5slide">
+                      <a href="#">
+                        <div class="best5slide-img">
+                          <img src="images/party1.jpg" alt="파티베이커리1" />
+                        </div>
+                        <div class="best-text">
+                          <h3>미니 파스텔 초코케이크</h3>
+                          <p>어여쁜 색감을 입은 파스텔 케이크</p>
+                          <p>40,000 WON</p>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <section class="popup-store"></section>
       <section class="knotted-banner"></section>
       <section class="taget-swiper"></section>

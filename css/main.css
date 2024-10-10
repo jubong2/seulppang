@@ -19,7 +19,7 @@
 }
 
 a {
-  color: #333;
+  color: #855333;
   text-decoration: none;
 }
 
@@ -28,6 +28,7 @@ li {
   list-style: none;
 }
 body {
+  color: #855333;
   width: 100%;
   font-family: "Arimo", sans-serif;
   background-color: #fff6e5;

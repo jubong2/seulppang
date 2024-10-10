@@ -1,5 +1,88 @@
 @charset "utf-8";
-
 .best5 {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 300px;
+}
+.best5-inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.best5-title {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+/* best5 카태고리 버튼 */
+.best5-button {
+  position: relative;
+  display: block;
+  float: left;
+  width: 30%;
+}
+
+.best5-button > h3 {
+  line-height: 2;
   font-family: "Gelasio", serif;
+  font-size: 50px;
+}
+
+/* best5 스와이퍼 */
+.best5-swiper {
+  position: relative;
+  display: block;
+  float: right;
+  width: 70%;
+  height: 100%;
+}
+.best5-swiper img {
+  width: 100%;
+  height: 25vw;
+
+  min-height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.best5slide {
+  width: 100%;
+}
+
+.best5slide-img {
+  min-width: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+.best-text {
+  padding: 20px 0;
+  color: rgba(133, 83, 51, 0.8);
+}
+
+.best-text > h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.best-text > p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
+/* 파티 */
+.party {
+  width: 100%;
 }
