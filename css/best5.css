@@ -1,8 +1,13 @@
 @charset "utf-8";
+
+/* 베스트 5 */
+
 .best5 {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
+
   overflow: hidden;
   margin-bottom: 300px;
 }
@@ -20,20 +25,29 @@
   font-size: 50px;
   margin-bottom: 50px;
 }
+
+.best5-product-warp {
+  padding: 2% 3%;
+}
 /* best5 카태고리 버튼 */
 .best5-button {
   position: relative;
   display: block;
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
-.best5-button > h3 {
-  line-height: 2;
+.best5-button > a {
+  width: 100%;
+  line-height: 1.8;
   font-family: "Gelasio", serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
+.best5-button > a.active {
+  color: blue; /* active일 때 색상 */
+  font-weight: bold; /* active일 때 강조 */
+}
 /* best5 스와이퍼 */
 .best5-swiper {
   position: relative;
@@ -42,23 +56,42 @@
   width: 70%;
   height: 100%;
 }
-.best5-swiper img {
-  width: 100%;
-  height: 25vw;
 
-  min-height: 250px;
-  object-fit: cover;
-  object-position: center;
+.productimg {
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* 이미지의 크기를 요소에 맞추고 중앙에 배치 */
+  object-position: center; /* 이미지 중심을 가운데로 설정 */
 }
 
-.best5slide {
+/* .best5slide {
+  position: relative;
+  height: 1000px;
   width: 100%;
-}
-
+} */
 .best5slide-img {
-  min-width: 200px;
-  overflow: hidden;
+  position: relative;
   width: 100%;
+}
+.best5slide-img > img {
+  width: 100%;
+}
+.best5slide-img > a {
+  position: relative;
+  display: block;
+}
+/*  상품 아이콘  */
+.product-icon {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+  margin: 10px 20px;
+}
+.product-icon > div {
+  display: block;
 }
 .best-text {
   padding: 20px 0;
@@ -82,7 +115,75 @@
   text-overflow: ellipsis;
   word-break: keep-all;
 }
+/* best content 랭킹 번호 */
+.swiper-slide:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "1";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.swiper-slide:nth-child(2)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "2";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.swiper-slide:nth-child(3)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "3";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.swiper-slide:nth-child(4)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "4";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.swiper-slide:nth-child(5)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "5";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
 /* 파티 */
 .party {
+  position: relative;
+  display: block;
   width: 100%;
 }
