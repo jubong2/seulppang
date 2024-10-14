@@ -1,0 +1,56 @@
+@charset "utf-8";
+.knotted-banner {
+  width: 100%;
+  margin-bottom: 300px;
+}
+.knotted-inner {
+  width: 100%;
+}
+
+.knotted-inner > img {
+  width: 100%;
+}
+/* 미니배너 영역 */
+.mini-banner {
+  width: 100%;
+  margin-bottom: 300px;
+}
+.miniBn-inner {
+  width: 100%;
+  position: relative;
+}
+.miniBn-inner img {
+  width: 70%;
+}
+.miniBn-left{
+    position: relative;
+    width: 100%;
+    margin-bottom: 140px;
+}
+.miniBn-right > img{
+    position: absolute;
+    right: 0;
+}
+.more-btn{
+    width: 200px;
+}
+.more-btn > img{
+    float: left;
+    width: 30px;
+}
+.more-btn > .miniBn-left > p{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.miniBn-left > .more-btn{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+.miniBn-left > .more-btn > img{
+    margin-right: 10px;
+}
