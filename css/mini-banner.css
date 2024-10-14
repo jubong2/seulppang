@@ -19,38 +19,54 @@
   width: 100%;
   position: relative;
 }
-.miniBn-inner img {
+.miniBn-inner > .miniBn-left > img {
   width: 70%;
 }
-.miniBn-left{
-    position: relative;
-    width: 100%;
-    margin-bottom: 140px;
+.miniBn-inner > .miniBn-right > img {
+  width: 70%;
 }
-.miniBn-right > img{
-    position: absolute;
-    right: 0;
+.miniBn-left {
+  display: flex;
+  /* background-color: blueviolet; */
+  width: 100%;
+  margin-bottom: 140px;
+  gap: 6.5%;
 }
-.more-btn{
-    width: 200px;
+.miniBn-right {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: aquamarine; */
+  width: 100%;
+  margin-bottom: 140px;
 }
-.more-btn > img{
-    float: left;
-    width: 30px;
+.more-btn {
+  width: 320px;
 }
-.more-btn > .miniBn-left > p{
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+.miniBn-left > .more-btn > img {
+  float: left;
+  width: 20px;
 }
-.miniBn-left > .more-btn{
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
+.miniBn-right > .more-btn > img {
+  float: right;
+  width: 20px;
 }
-.miniBn-left > .more-btn > img{
-    margin-right: 10px;
+/* 왼쪽배너 더보기 */
+.miniBn-left > .more-btn > p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.miniBn-left > .more-btn {
+  display: flex;
+  align-items: center;
+  gap: 4%;
+}
+/* 오른쪽배너 더보기 */
+.miniBn-right > .more-btn > p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.miniBn-right > .more-btn {
+  display: flex;
+  align-items: center;
+  gap: 4%;
 }

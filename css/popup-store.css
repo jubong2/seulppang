@@ -11,6 +11,23 @@
   margin: 0 auto;
   width: 70%;
 }
+.popup-count{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  /* margin: 0 auto; */
+  text-align: center;
+  background-color: #FFC898;
+  border-radius: 50%;
+  padding: 20px 0;
+}
+.popup-count p span{
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+}
 .popup-title {
   position: relative;
   display: block;
@@ -18,7 +35,7 @@
 }
 .popup-title h2 {
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .popup-title h4 {
   font-size: 30px;
@@ -26,6 +43,9 @@
 }
 .popup-count p {
   font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-weight: 600;
 }
 .popup-img-intro {
   width: 100%;
@@ -33,6 +53,7 @@
   display: flex;
   justify-content: space-between;
   max-height: 560px;
+  margin-top: 30px;
  
 }
 .left {
@@ -80,7 +101,7 @@
   left: 10px;
   color: white; /* 글씨를 흰색으로 변경 */
   z-index: 10; /* 이미지 위에 타이틀을 나타내기 위해 z-index 설정 */
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 8px;
 }
 .first-store h3,
