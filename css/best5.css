@@ -39,15 +39,34 @@
 
 .best5-button > a {
   width: 100%;
-  line-height: 1.8;
+  line-height: 2;
   font-family: "Gelasio", serif;
   font-size: 40px;
 }
 
-.best5-button > a.active {
-  color: blue; /* active일 때 색상 */
-  font-weight: bold; /* active일 때 강조 */
+.best5-button a h3 {
+  position: relative; /* 상대 위치 지정 */
+  transition: all 0.3s; /* h3 요소에도 트랜지션 적용 */
 }
+.best5-button a h3:hover {
+  font-size: 60px;
+}
+.best5-button > a > h3::after {
+  content: ""; /* 가상 요소에 내용 추가 */
+  position: absolute; /* 절대 위치 지정 */
+  left: 0; /* 중앙 정렬 */
+  bottom: 0px; /* h3 아래에 위치 */
+  transition: all 1s; /* 가상 요소의 트랜지션 */
+  width: 0%; /* 기본 너비 */
+  border-bottom: #ff8000 solid 3px; /* 경계 스타일 */
+  opacity: 0; /* 기본 상태에서 가리기 */
+}
+
+.best5-button > a.active h3::after {
+  opacity: 1; /* 가시성 */
+  width: 40%; /* 너비 설정 */
+}
+
 /* best5 스와이퍼 */
 .best5-swiper {
   position: relative;
@@ -94,11 +113,14 @@
   display: block;
 }
 .best-text {
+  cursor: pointer;
   padding: 20px 0;
   color: rgba(133, 83, 51, 0.8);
 }
 
 .best-text > h3 {
+  height: 50px;
+
   font-size: 25px;
   margin-bottom: 20px;
   white-space: nowrap;
@@ -106,6 +128,7 @@
   text-overflow: ellipsis;
 }
 .best-text > p {
+  height: 50px;
   font-size: 20px;
   margin-bottom: 20px;
   display: -webkit-box;
