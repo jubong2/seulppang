@@ -57,6 +57,7 @@
     <script src="js/subpage.js"></script>
     <script src="js/detailpage.js"></script>
     <script src="js/best5.js"></script>
+    <script src="js/community.js"></script>
   </head>
   <body>
     <div class="warp">
@@ -402,7 +403,6 @@
                       <div class="swiper-slide best5slide">
                         <div class="best5slide-img">
                           <a href="#">
-
                             <img src="images/dessert3.jpg" alt="디저트3" class="productimg" />
 
                             <div class="product-icon">
@@ -577,7 +577,7 @@
             <h2>3일씩 릴레이 팝업 진행!</h2>
           </div>
           <div class="popup-count">
-            <p>1차 팝업 종료시까지 <br><span id="timer">00:00:00</span></p>
+            <p>1차 팝업 종료시까지 <br /><span id="timer">00:00:00</span></p>
           </div>
           <div class="popup-img-intro">
             <!-- 왼쪽: 희와제과 -->
@@ -635,9 +635,6 @@
           <!-- 오른쪽 배너 -->
           <div class="miniBn-right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <div class="more-btn">
-
-              <img src="images/Btn-left.png" alt="" />
-
               <p>자세히 보기</p>
               <img src="images/Btn-left.png" alt="" />
             </div>
@@ -646,7 +643,37 @@
         </div>
       </section>
       <section class="pet-swiper"></section>
-      <section class="community"></section>
+      <!-- 커뮤니티 -->
+      <section class="community">
+        <div class="community-inner">
+          <h2>빵친자들 커뮤니티</h2>
+          <div class="notice-btn">
+            <div class="tip">
+              <h3>빵팁공유</h3>
+            </div>
+            <div class="wonder">
+              <h3>궁금해요</h3>
+            </div>
+          </div>
+          <table class="notice-board">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>아이디</th>
+                <th>제목</th>
+                <th>작성일</th>
+              </tr>
+            </thead>
+            <tbody id="noticeList">
+              <!-- js출력 -->
+            </tbody>
+          </table>
+          <!-- 페이지네이션 버튼 -->
+          <ul class="pagination" id="pagination">
+            <!-- js출력 -->
+          </ul>
+        </div>
+      </section>
       <section class="footer"></section>
     </div>
 

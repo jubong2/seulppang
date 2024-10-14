@@ -1,3 +1,4 @@
+@charset "utf-8";
 .popup-store {
   position: relative;
   display: block;
@@ -24,7 +25,7 @@
   padding: 20px 0;
 }
 .popup-count p span{
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 800;
   color: rgb(255, 0, 0);
 }
