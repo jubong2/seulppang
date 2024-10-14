@@ -37,11 +37,11 @@ window.addEventListener("load", function () {
   document.querySelectorAll(".best5-swiper > div").forEach(function (section) {
     section.style.display = "none";
   });
-  document.querySelector(".party").style.display = "block"; // 기본적으로 party 섹션 표시
+  document.querySelector(".gift").style.display = "block"; // 기본적으로 party 섹션 표시
 
   // 기본 색상 변경 (Party 섹션이 보일 때)
   document.querySelectorAll(".best5-button > a").forEach(function (btn) {
-    if (btn.textContent.toLowerCase() === "party") {
+    if (btn.textContent.toLowerCase() === "gift") {
       btn.classList.add("active"); // 기본적으로 active 클래스 추가
       btn.querySelector("h3").classList.add("active");
     }
