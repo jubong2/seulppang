@@ -24,10 +24,12 @@ window.addEventListener("load", function () {
       // 모든 버튼의 스타일 초기화
       document.querySelectorAll(".best5-button a").forEach(function (btn) {
         btn.classList.remove("active"); // active 클래스 제거
+        btn.querySelector("h3").classList.remove("active");
       });
 
       // 클릭한 버튼의 스타일 변경
       button.classList.add("active");
+      button.querySelector("h3").classList.add("active");
     });
   });
 
@@ -41,34 +43,39 @@ window.addEventListener("load", function () {
   document.querySelectorAll(".best5-button > a").forEach(function (btn) {
     if (btn.textContent.toLowerCase() === "party") {
       btn.classList.add("active"); // 기본적으로 active 클래스 추가
+      btn.querySelector("h3").classList.add("active");
     }
   });
 
   // 찜하기
-  const heart = document.querySelector(".heart-icon > img"); // 이미지 태그 선택
-  const cart = document.querySelector(".cart-icon > img"); // 이미지 태그 선택
+  const hearts = document.querySelectorAll(".heart-icon img"); // 모든 찜하기 아이콘 선택
+  const carts = document.querySelectorAll(".cart-icon img"); // 모든 장바구니 아이콘 선택
 
-  heart.addEventListener("click", function (event) {
-    event.preventDefault(); // 링크 이동 방지
-    // 현재 이미지 소스를 확인하여 상태를 결정
-    if (heart.src.includes("images/heart.png")) {
-      heart.src = "images/heart-red.png"; // 찜한 이미지로 변경
-      alert("찜목록에 저장했습니다.");
-    } else {
-      heart.src = "images/heart.png"; // 원래 이미지로 변경
-      alert("찜목록에서 해제하였습니다.");
-    }
+  // 각 heart 아이콘에 대해 클릭 이벤트 추가
+  hearts.forEach(function (heart) {
+    heart.addEventListener("click", function (event) {
+      event.preventDefault(); // 링크 이동 방지
+      if (heart.src.includes("images/heart.png")) {
+        heart.src = "images/heart-red.png"; // 찜한 이미지로 변경
+        alert("찜목록에 저장했습니다.");
+      } else {
+        heart.src = "images/heart.png"; // 원래 이미지로 변경
+        alert("찜목록에서 해제하였습니다.");
+      }
+    });
   });
 
-  cart.addEventListener("click", function (event) {
-    event.preventDefault(); // 링크 이동 방지
-    // 현재 이미지 소스를 확인하여 상태를 결정
-    if (cart.src.includes("images/cart.png")) {
-      cart.src = "images/cart-red.png"; // 찜한 이미지로 변경
-      alert("장바구니에 저장했습니다.");
-    } else {
-      cart.src = "images/cart.png"; // 원래 이미지로 변경
-      alert("장바구니에서 해제하였습니다.");
-    }
+  // 각 cart 아이콘에 대해 클릭 이벤트 추가
+  carts.forEach(function (cart) {
+    cart.addEventListener("click", function (event) {
+      event.preventDefault(); // 링크 이동 방지
+      if (cart.src.includes("images/cart.png")) {
+        cart.src = "images/cart-red.png"; // 장바구니 아이콘 변경
+        alert("장바구니에 저장했습니다.");
+      } else {
+        cart.src = "images/cart.png"; // 원래 아이콘으로 변경
+        alert("장바구니에서 해제하였습니다.");
+      }
+    });
   });
 });
