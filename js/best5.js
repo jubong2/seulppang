@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   // 베스트 5 스와이퍼 초기화
-  var swiper = new Swiper(".bestSwiper", {
+  var bestSwiper = new Swiper(".bestSwiper", {
     slidesPerView: 2.5,
     spaceBetween: 30,
   });

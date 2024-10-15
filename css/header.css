@@ -31,20 +31,58 @@
 .header-logo > a > img {
   width: 100%;
 }
+
+/* search */
+
+.search {
+  opacity: 0;
+  padding: 10px 5px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  transform: translate(-12%, -50%);
+  width: 0%;
+  height: 40px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.search.active {
+  opacity: 1;
+  width: 15%;
+}
+.search-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-inner > input {
+  border: #d82323;
+  height: 100%;
+  width: 70%;
+  outline: navajowhite;
+}
 /* 헤더 아이콘 */
 .header-top-icon {
   display: flex;
-  gap: 20%;
+  gap: 10%;
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translate(-5%, -50%);
-  width: 8%;
+  width: 7%;
 }
 .header-top-icon > div {
   width: calc(100% / 4);
 }
-.header-top-icon > a > img {
+.header-top-icon > div > img {
+  width: 100%;
+}
+.header-top-icon > div > a > img {
   width: 100%;
 }
 .bakery {
@@ -84,7 +122,24 @@
   color: #fff;
   letter-spacing: 1px;
 }
+.header-navi-title > h3 {
+  position: relative;
+}
+.header-navi-title > h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.5s ease; /* 애니메이션 설정 */
+}
 
+.header-navi-title > h3:hover::after {
+  width: 30%; /* 호버 시 전체 너비로 확장 */
+}
 .bakery-submenu > div {
   display: flex;
 }
@@ -97,7 +152,7 @@
   width: 80%;
   line-height: 3;
   background-color: rgba(133, 83, 51, 0.8);
-  padding-left: 15%;
+
   margin-top: 6%;
   font-size: 15px;
   opacity: 0; /* 초기 투명도를 0으로 설정 (숨김 상태) */
@@ -108,9 +163,24 @@
 .bakery-cate {
   width: 60%;
 }
-
+.bakery-cate > li {
+  padding-left: 15%;
+}
+.bakery-cate > li:hover {
+  background-color: rgba(255, 199, 164, 0.3);
+}
 .bakery-inner {
   width: 40%;
+}
+
+.bakery-inner.active {
+  display: block; /* active 클래스가 있을 때 블록으로 표시 */
+}
+.header-navi-submenu > li {
+  padding-left: 15%;
+}
+.header-navi-submenu > li:hover {
+  background-color: rgba(255, 199, 164, 0.3);
 }
 .header-navi > li:hover .header-navi-submenu {
   opacity: 1; /* 호버 시 투명도를 1로 설정 (보이게 함) */
@@ -118,19 +188,21 @@
   display: block; /* 하위 메뉴를 블록으로 표시 */
 }
 .bakery-submenu {
+  width: 100%;
   transition: all 0.5s;
 }
 
-.bakery-submenu.active {
-  width: 120%;
-}
-.bakery-inner ul {
+.bakery-inner > ul {
   width: 100%;
   padding-left: 5%;
   opacity: 0;
   height: 0;
   overflow: hidden;
   transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.bakery-inner > ul > li:hover {
+  background-color: rgba(255, 199, 164, 0.3);
 }
 
 /* ul이 활성화되었을 때 표시되도록 설정 */
@@ -140,9 +212,9 @@
 }
 .header-navi-submenu > li > a {
   font-weight: bold;
-
   color: #ffff;
 }
+
 .bakery-cate > li > a {
   font-weight: bold;
   color: #ffff;
