@@ -1,24 +1,26 @@
 @charset "utf-8";
 
 .header {
-  position: relative;
+  position: fixed;
   display: block;
   width: 100%;
-  padding: 10px 0;
+  height: 150px;
+  z-index: 9999;
 }
 /* 헤더상단 */
 .header-top {
+  background-color: #fff6e5;
+  padding: 10px 0;
   display: flex;
   position: relative;
   display: block;
   width: 100%;
-  height: 50%;
+  height: 60%;
 }
 /* 헤더 로고 */
 .header-logo {
   overflow: hidden;
   width: 20%;
-  height: 100%;
   margin: 0 auto;
 }
 .header-logo > a > img {
@@ -52,32 +54,60 @@
 .header-bottom {
   display: block;
   position: relative;
+  height: 40%;
   width: 100%;
-  background-color: rgb(255, 145, 0);
+  background-color: rgba(133, 83, 51, 0.8);
 }
 .header-navi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70%;
   display: flex;
-  gap: 50px;
-  margin: auto;
 }
 .header-navi > li {
   position: relative;
-  background-color: aliceblue;
   width: calc(100% / 5);
 }
 
-.header-navi > li > a > h3 {
+.header-navi-title {
   width: 100%;
   text-align: center;
-  background-color: aqua;
-}
-.header-navi > li > div {
-  margin-left: 30%;
-  text-align: left;
-  background-color: antiquewhite;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
+.bakery-submenu > div {
+  display: flex;
+}
+.bakery-cate {
+  width: 60%;
+}
+.header-navi-submenu {
+  position: absolute;
+  text-align: left;
+  margin-left: 30%;
+  width: 100%;
+  line-height: 3;
+  background-color: aquamarine;
+  padding-left: 15%;
+  font-size: 18px;
+  opacity: 0; /* 초기 투명도를 0으로 설정 (숨김 상태) */
+  transition: all 1s; /* 모든 속성에 1초의 전환 효과 적용 */
+  visibility: hidden; /* 하위 메뉴가 기본적으로 보이지 않도록 설정 */
+}
+.header-navi > li:hover .header-navi-submenu {
+  opacity: 1; /* 호버 시 투명도를 1로 설정 (보이게 함) */
+  visibility: visible; /* 하위 메뉴가 보이도록 설정 */
+  display: block; /* 하위 메뉴를 블록으로 표시 */
+}
+.bakery-submenu {
+  background-color: aliceblue;
+  width: 150%;
+}
 /*  */
 /* 반응형 */
 @media (max-width: 678px) {
