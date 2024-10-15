@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.target-swiper {
+  width: 100%;
+  background-color: antiquewhite;
+  margin-bottom: 300px;
+}
+
+.tarhget-warp {
+  margin: 0 auto;
+  width: 70%;
+}
