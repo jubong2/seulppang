@@ -1,7 +1,8 @@
 window.addEventListener("load", function () {
-  // 파티 스와이퍼
-  var swiper = new Swiper(".bestSwiper", {
-    slidesPerView: 2.5,
+  // 티겟 스와이퍼
+  // 베스트 5 스와이퍼 초기화
+  var targetSwiper = new Swiper(".targetSwiper", {
+    slidesPerView: 3,
     spaceBetween: 30,
   });
 });
