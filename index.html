@@ -668,8 +668,9 @@
                         </div>
                         <div class="cart-icon">
                           <img src="images/cart.png" alt="장바구니아이콘" />
-                        </div></div
-                    ></a>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                   <div class="best-text">
                     <h3>[소드락이] 한입 쿠키컵 세트</h3>
@@ -765,33 +766,59 @@
       <section class="community">
         <div class="community-inner">
           <h2>빵친자들 커뮤니티</h2>
-          <div class="notice-btn">
-            <div class="tip">
-              <h3>빵팁공유</h3>
+          <div class="notice">
+            <!-- 빵팁공유 -->
+            <div class="tip-container">
+              <div class="tip">
+                <h3>빵팁공유</h3>
+              </div>
+              <table class="notice-board">
+                <thead>
+                  <tr>
+                    <th>번호</th>
+                    <th>아이디</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                  </tr>
+                </thead>
+                <tbody id="noticeList">
+                  <!-- js출력 -->
+                </tbody>
+              </table>
+              <!-- 페이지네이션 버튼 -->
+              <ul class="pagination" id="pagination">
+                <!-- js출력 -->
+              </ul>
             </div>
-            <div class="wonder">
-              <h3>궁금해요</h3>
+            <!-- 궁금해요 -->
+            <div class="wonder-container">
+              <div class="wonder">
+                <h3>궁금해요</h3>
+              </div>
+              <table class="notice-board">
+                <thead>
+                  <tr>
+                    <th>번호</th>
+                    <th>아이디</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                  </tr>
+                </thead>
+                <tbody id="noticeList">
+                  <!-- js출력 -->
+                </tbody>
+              </table>
+              <!-- 페이지네이션 버튼 -->
+              <ul class="pagination" id="pagination">
+                <!-- js출력 -->
+              </ul>
             </div>
           </div>
-          <table class="notice-board">
-            <thead>
-              <tr>
-                <th>번호</th>
-                <th>아이디</th>
-                <th>제목</th>
-                <th>작성일</th>
-              </tr>
-            </thead>
-            <tbody id="noticeList">
-              <!-- js출력 -->
-            </tbody>
-          </table>
-          <!-- 페이지네이션 버튼 -->
-          <ul class="pagination" id="pagination">
-            <!-- js출력 -->
-          </ul>
+
+         
         </div>
       </section>
+      <!-- 푸터 -->
       <section class="footer"></section>
     </div>
 
