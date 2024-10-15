@@ -64,7 +64,7 @@ window.addEventListener("load" , function(){
         const paginationUL = document.getElementById("pagination");
         paginationUL.innerHTML = ""; // 기존 페이지네이션 초기화
         // 이전 버튼
-        const prevBtn = document.createElement("li");
+        const prevBtn = document.createElement("p");
         prevBtn.textContent = "이전";
         prevBtn.addEventListener("click", () => {
           if (currentPage > 1) {
@@ -89,7 +89,7 @@ window.addEventListener("load" , function(){
           paginationUL.appendChild(li);
         }
         // 다음 페이지 버튼
-        const nextBtn = document.createElement("li");
+        const nextBtn = document.createElement("p");
         nextBtn.textContent = "다음";
         nextBtn.addEventListener("click", () => {
           if (currentPage < totalPg) {
@@ -102,7 +102,7 @@ window.addEventListener("load" , function(){
       }
       //   페이지네이션 ui 업데이트
       function audatPaginationUI() {
-        const paginationItems = document.querySelectorAll("#pagination li");
+        const paginationItems = document.querySelectorAll("#pagination li, #pagination p");
         paginationItems.forEach((item, index) => {
           //   console.log(item);
           if (index === currentPage) {
@@ -115,4 +115,5 @@ window.addEventListener("load" , function(){
       // 공지사항 목록 화면에 호출
       displayNotices(notices, currentPage, itemsPerPage);
       displayPagination(totalPages, currentPage);
+      
 })
