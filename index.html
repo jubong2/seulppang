@@ -51,13 +51,13 @@
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- js -->
-    <script src="js/js_hyun.js"></script>
-    <script src="js/js_ju.js"></script>
+
     <script src="js/loginpage.js"></script>
     <script src="js/subpage.js"></script>
     <script src="js/detailpage.js"></script>
     <script src="js/best5.js"></script>
     <script src="js/community.js"></script>
+    <script src="js/header.js"></script>
   </head>
   <body>
     <div class="warp">
@@ -66,10 +66,20 @@
           <div class="header-logo">
             <a href="#"><img src="images/logo.png" alt="로고" /></a>
           </div>
+          <div class="search">
+            <input type="text">
+          </div>
           <div class="header-top-icon">
-            <a href="#"><img src="images/log-in.png" alt="로그인" /></a>
-            <a href="#"><img src="images/heart-header.png" alt="찜하기" /></a>
-            <a href="#"><img src="images/cart-header.png" alt="로그인" /></a>
+            <div><img src="images/search.png" alt="검색하기" /></div>
+            <div>
+              <a href="#"><img src="images/log-in.png" alt="로그인" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="images/heart-header.png" alt="찜하기" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="images/cart-header.png" alt="로그인" /></a>
+            </div>
           </div>
           <div class="header-mb-bar">
             <a href="#"><img src="images/mb-header.png" alt="햄버거바" /></a>
@@ -94,6 +104,7 @@
                       <li><a href="#">롤케이트</a></li>
                       <li><a href="#">선물세트</a></li>
                     </ul>
+                    <ul class="vegan"></ul>
                     <ul class="navi-dessert">
                       <li><a href="#">구움과자</a></li>
                       <li><a href="#">스콘</a></li>
@@ -108,6 +119,7 @@
                       <li><a href="#">치아바타</a></li>
                       <li><a href="#">기타</a></li>
                     </ul>
+                    <ul class="pet-bakery"></ul>
                   </div>
                 </div>
               </div>
@@ -119,7 +131,7 @@
               <div>
                 <a href="#" class="header-navi-title"><h3>HOT</h3></a>
                 <ul class="header-navi-submenu">
-                  <li><a href="#">알뜰빵</a></li>
+                  <li class="dd"><a href="#">알뜰빵</a></li>
                   <li><a href="#">신상빵</a></li>
                   <li><a href="#">인기빵</a></li>
                 </ul>

@@ -78,8 +78,10 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
+
   background-color: #ffc898;
   z-index: -2;
+
 }
 .notice-btn > .tip > h3,
 .notice-btn > .wonder > h3 {
