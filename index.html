@@ -67,7 +67,7 @@
             <a href="#"><img src="images/logo.png" alt="로고" /></a>
           </div>
           <div class="search">
-            <input type="text">
+            <input type="text" />
           </div>
           <div class="header-top-icon">
             <div><img src="images/search.png" alt="검색하기" /></div>
@@ -149,6 +149,17 @@
       <section class="banner">
         <div class="banner-warp">
           <img src="images/banner-bg.png" alt="배너배경이미지" class="banner-bg" />
+          <div class="top-left-bb" data-aos="fade-up" data-aos-duration="3000">
+            <img src="images/bubble1.png" alt="말풍선" />
+          </div>
+          <div class="top-right-bb">
+            <img src="images/bubble3.png" alt="말풍선" data-aos="fade-up" data-aos-duration="2000" />
+            <h2></h2>
+          </div>
+          <div class="bottom-bb">
+            <img src="images/bubble2.png" alt="말풍선" data-aos="zoom-in-up" data-aos-duration="3000" />
+            <h2></h2>
+          </div>
         </div>
       </section>
       <!-- 베스트 5 -->
@@ -766,12 +777,15 @@
       <section class="community">
         <div class="community-inner">
           <h2>빵친자들 커뮤니티</h2>
+          <div class="tip" id="tabButton">
+            <h3>빵팁공유</h3>
+          </div>
+          <div class="wonder" id="tabButton2">
+            <h3>궁금해요</h3>
+          </div>
           <div class="notice">
             <!-- 빵팁공유 -->
             <div class="tip-container">
-              <div class="tip">
-                <h3>빵팁공유</h3>
-              </div>
               <table class="notice-board">
                 <thead>
                   <tr>
@@ -792,9 +806,6 @@
             </div>
             <!-- 궁금해요 -->
             <div class="wonder-container">
-              <div class="wonder">
-                <h3>궁금해요</h3>
-              </div>
               <table class="notice-board">
                 <thead>
                   <tr>
@@ -804,18 +815,16 @@
                     <th>작성일</th>
                   </tr>
                 </thead>
-                <tbody id="noticeList">
+                <tbody id="noticeList2">
                   <!-- js출력 -->
                 </tbody>
               </table>
               <!-- 페이지네이션 버튼 -->
-              <ul class="pagination" id="pagination">
+              <ul class="pagination" id="pagination2">
                 <!-- js출력 -->
               </ul>
             </div>
           </div>
-
-         
         </div>
       </section>
       <!-- 푸터 -->
@@ -849,6 +858,7 @@
 
         // 페이지 로드 시 바로 타이머 표시
         updateTimer();
+        // ===========================================
       });
     </script>
   </body>
