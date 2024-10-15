@@ -7,6 +7,7 @@
   height: 150px;
   z-index: 9999;
 }
+
 /* 헤더상단 */
 .header-top {
   background-color: #fff6e5;
@@ -19,9 +20,13 @@
 }
 /* 헤더 로고 */
 .header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
   width: 20%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .header-logo > a > img {
   width: 100%;
@@ -32,12 +37,12 @@
   gap: 20%;
   position: absolute;
   top: 50%;
-  right: 1%;
-  transform: translate(-1%, -50%);
+  right: 5%;
+  transform: translate(-5%, -50%);
   width: 8%;
 }
-.header-top-icon > a {
-  width: calc(100% / 3);
+.header-top-icon > div {
+  width: calc(100% / 4);
 }
 .header-top-icon > a > img {
   width: 100%;
@@ -83,21 +88,29 @@
 .bakery-submenu > div {
   display: flex;
 }
-.bakery-cate {
-  width: 60%;
-}
+
 .header-navi-submenu {
+  color: #ffff !important;
   position: absolute;
   text-align: left;
   margin-left: 30%;
-  width: 100%;
+  width: 80%;
   line-height: 3;
-  background-color: aquamarine;
+  background-color: rgba(133, 83, 51, 0.8);
   padding-left: 15%;
-  font-size: 18px;
+  margin-top: 6%;
+  font-size: 15px;
   opacity: 0; /* 초기 투명도를 0으로 설정 (숨김 상태) */
   transition: all 1s; /* 모든 속성에 1초의 전환 효과 적용 */
   visibility: hidden; /* 하위 메뉴가 기본적으로 보이지 않도록 설정 */
+}
+
+.bakery-cate {
+  width: 60%;
+}
+
+.bakery-inner {
+  width: 40%;
 }
 .header-navi > li:hover .header-navi-submenu {
   opacity: 1; /* 호버 시 투명도를 1로 설정 (보이게 함) */
@@ -105,10 +118,40 @@
   display: block; /* 하위 메뉴를 블록으로 표시 */
 }
 .bakery-submenu {
-  background-color: aliceblue;
-  width: 150%;
+  transition: all 0.5s;
 }
-/*  */
+
+.bakery-submenu.active {
+  width: 120%;
+}
+.bakery-inner ul {
+  width: 100%;
+  padding-left: 5%;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+/* ul이 활성화되었을 때 표시되도록 설정 */
+.bakery-inner ul.active {
+  opacity: 1;
+  height: auto; /* 높이를 자동으로 맞춤 */
+}
+.header-navi-submenu > li > a {
+  font-weight: bold;
+
+  color: #ffff;
+}
+.bakery-cate > li > a {
+  font-weight: bold;
+  color: #ffff;
+}
+
+.bakery-inner > ul > li > a {
+  font-weight: bold;
+  color: #ffff;
+}
 /* 반응형 */
 @media (max-width: 678px) {
   .header {
