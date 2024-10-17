@@ -97,6 +97,7 @@
 .popup1-title,
 .popup2-title,
 .popup3-title {
+  width: 100%;
   position: absolute;
   top: 10px; /* 사진 아래쪽에 위치 */
   left: 10px;
@@ -112,6 +113,8 @@
   top: 50%; /* 사진 아래쪽에 위치 */
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
   color: white; /* 글씨를 흰색으로 변경 */
   z-index: 10; /* 이미지 위에 타이틀을 나타내기 위해 z-index 설정 */
   padding: 10px;
@@ -139,92 +142,115 @@
 }
 /* 900px 이하 */
 @media (max-width: 900px) {
-  .popup-inner {
-    width: 90%; /* 전체 폭 축소 */
-  }
-
-  .popup-img-intro {
-    flex-direction: row; /* 가로 정렬 유지 */
-    gap: 10px;
-  }
-
-  .left, .right {
-    width: 48%; /* 두 섹션이 나란히 배치 */
-  }
-
-  .second-store, .third-store {
-    height: 48%; /* 오른쪽 두 스토어가 균등하게 분할 */
-  }
-
-  .popup-count {
-    width: 220px;
-    height: 220px;
-  }
-
-  .popup-count p span {
-    font-size: 35px;
-  }
-
   .popup-title h2 {
-    font-size: 40px;
+    font-size: 35px;
+    margin-bottom: 30px;
   }
+  .popup-title h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .popup1-title h2,
+.popup2-title h2,
+.popup3-title h2 {
+  font-size: 30px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  float: left;
+}
+.popup-count{
+  width: 180px;
+  height: 180px;
+}
+.popup-count p span{
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+}
+.popup-count p {
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.first-store h3,
+.second-store h3,
+.third-store h3 {
+  font-size: 40px;
+}
+.second-store h3,
+.third-store h3{
+  top: 60%;
+}
+.popup1-title p,
+.popup2-title p,
+.popup3-title p {
+  font-size: 12px;
+}
 }
 
 /* 768px 이하 */
 @media (max-width: 768px) {
-  .popup-inner {
-    width: 95%; /* 전체 폭 조정 */
-  }
-
-  .popup-img-intro {
-    flex-direction: row; /* 여전히 가로 정렬 유지 */
-    flex-wrap: wrap; /* 공간이 부족하면 줄바꿈 */
-    gap: 15px;
-  }
-
-  .left, .second-store, .third-store {
-    width: 48%; /* 각 스토어를 48%로 나란히 배치 */
-    height: auto;
-  }
-
-  .popup-count {
-    width: 180px;
-    height: 180px;
-  }
-
-  .popup-count p span {
-    font-size: 30px;
-  }
-
   .popup-title h2 {
     font-size: 30px;
+    margin-bottom: 0px;
   }
+  .popup-title h4 {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .popup1-title h2,
+.popup2-title h2,
+.popup3-title h2 {
+  font-size: 25px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  float: left;
+}
+.popup-count{
+  width: 180px;
+  height: 180px;
+}
+.popup-count p span{
+  font-size: 37px;
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+}
+.popup-count p {
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.first-store h3,
+.second-store h3,
+.third-store h3 {
+  font-size: 35px;
+  padding: 0;
+}
+.popup1-title p,
+.popup2-title p,
+.popup3-title p {
+  font-size: 10px;
+}
+.popup1-title ,
+.popup2-title ,
+.popup3-title {
+ padding: 0px;
+}
 }
 
 /* 400px 이하: 세로 정렬 */
-@media (max-width: 400px) {
-  .popup-img-intro {
-    flex-direction: column; /* 세로 정렬 */
-    gap: 20px; /* 간격 조정 */
-  }
-
-  .left, .second-store, .third-store {
-    width: 100%; /* 전체 폭 사용 */
-  }
-
-  .popup-count {
-    width: 160px;
-    height: 160px;
-  }
-
-  .popup-count p span {
-    font-size: 25px;
-  }
-
-  .popup-title h2 {
-    font-size: 25px;
-  }
+@media screen and (max-width: 400px) {
+ .popup-img-intro{
+  flex: none;
+  background-color: #ffb16c;
+  height: 300px;
+ }
+ .left{
+  width: 100%;
+ }
 }
+
+
 
 /* 320px 이하 */
 @media (max-width: 320px) {
