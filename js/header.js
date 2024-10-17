@@ -3,7 +3,6 @@ window.addEventListener("load", function () {
 
   const cateItems = document.querySelectorAll(".bakery-cate li");
   const bakeryInnerLists = document.querySelectorAll(".bakery-inner ul");
-  const innetrsub = document.querySelectorAll(".bakery-inner");
   const bakerySubmenu = document.querySelector(".bakery-submenu");
 
   cateItems.forEach((item, index) => {
