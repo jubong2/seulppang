@@ -113,13 +113,13 @@
 .product-icon > div {
   display: block;
 }
-.best-text {
+.product-text {
   cursor: pointer;
   padding: 20px 0;
   color: rgba(133, 83, 51, 0.8);
 }
 
-.best-text > h3 {
+.product-text > h3 {
   height: 50px;
 
   font-size: 25px;
@@ -128,7 +128,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.best-text > p {
+.product-text > p {
   height: 50px;
   font-size: 20px;
   margin-bottom: 20px;
