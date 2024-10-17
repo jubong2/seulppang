@@ -52,6 +52,7 @@
 .search.active {
   opacity: 1;
   width: 15%;
+  margin-right: 20px;
 }
 .search-inner {
   width: 100%;
@@ -69,12 +70,12 @@
 /* 헤더 아이콘 */
 .header-top-icon {
   display: flex;
-  gap: 10%;
+  gap: 16%;
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translate(-5%, -50%);
-  width: 7%;
+  width: 9%;
 }
 .header-top-icon > div {
   width: calc(100% / 4);
@@ -85,9 +86,9 @@
 .header-top-icon > div > a > img {
   width: 100%;
 }
-.bakery {
+/* .bakery {
   display: flex;
-}
+} */
 /* 헤더 햄버거바 - 모바일 */
 .header-mb-bar {
   display: none;
@@ -124,6 +125,8 @@
 }
 .header-navi-title > h3 {
   position: relative;
+  font-size: 17px;
+  font-weight: 300;
 }
 .header-navi-title > h3::after {
   content: "";
@@ -132,7 +135,7 @@
   bottom: -10px;
   transform: translateX(-50%);
   width: 0;
-  height: 3px;
+  height: 1px;
   background-color: #fff;
   transition: width 0.5s ease; /* 애니메이션 설정 */
 }
