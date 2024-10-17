@@ -12,7 +12,7 @@
   margin: 0 auto;
   width: 70%;
 }
-.popup-count{
+.popup-count {
   position: absolute;
   top: 0;
   right: 0;
@@ -24,7 +24,7 @@
   border-radius: 50%;
   padding: 20px 0;
 }
-.popup-count p span{
+.popup-count p span {
   font-size: 50px;
   font-weight: 800;
   color: rgb(255, 0, 0);
@@ -55,7 +55,6 @@
   justify-content: space-between;
   max-height: 560px;
   margin-top: 30px;
- 
 }
 .left {
   width: 40%;
@@ -71,11 +70,10 @@
   display: flex;
   flex-direction: column;
   gap: 5%;
- 
 }
 .second-store,
 .third-store {
-  height: calc(100% / 2); 
+  height: calc(100% / 2);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -84,7 +82,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
- 
 }
 /* 부모 요소에 position: relative 추가 */
 .first-store,
@@ -151,41 +148,41 @@
     margin-bottom: 5px;
   }
   .popup1-title h2,
-.popup2-title h2,
-.popup3-title h2 {
-  font-size: 30px;
-  margin-bottom: 2px;
-  margin-right: 5px;
-  float: left;
-}
-.popup-count{
-  width: 180px;
-  height: 180px;
-}
-.popup-count p span{
-  font-size: 40px;
-  font-weight: 800;
-  color: rgb(255, 0, 0);
-}
-.popup-count p {
-  font-size: 18px;
-  margin-top: 5px;
-  font-weight: 600;
-}
-.first-store h3,
-.second-store h3,
-.third-store h3 {
-  font-size: 40px;
-}
-.second-store h3,
-.third-store h3{
-  top: 60%;
-}
-.popup1-title p,
-.popup2-title p,
-.popup3-title p {
-  font-size: 12px;
-}
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 30px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    float: left;
+  }
+  .popup-count {
+    width: 180px;
+    height: 180px;
+  }
+  .popup-count p span {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+  }
+  .popup-count p {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .first-store h3,
+  .second-store h3,
+  .third-store h3 {
+    font-size: 40px;
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 60%;
+  }
+  .popup1-title p,
+  .popup2-title p,
+  .popup3-title p {
+    font-size: 12px;
+  }
 }
 
 /* 768px 이하 */
@@ -199,76 +196,171 @@
     margin-bottom: 0px;
   }
   .popup1-title h2,
-.popup2-title h2,
-.popup3-title h2 {
-  font-size: 25px;
-  margin-bottom: 2px;
-  margin-right: 5px;
-  float: left;
-}
-.popup-count{
-  width: 180px;
-  height: 180px;
-}
-.popup-count p span{
-  font-size: 37px;
-  font-weight: 800;
-  color: rgb(255, 0, 0);
-}
-.popup-count p {
-  font-size: 16px;
-  margin-top: 5px;
-  font-weight: 600;
-}
-.first-store h3,
-.second-store h3,
-.third-store h3 {
-  font-size: 35px;
-  padding: 0;
-}
-.popup1-title p,
-.popup2-title p,
-.popup3-title p {
-  font-size: 10px;
-}
-.popup1-title ,
-.popup2-title ,
-.popup3-title {
- padding: 0px;
-}
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 25px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    float: left;
+  }
+  .popup-count {
+    width: 180px;
+    height: 180px;
+  }
+  .popup-count p span {
+    font-size: 37px;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+  }
+  .popup-count p {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .first-store h3,
+  .second-store h3,
+  .third-store h3 {
+    font-size: 35px;
+    padding: 0;
+  }
+  .popup1-title p,
+  .popup2-title p,
+  .popup3-title p {
+    font-size: 10px;
+  }
+  .popup1-title,
+  .popup2-title,
+  .popup3-title {
+    padding: 0px;
+  }
 }
 
-/* 400px 이하: 세로 정렬 */
+@media screen and (max-width: 650px) {
+  .popup-title h2 {
+    font-size: 24px;
+    height: 35px;
+  }
+  .popup-title h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .popup-count {
+    width: 170px;
+    height: 170px;
+    padding-top: 15px;
+  }
+  .popup-count p span {
+    font-size: 33px;
+  }
+  .popup-count p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .popup-img-intro {
+    flex-direction: column;
+    gap: 3%;
+    height: 2000px;
+  }
+  .left {
+    width: 100%;
+    height: 650px;
+  }
+  .first-store {
+    height: 100%;
+  }
+  .right {
+    width: 100%;
+    height: 1300px;
+  }
+  .first-store > img,
+  .second-store > img,
+  .third-store > img {
+    height: 40vw;
+    min-height: 200px;
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 50%;
+  }
+}
 @media screen and (max-width: 400px) {
- .popup-img-intro{
-  flex: none;
-  background-color: #ffb16c;
-  height: 300px;
- }
- .left{
-  width: 100%;
- }
+  .popup-title h2 {
+    width: 50%;
+    font-size: 24px;
+  }
+  .popup-title h4 {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .popup-count {
+    width: 130px;
+    height: 130px;
+    padding-top: 15px;
+
+  }
+  .popup-count p span {
+    font-size: 30px;
+  }
+  .popup-count p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .popup-img-intro {
+    flex-direction: column;
+    gap: 3%;
+    height: 2000px;
+  }
+  .left {
+    width: 100%;
+    height: 650px;
+  }
+  .first-store {
+    height: 100%;
+  }
+  .right {
+    width: 100%;
+    height: 1300px;
+  }
+  .first-store > img,
+  .second-store > img,
+  .third-store > img {
+    height: 40vw;
+    min-height: 200px;
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 50%;
+  }
 }
-
-
 
 /* 320px 이하 */
-@media (max-width: 320px) {
-  .popup-img-intro {
-    gap: 10px; /* 간격 축소 */
+@media screen and (max-width: 320px) {
+  .popup-title h2 {
+    width: 50%;
+    height: 20px;
+    font-size: 19px;
   }
-
+  .popup-title h4 {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
   .popup-count {
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
+    padding-top: 12px;
+
+  }
+  .popup-count p {
+    font-size: 11px;
+    margin-top: 8px;
   }
 
   .popup-count p span {
-    font-size: 20px;
+    font-size: 22px;
   }
-
-  .popup-title h2 {
-    font-size: 20px;
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 22px;
   }
 }
-
