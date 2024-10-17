@@ -1,18 +1,16 @@
 @charset "utf-8";
 .banner {
+  padding-top: 100px;
   width: 100%;
   margin-bottom: 300px;
-  
 }
 .banner-warp {
   width: 100%;
   position: relative;
-  
 }
 
 .banner-warp > img {
   width: 100%;
-  margin-top: 80px;
 }
 /* .top-left-bb > img, .top-right-bb > img , .bottom-bb > img{
   width: 30%;
@@ -22,29 +20,27 @@
   width: 30%;
   position: absolute;
   left: 3%;
-  top: 10%;
+  top: 5%;
 }
-.top-left-bb img {
+.top-left-bb > img {
   width: 100%;
 }
 /* 탑 오른쪽 말풍선 */
 .top-right-bb {
   width: 100%;
 }
-.top-right-bb {
+.top-right-bb > img {
   width: 30%;
   position: absolute;
   right: 3%;
-  top: 10%;
-}
-.top-right-bb img {
-  width: 100%;
+  top: 7%;
 }
 /* 바텀 말풍선 */
 .bottom-bb {
   width: 100%;
 }
 .bottom-bb > img {
+  width: 100%;
   width: 30%;
   position: absolute;
   right: 5%;
