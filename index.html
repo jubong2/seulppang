@@ -28,15 +28,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <!-- *제이쿼리 연결은 제일 위쪽* -->
+    <script src="js/jquery-1.10.2.min.js"></script>
     <!-- AOS적용 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- *제이쿼리 연결은 제일 위쪽* -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <!-- AOS적용 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/html5shiv.js"></script>
 
     <!--  prefixfree 주석했다가 나중에 풀기-->
@@ -62,6 +60,7 @@
   </head>
   <body>
     <div class="warp">
+      <!-- 헤더 -->
       <section class="header">
         <div class="header-top">
           <div class="header-logo">
@@ -150,6 +149,7 @@
           </ul>
         </div>
       </section>
+      <!-- 배너 -->
       <section class="banner">
         <div class="banner-warp">
           <img src="images/banner-bg.png" alt="배너배경이미지" class="banner-bg" />
@@ -649,6 +649,7 @@
           <img src="images/knottedbanner.jpg" alt="" />
         </div>
       </section>
+      <!-- 추천 스와이퍼 -->
       <section class="target-swiper">
         <div class="target-warp">
           <div class="swipersection-title">
@@ -766,7 +767,7 @@
       <section class="mini-banner">
         <div class="miniBn-inner">
           <!-- 왼쪽 배너 -->
-          <div class="miniBn-left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+          <div class="miniBn-left" data-aos="fade-right" data-aos-duration="1000">
             <img src="images/samplerbanner.jpg" alt="" />
             <div class="more-btn">
               <img src="images/Btn-right.png" alt="" />
@@ -774,7 +775,7 @@
             </div>
           </div>
           <!-- 오른쪽 배너 -->
-          <div class="miniBn-right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+          <div class="miniBn-right">
             <div class="more-btn">
               <p>자세히 보기</p>
               <img src="images/Btn-left.png" alt="" />
@@ -950,11 +951,29 @@
         </div>
       </section>
       <!-- 푸터 -->
-      <section class="footer"></section>
+      <section class="footer">
+        <div class="inner">
+          <ul class="footer-list">
+            <li>
+              <span>상호 : ㈜와이드모바일<em class="footer-bar"></em></span>
+
+              <span>통신판매업신고번호 : 제2018-서울서대문-0301호<em class="footer-bar"></em></span>
+
+              <span>사업자등록번호 : 121-81-66458</span>
+            </li>
+            <li>
+              고객센터 : <a href="tel:000-0000">1566-9070</a> (운영시간 9:00~18:00,<br class="footer-br" />
+              주말/공휴일/점심 12:00~13:00 제외)
+            </li>
+            <li><p>Copyright © WIDEMOBILE INC. Allright Reserved.</p></li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <script>
       $(document).ready(function () {
+        AOS.init();
         function updateTimer() {
           const targetDate = new Date("2024-11-09T11:00:00"); // 11월 9일 오전 11시 목표 시간
           const now = new Date(); // 현재 시간

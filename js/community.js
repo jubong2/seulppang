@@ -1,4 +1,15 @@
 window.addEventListener("load", function () {
+  $(".wonder").css({
+    "background-color": "#ffb16c", 
+  });
+
+  // 버튼 클릭 시 이벤트 처리
+  $(".tip").click(function () {
+    // 모든 버튼을 원래 색상으로 초기화
+    $(".wonder").css({
+      "background-color": "",
+      color: "",})
+    });
   //  팁 게시판 데이터
   const tip = [
     { id: 1, name: "lsg0905", title: "소베 소금빵 맛있게 먹는 방법 공유합니다 !", date: "2024-10-01" },
@@ -27,7 +38,7 @@ window.addEventListener("load", function () {
     { id: 24, name: "mole333", title: "공지사항 12", date: "2024-09-20" },
   ];
   //   페이지당 표시할 항목수
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
   let currentPage = 1;
   const totalPages = Math.ceil(tip.length / itemsPerPage);
   //   console.log(totalPages); // 3
@@ -150,7 +161,7 @@ window.addEventListener("load", function () {
     { id: 24, name: "mole333", title: "공지사항 12", date: "2024-09-20" },
   ];
   //   페이지당 표시할 항목수
-  const itemsPerPage2 = 10;
+  const itemsPerPage2 = 12;
   let currentPage2 = 1;
   const totalPages2 = Math.ceil(wonder.length / itemsPerPage2);
   //   console.log(totalPages); // 3
