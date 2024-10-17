@@ -16,30 +16,32 @@
 } */
 /* 탑 왼쪽 말풍선 */
 .top-left-bb {
-  width: 100%;
+  width: 30%;
   position: absolute;
   left: 3%;
   top: 5%;
 }
-.top-left-bb > img {
-  width: 30%;
+.top-left-bb img {
+  width: 100%;
 }
 /* 탑 오른쪽 말풍선 */
 .top-right-bb {
   width: 100%;
 }
-.top-right-bb > img {
+.top-right-bb {
   width: 30%;
   position: absolute;
   right: 3%;
   top: 7%;
 }
-/* 바텀 말풍선 */
-.bottom-bb{
+.top-right-bb img {
   width: 100%;
-  
 }
-.bottom-bb > img{
+/* 바텀 말풍선 */
+.bottom-bb {
+  width: 100%;
+}
+.bottom-bb > img {
   width: 30%;
   position: absolute;
   right: 5%;

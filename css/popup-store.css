@@ -20,7 +20,7 @@
   height: 300px;
   /* margin: 0 auto; */
   text-align: center;
-  background-color: #FFC898;
+  background-color: #ffb16c;
   border-radius: 50%;
   padding: 20px 0;
 }
@@ -137,3 +137,112 @@
 .popup3-title p {
   font-size: 15px;
 }
+/* 900px 이하 */
+@media (max-width: 900px) {
+  .popup-inner {
+    width: 90%; /* 전체 폭 축소 */
+  }
+
+  .popup-img-intro {
+    flex-direction: row; /* 가로 정렬 유지 */
+    gap: 10px;
+  }
+
+  .left, .right {
+    width: 48%; /* 두 섹션이 나란히 배치 */
+  }
+
+  .second-store, .third-store {
+    height: 48%; /* 오른쪽 두 스토어가 균등하게 분할 */
+  }
+
+  .popup-count {
+    width: 220px;
+    height: 220px;
+  }
+
+  .popup-count p span {
+    font-size: 35px;
+  }
+
+  .popup-title h2 {
+    font-size: 40px;
+  }
+}
+
+/* 768px 이하 */
+@media (max-width: 768px) {
+  .popup-inner {
+    width: 95%; /* 전체 폭 조정 */
+  }
+
+  .popup-img-intro {
+    flex-direction: row; /* 여전히 가로 정렬 유지 */
+    flex-wrap: wrap; /* 공간이 부족하면 줄바꿈 */
+    gap: 15px;
+  }
+
+  .left, .second-store, .third-store {
+    width: 48%; /* 각 스토어를 48%로 나란히 배치 */
+    height: auto;
+  }
+
+  .popup-count {
+    width: 180px;
+    height: 180px;
+  }
+
+  .popup-count p span {
+    font-size: 30px;
+  }
+
+  .popup-title h2 {
+    font-size: 30px;
+  }
+}
+
+/* 400px 이하: 세로 정렬 */
+@media (max-width: 400px) {
+  .popup-img-intro {
+    flex-direction: column; /* 세로 정렬 */
+    gap: 20px; /* 간격 조정 */
+  }
+
+  .left, .second-store, .third-store {
+    width: 100%; /* 전체 폭 사용 */
+  }
+
+  .popup-count {
+    width: 160px;
+    height: 160px;
+  }
+
+  .popup-count p span {
+    font-size: 25px;
+  }
+
+  .popup-title h2 {
+    font-size: 25px;
+  }
+}
+
+/* 320px 이하 */
+@media (max-width: 320px) {
+  .popup-img-intro {
+    gap: 10px; /* 간격 축소 */
+  }
+
+  .popup-count {
+    width: 140px;
+    height: 140px;
+  }
+
+  .popup-count p span {
+    font-size: 20px;
+  }
+
+  .popup-title h2 {
+    font-size: 20px;
+  }
+}
+
