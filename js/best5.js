@@ -1,8 +1,15 @@
 window.addEventListener("load", function () {
   // 베스트 5 스와이퍼 초기화
-  var bestSwiper = new Swiper(".bestSwiper", {
+  const bestSwiper = new Swiper(".bestSwiper", {
     slidesPerView: 2.5,
     spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false, // 유저 상호작용 후에도 autoplay 유지
+    },
+    on: {
+      loop: true, // 루프 활성화
+    },
   });
 
   // 버튼 클릭 시 해당 섹션만 표시하는 로직
@@ -11,11 +18,9 @@ window.addEventListener("load", function () {
       event.preventDefault(); // 링크 이동 방지
 
       // 모든 섹션을 숨김
-      document
-        .querySelectorAll(".best5-swiper > div")
-        .forEach(function (section) {
-          section.style.display = "none";
-        });
+      document.querySelectorAll(".best5-swiper > div").forEach(function (section) {
+        section.style.display = "none";
+      });
 
       // 클릭한 버튼의 텍스트에 해당하는 섹션만 보임
       const sectionClass = button.textContent.toLowerCase();
