@@ -23,11 +23,17 @@
 
 .swipersection-title > h4 {
   background-color: antiquewhite;
-  margin: 50px;
-  width: 70%;
+  margin: 50px 0;
+  width: 80%;
   font-size: 50px;
 }
+.enter,
+.enter2,
+.enter3 {
+  display: none;
+}
 .swiper-more-button > p {
+  width: 80%;
   padding-top: 5px;
   font-size: 25px;
   font-weight: bold;
@@ -35,8 +41,10 @@
 .swiper-more-button {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 15%;
+  justify-content: space-between;
+  /* width: 12%; */
+
+  /* gap: 5%; */
 }
 .swipersection-title .more-btn img {
   width: 15px;
@@ -48,7 +56,6 @@
 
 /* 펫 스와이퍼 */
 .pet-swiper {
-  background-color: aqua;
   width: 100%;
   background: url("../images/pet-bg.jpg") no-repeat;
   background-position: center;
@@ -67,4 +74,72 @@
 }
 .pet-img {
   position: relative;
+}
+
+/* 반응형 */
+@media (max-width: 1500px) {
+  .enter {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .swiper-more-button > p {
+    font-size: 18px;
+  }
+  .swipersection-title > h4 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .swipersection-title > h4 {
+    width: 70%;
+    font-size: 30px;
+  }
+  .swiper-more-button > p {
+    font-size: 15px;
+  }
+  .swipersection-title .more-btn img {
+    width: 10px;
+  }
+  .enter3 {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .swipersection-title > h4 {
+    font-size: 25px;
+    margin: 25px 0;
+  }
+
+  .enter {
+    display: none;
+  }
+  .enter2 {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .swipersection-title > h4 {
+    padding-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .swipersection-title {
+    display: block;
+  }
+  .swiper-more-button {
+    width: 30%;
+    margin-left: 80%;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .swiper-more-button > p {
+    font-size: 8px;
+  }
+  .swipersection-title .more-btn img {
+    width: 5px;
+  }
 }

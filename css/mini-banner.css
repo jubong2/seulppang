@@ -125,20 +125,7 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 650px) {
-  .miniBn-left {
-    margin-bottom: 40px;
-  }
-  .more-btn {
-    gap: 9px;
-  }
-  .more-btn > div {
-    width: 12px;
-  }
-  .more-btn > p {
-    font-size: 16px;
-  }
-}
+
 @media screen and (max-width: 400px) {
   .miniBn-left {
     margin-bottom: 30px;
