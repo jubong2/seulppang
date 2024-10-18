@@ -85,11 +85,11 @@
   object-position: center; /* 이미지 중심을 가운데로 설정 */
 }
 
-/* .best5slide {
+.best5slide {
   position: relative;
-  height: 1000px;
+
   width: 100%;
-} */
+}
 .best5slide-img {
   position: relative;
   width: 100%;
@@ -98,21 +98,32 @@
   width: 100%;
 }
 .best5slide-img > a {
+  width: 100%;
   position: relative;
   display: block;
 }
 /*  상품 아이콘  */
 .product-icon {
-  width: 100px;
   position: absolute;
+  overflow: hidden;
+  width: 80px;
   right: 0;
   bottom: 0;
   display: flex;
-  gap: 20px;
+  gap: 15%;
   margin: 10px 20px;
 }
 .product-icon > div {
+  width: calc(100% / 2);
   display: block;
+}
+
+.heart-icon > img {
+  width: 100%;
+}
+
+.cart-icon > img {
+  width: 100%;
 }
 .product-text {
   cursor: pointer;

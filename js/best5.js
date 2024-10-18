@@ -61,7 +61,7 @@ window.addEventListener("load", function () {
     heart.addEventListener("click", function (event) {
       event.preventDefault(); // 링크 이동 방지
       if (heart.src.includes("images/heart.png")) {
-        heart.src = "images/heart-red.png"; // 찜한 이미지로 변경
+        heart.src = "images/heart-2.png"; // 찜한 이미지로 변경
         alert("찜목록에 저장했습니다.");
       } else {
         heart.src = "images/heart.png"; // 원래 이미지로 변경
@@ -75,10 +75,10 @@ window.addEventListener("load", function () {
     cart.addEventListener("click", function (event) {
       event.preventDefault(); // 링크 이동 방지
       if (cart.src.includes("images/cart.png")) {
-        cart.src = "images/cart-red.png"; // 장바구니 아이콘 변경
+        cart.src = "images/cart-2.png"; // 장바구니 아이콘 변경
         alert("장바구니에 저장했습니다.");
       } else {
-        cart.src = "images/cart.png"; // 원래 아이콘으로 변경
+        cart.src = "images/cart-2.png"; // 원래 아이콘으로 변경
         alert("장바구니에서 해제하였습니다.");
       }
     });
