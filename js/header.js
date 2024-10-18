@@ -55,4 +55,6 @@ window.addEventListener("load", function () {
   searchBtn.addEventListener("click", function () {
     search.classList.toggle("active"); // active 클래스 토글
   });
+  // 모바일---------------------------------------------------
+  
 });
