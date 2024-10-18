@@ -155,7 +155,6 @@
   width: 80%;
   line-height: 3;
   background-color: rgba(133, 83, 51, 0.8);
-
   margin-top: 6%;
   font-size: 15px;
   opacity: 0; /* 초기 투명도를 0으로 설정 (숨김 상태) */
@@ -164,7 +163,7 @@
 }
 
 .bakery-cate {
-  width: 60%;
+  width: 100%;
 }
 .bakery-cate > li {
   padding-left: 15%;
@@ -173,6 +172,9 @@
   background-color: rgba(255, 199, 164, 0.3);
 }
 .bakery-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 40%;
 }
 
