@@ -39,7 +39,7 @@
 .top-left-bb > img {
   position: relative;
   animation: fadeInUp 4s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 5;
 }
 /* 탑 오른쪽 말풍선 */
 .top-right-bb {
@@ -65,7 +65,7 @@
 .top-right-bb > img {
   position: relative;
   animation: fadeInUp 5s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 5;
 }
 
 /* 바텀 말풍선 */

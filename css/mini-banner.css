@@ -10,68 +10,96 @@
 .knotted-inner > img {
   width: 100%;
 }
-/* 미니배너 영역 */
 .mini-banner {
-  width: 100%;
-  margin-bottom: 300px;
-}
-.miniBn-inner {
-  width: 100%;
   position: relative;
-}
-.miniBn-left {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 10%;
-  /* gap: 10%; */
-  /* background-color: blueviolet; */
-  margin-bottom: 140px;
-  /* gap: 6.5%; */
-}
-.minibn-img {
-  width: 70%;
-}
-.minibn-img > img {
-  width: 100%;
+  overflow: hidden;
+  padding: 20px 0; /* 배너 위아래 여백 */
 }
 
+.miniBn-left,
 .miniBn-rigth {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10%;
-  /* gap: 10%; */
-  /* background-color: blueviolet; */
   margin-bottom: 140px;
-  /* gap: 6.5%; */
+  opacity: 0; /* 초기 상태에서 숨기기 */
+  transform: translateX(-150px); /* 왼쪽 배너 초기 위치 */
+  transition: all 0.8s ease-in-out;
 }
+.miniBn-left{
+  padding-right: 10%;
+}
+.miniBn-rigth {
+  padding-left: 10%;
+  transform: translateX(150px); /* 오른쪽 배너 초기 위치 */
+}
+
+.minibn-img {
+  width: 80%;
+}
+
+.minibn-img > img {
+  width: 100%;
+}
+
 /* 버튼 */
 .more-btn {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
-  /* width: 320px; */
 }
 
 .more-btn > div {
-  width: 30px;
+  width: 20px;
   height: 100%;
 }
+
 .more-btn div > img {
   width: 100%;
 }
+
 .more-btn > p {
   padding-top: 3%;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
 }
+
+/* 애니메이션 실행 시 */
+.show {
+  opacity: 1; /* 보이게 설정 */
+  transform: translateX(0); /* 원래 위치로 이동 */
+}
+
+
+
+
 /* 반응형============================================ */
+@media screen and (max-width: 1000px) {
+  .miniBn-left {
+    margin-bottom: 50px;
+    padding-right: 3%;
+  }
+  .miniBn-rigth {
+    padding-left: 3%;
+  }
+  .more-btn {
+    gap: 20px;
+  }
+  .more-btn > div {
+    width: 18px;
+  }
+  .more-btn > p {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 900px) {
   .miniBn-left {
     margin-bottom: 50px;
+    padding-right: 3%;
+  }
+  .miniBn-rigth {
+    padding-left: 3%;
   }
   .more-btn {
     gap: 20px;
@@ -101,15 +129,19 @@
 @media screen and (max-width: 400px) {
   .miniBn-left {
     margin-bottom: 30px;
+    padding-right: 2%;
+  }
+  .miniBn-rigth {
+    padding-left: 2%;
   }
   .more-btn {
     gap: 5px;
   }
   .more-btn > div {
-    width: 7px;
+    width: 5px;
   }
   .more-btn > p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -120,9 +152,9 @@
     gap: 5px;
   }
   .more-btn > div {
-    width: 7px;
+    width: 5px;
   }
   .more-btn > p {
-    font-size: 12px;
+    font-size: 8px;
   }
 }

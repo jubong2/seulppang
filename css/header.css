@@ -232,6 +232,7 @@
 /* 반응형 */
 
 /* 반응형================================================= */
+
 @media screen and (max-width: 1000px) {
   .header-top-icon {
     width: 14%;
@@ -257,6 +258,7 @@
   .header-top-icon {
     display: none;
   }
+
   .header-bottom {
     display: none;
   }
@@ -274,3 +276,4 @@
   }
 
 }
+
