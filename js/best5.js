@@ -1,8 +1,8 @@
 window.addEventListener("load", function () {
   // 베스트 5 스와이퍼 초기화
   const bestSwiper = new Swiper(".bestSwiper", {
-    slidesPerView: 2.5,
-    spaceBetween: 30,
+    slidesPerView: 1.5,
+    spaceBetween: 10,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false, // 유저 상호작용 후에도 autoplay 유지
@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
     on: {
       loop: true, // 루프 활성화
     },
+    breakpoints: { 1200: { slidesPerView: 2.5 }, 800: { slidesPerView: 2 }, 600: { slidesPerView: 2, spaceBetween: 20 } },
   });
 
   // 버튼 클릭 시 해당 섹션만 표시하는 로직

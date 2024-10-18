@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-bottom: 300px;
+  margin-bottom: 280px;
 }
 .best5-inner {
   position: relative;
@@ -27,14 +27,14 @@
 
 .best5-product-warp {
   display: flex;
+  gap: 5%;
   padding: 2% 3%;
 }
 /* best5 카태고리 버튼 */
 .best5-button {
   position: relative;
   display: block;
-  float: left;
-  width: 25%;
+  /* width: 25%; */
 }
 
 .best5-button > a {
@@ -64,17 +64,13 @@
   opacity: 1; /* 가시성 */
   width: 40%; /* 너비 설정 */
 }
-.best5-button > a:hover h3::after {
-  opacity: 1; /* 가시성 */
-  width: 40%; /* 너비 설정 */
-}
 
 /* best5 스와이퍼 */
 .best5-swiper {
   position: relative;
   display: block;
-  float: right;
-  width: 70%;
+  /* float: right; */
+  width: 80%;
   height: 100%;
 }
 
@@ -149,7 +145,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  word-break: keep-all;
+  /* word-break: keep-all; */
 }
 /* best content 랭킹 번호 */
 .best5slide:nth-child(1)::after {
@@ -222,4 +218,188 @@
   position: relative;
   display: block;
   width: 100%;
+}
+@media (max-width: 1400px) {
+  .product-text > h3 {
+    height: 25px;
+  }
+  .product-text > p {
+    height: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .best5-title {
+    font-size: 35px;
+  }
+  .product-text > h3 {
+    font-size: 20px;
+  }
+
+  .best5-button > a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .best5-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-icon {
+    width: 60px;
+  }
+
+  .best5slide:nth-child(1)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(2)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(3)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(4)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(5)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .product-text > h3 {
+    font-size: 18px;
+    height: 20px;
+  }
+  .product-text > p {
+    font-size: 18px;
+    height: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .best5-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .best5-product-warp {
+    flex-direction: column;
+  }
+
+  .best5-button {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+  .best5-button > a {
+    width: calc(100% / 4);
+  }
+  .best5-button > a > h3 {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .best5-swiper {
+    width: 100%;
+  }
+
+  .best5-title {
+    margin-bottom: 25px;
+  }
+  .best5-button > a > h3 {
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    transition: all 1s; /* 가상 요소의 트랜지션 */
+    /* background-color: #ffffff; */
+    background-color: #fff;
+  }
+  .best5-button > a.active h3 {
+    background-color: #ff8000;
+    color: #fff;
+    opacity: 1; /* 가시성 */
+  }
+
+  .best5-button > a > h3::after {
+    opacity: 0; /* 기본 상태에서 가리기 */
+  }
+
+  .best5-button > a.active h3::after {
+    opacity: 0; /* 가시성 */
+    width: 40%; /* 너비 설정 */
+  }
+}
+@media (max-width: 500px) {
+  .best5-title {
+    font-size: 19px;
+  }
+  .best5-button > a > h3 {
+    font-size: 15px;
+  }
+  .best5-button > a > h3 {
+    border-radius: 10px 10px 0 0;
+  }
+  .product-icon {
+    width: 20px;
+    height: 50px;
+    gap: 5px;
+    flex-direction: column;
+    right: -15px;
+    bottom: -8px;
+  }
+  .cart-icon {
+    width: 100%;
+  }
+  .product-icon > div {
+    width: 100%;
+    display: block;
+  }
+  .best5slide:nth-child(1)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(2)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(3)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(4)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(5)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .product-text > h3 {
+    font-size: 15px;
+    height: 15px;
+  }
+
+  .product-text > p {
+    font-size: 15px;
+    height: 15px;
+  }
+  .best5-button > a > h3 {
+    font-size: 10px;
+  }
 }
