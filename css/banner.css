@@ -18,7 +18,6 @@
 /* 탑 왼쪽 말풍선 */
 .top-left-bb {
   width: 30%;
-
   position: absolute;
   left: 3%;
   top: 5%;
@@ -26,16 +25,49 @@
 .top-left-bb > img {
   width: 100%;
 }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.top-left-bb > img {
+  position: relative;
+  animation: fadeInUp 4s;
+  animation-iteration-count: 3;
+}
 /* 탑 오른쪽 말풍선 */
 .top-right-bb {
-  width: 100%;
-}
-.top-right-bb > img {
   width: 30%;
   position: absolute;
   right: 3%;
   top: 7%;
 }
+.top-right-bb > img {
+  width: 100%;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.top-right-bb > img {
+  position: relative;
+  animation: fadeInUp 5s;
+  animation-iteration-count: 3;
+}
+
 /* 바텀 말풍선 */
 .bottom-bb {
   width: 100%;

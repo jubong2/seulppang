@@ -69,8 +69,59 @@
   font-size: 30px;
 }
 /* 반응형============================================ */
-@media screen and (max-width:900px){
-  .miniBn-left{
+@media screen and (max-width: 900px) {
+  .miniBn-left {
     margin-bottom: 50px;
+  }
+  .more-btn {
+    gap: 20px;
+  }
+  .more-btn > div {
+    width: 18px;
+  }
+  .more-btn > p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .miniBn-left {
+    margin-bottom: 40px;
+  }
+  .more-btn {
+    gap: 12px;
+  }
+  .more-btn > div {
+    width: 13px;
+  }
+  .more-btn > p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .miniBn-left {
+    margin-bottom: 30px;
+  }
+  .more-btn {
+    gap: 5px;
+  }
+  .more-btn > div {
+    width: 7px;
+  }
+  .more-btn > p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .miniBn-left {
+    margin-bottom: 20px;
+  }
+  .more-btn {
+    gap: 5px;
+  }
+  .more-btn > div {
+    width: 7px;
+  }
+  .more-btn > p {
+    font-size: 12px;
   }
 }
