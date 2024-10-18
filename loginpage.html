@@ -6,14 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>슬기로운 빵생활</title>
     <!-- SEO적용 -->
-    <meta
-      name="description"
-      content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! "
-    />
-    <meta
-      name="keywords"
-      content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송"
-    />
+    <meta name="description" content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! " />
+    <meta name="keywords" content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송" />
     <meta name="author" content="슬기로운빵생활" />
     <meta property="og:title" content="슬기로운빵생활" />
     <meta property="og:description" content="전국 빵집 모음! " />
@@ -24,28 +18,16 @@
     <!-- 파비콘 적용 -->
     <link rel="icon" href="images/favicon.png" />
     <!-- 폰트어썸 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- 구글 폰트 적용 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <!-- ---------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <!-- AOS적용 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -62,11 +44,8 @@
 
     <!-- 스와이퍼 -->
     <!-- Link Swiper's CSS -->
-     <link rel="stylesheet" href="css/loginpage.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="css/loginpage.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css 연결 -->
@@ -81,21 +60,27 @@
   <body>
     <div class="warp">
       <!-- 헤더 -->
-       <section class="header"></section>
-       <!-- 로그인 창 -->
-        <section class="login">
-          <div class="login-inner">
+      <section class="header"></section>
+      <!-- 로그인 창 -->
+      <section class="login">
+        <div class="login-inner">
+          <img src="images/login-bg.png" alt="" />
+          <div class="login-main">
             <h2>로그인</h2>
             <form method="post" id="login-form">
-              <input type="email" name="userName" placeholder="Email" />
-              <input type="password" name="userPassword" placeholder="Password" />
+              <input type="email" name="userName" placeholder="아이디" />
+              <input type="password" name="userPassword" placeholder="비밀번호" />
               <label class="remember-check">
-                <a href="#">회원가입 페이지로 넘어가기</a>
+                <a href="#">비밀번호를 잊어버리셨나요 ?</a>
               </label>
-              <input type="button" value="Login" onclick="alert(`로그인이 완료되었습니다.`)">
+              <div class="btn">
+                <input type="button" value="로그인" onclick="alert(`로그인이 완료되었습니다.`)" />
+                <input type="button" value="회원가입" onclick="alert(`로그인이 완료되었습니다.`)" />
+              </div>
             </form>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   </body>
 </html>
