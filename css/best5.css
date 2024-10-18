@@ -26,6 +26,7 @@
 }
 
 .best5-product-warp {
+  display: flex;
   padding: 2% 3%;
 }
 /* best5 카태고리 버튼 */
