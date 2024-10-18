@@ -41,3 +41,98 @@ img {
   width: 100%;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .banner {
+    margin-bottom: 200px;
+  }
+
+  .best5 {
+    margin-bottom: 180px;
+  }
+
+  .popup-store {
+    margin-bottom: 200px;
+  }
+
+  .knotted-banner {
+    margin-bottom: 200px;
+  }
+
+  .target-swiper {
+    margin-bottom: 200px;
+  }
+  .mini-banner {
+    margin-bottom: 200px;
+  }
+
+  .pet-swiper {
+    margin-bottom: 200px;
+  }
+
+  .community {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    margin-bottom: 150px;
+  }
+
+  .best5 {
+    margin-bottom: 120px;
+  }
+
+  .popup-store {
+    margin-bottom: 150px;
+  }
+
+  .knotted-banner {
+    margin-bottom: 150px;
+  }
+
+  .target-swiper {
+    margin-bottom: 150px;
+  }
+  .mini-banner {
+    margin-bottom: 150px;
+  }
+
+  .pet-swiper {
+    margin-bottom: 150px;
+  }
+
+  .community {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 450px) {
+  .banner {
+    margin-bottom: 80px;
+  }
+  .best5 {
+    margin-bottom:60px;
+  }
+
+  .popup-store {
+    margin-bottom: 80px;
+  }
+
+  .knotted-banner {
+    margin-bottom: 80px;
+  }
+
+  .target-swiper {
+    margin-bottom: 80px;
+  }
+  .mini-banner {
+    margin-bottom: 80px;
+  }
+
+  .pet-swiper {
+    margin-bottom: 80px;
+  }
+
+  .community {
+    margin-bottom: 80px;
+  }
+}
