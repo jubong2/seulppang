@@ -62,6 +62,7 @@
 
     <!-- 스와이퍼 -->
     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="css/loginpage.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -79,7 +80,22 @@
   </head>
   <body>
     <div class="warp">
-      <header></header>
+      <!-- 헤더 -->
+       <section class="header"></section>
+       <!-- 로그인 창 -->
+        <section class="login">
+          <div class="login-inner">
+            <h2>로그인</h2>
+            <form method="post" id="login-form">
+              <input type="email" name="userName" placeholder="Email" />
+              <input type="password" name="userPassword" placeholder="Password" />
+              <label class="remember-check">
+                <a href="#">회원가입 페이지로 넘어가기</a>
+              </label>
+              <input type="button" value="Login" onclick="alert(`로그인이 완료되었습니다.`)">
+            </form>
+          </div>
+        </section>
     </div>
   </body>
 </html>
