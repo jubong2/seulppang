@@ -4,7 +4,7 @@
     <!-- 구글 애널리틱스  -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>슬기로운 빵생활</title>
+    <title>로그인 페이지</title>
     <!-- SEO적용 -->
     <meta name="description" content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! " />
     <meta name="keywords" content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송" />
@@ -159,18 +159,40 @@
           <img src="images/login-bg.png" alt="" />
           <div class="login-main">
             <h2>로그인</h2>
-            <input type="email" name="userName" placeholder="아이디" />
-            <input type="password" name="userPassword" placeholder="비밀번호" />
+            <input type="email" name="userName" placeholder="아이디" id="username"/>
+            <input type="password" name="userPassword" placeholder="비밀번호" id="password"/>
             <label class="remember-check">
               <a href="#">비밀번호를 잊어버리셨나요 ?</a>
             </label>
             <div class="btn">
-              <input type="button" value="로그인" onclick="alert(`로그인이 완료되었습니다.`)" />
-              <input type="button" value="회원가입" onclick="alert(`회원가입 페이지로 이동합니다.`)" />
+              <input type="button" value="로그인"  />
+              <input type="button" value="회원가입" />
             </div>
           </div>
         </div>
       </section>
     </div>
+
+    <script>
+      const loginForm = document.querySelector(".login-main");
+      loginForm.addEventListener("button", function (e) {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        console.log(users);
+
+        const userFind = users.find((user) => user.username === username && user.password === password)
+        if(userFind){
+         // 로그인이 성공하면 로컬스토리지에 사용자 정볼을 저장합니다.
+         localStorage.setItem("userFind" , JSON.stringify(userFind))
+         alert(`${username}님 환영합니다. 로그인 성공적으로 마무리 되었습니다.`)
+         window.location.href = `index.html?username=${encodeURIComponent(username)}`
+        }else{
+            alert("로그인 정보가 일치하지 않습니다.")
+            loginForm.reset()
+        }
+      });
+    </script>
   </body>
 </html>
