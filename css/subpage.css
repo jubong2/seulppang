@@ -32,7 +32,9 @@
   display: block;
 }
 /* gift */
-.subpage-gift-button {
+.subpage-gift-button,
+.subpage-dessert-button,
+.subpage-meal-button {
   display: flex;
 }
 
@@ -40,35 +42,31 @@
   position: relative;
 }
 
-.gift {
+/* .gift {
   width: 100%;
-}
-
-.gift-product {
-  width: calc(100% / 3.5);
-  display: inline-block;
-  margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
-}
-.gift-button {
-  cursor: pointer;
 }
 .veganpage {
   width: 100%;
+} */
+
+.gift-product,
+.vegan-product,
+.dessert-product,
+.meal-product,
+.pet-product {
+  width: calc(100% / 3.5);
+  display: inline-block;
+  margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
+}
+.gift-button,
+.desset-button,
+.meal-button {
+  cursor: pointer;
 }
 
-.vegan-product {
-  width: calc(100% / 3.5);
-  display: inline-block;
-  margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
+.subpage-pet {
+  background-color: aqua;
 }
-.subpage-dessert-button {
-  display: flex;
-}
-.dessert-product {
-  width: calc(100% / 3.5);
-  display: inline-block;
-  margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
-}
-.desset-button {
-  cursor: pointer;
+.pet-page {
+  width: 100%;
 }
