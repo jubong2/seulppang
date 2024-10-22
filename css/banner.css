@@ -1,6 +1,7 @@
 @charset "utf-8";
+.mb-banner{display: none;}
 .banner {
-  padding-top: 90px;
+  padding-top: 50px;
   width: 100%;
   margin-bottom: 300px;
 }
@@ -79,8 +80,22 @@
   right: 5%;
   bottom: 20%;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 678px) {
   .banner {
     padding-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .banner-warp {
+    display: none;
+  }
+  .mb-banner {
+    display: block;
+    width: 100%;
+  }
+
+  .mb-banner > img {
+    width: 100%;
   }
 }
