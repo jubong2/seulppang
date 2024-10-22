@@ -209,8 +209,8 @@
 }
 
 .navi-gift > li,
-.navi-dessert,
-.navi-meal {
+.navi-dessert > li,
+.navi-meal > li {
   padding-left: 10%;
 }
 
