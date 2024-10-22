@@ -79,7 +79,7 @@ window.addEventListener("load", function () {
         cart.src = "images/cart-2.png"; // 장바구니 아이콘 변경
         alert("장바구니에 저장했습니다.");
       } else {
-        cart.src = "images/cart-2.png"; // 원래 아이콘으로 변경
+        cart.src = "images/cart.png"; // 원래 아이콘으로 변경
         alert("장바구니에서 해제하였습니다.");
       }
     });

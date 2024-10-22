@@ -56,5 +56,26 @@ window.addEventListener("load", function () {
     search.classList.toggle("active"); // active 클래스 토글
   });
   // 모바일---------------------------------------------------
-  
+  const hambergerBar = document.querySelector(".header-mb-bar");
+  const mbMenu = document.querySelector(".mb-header-warp");
+
+  hambergerBar.addEventListener("click", function () {
+    mbMenu.classList.add("active");
+  });
+  const headerMbBar = document.querySelector(".header-mb-bar");
+  const mbHeaderWarp = document.querySelector(".mb-header-warp");
+  const closed = document.querySelector(".closed");
+
+  headerMbBar.addEventListener("click", function () {
+    mbHeaderWarp.classList.add("active");
+  });
+  closed.addEventListener("click", function () {
+    mbHeaderWarp.classList.remove("active");
+  });
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 678) {
+      // 678px 이상이면 메뉴 강제 닫기
+      mbHeaderWarp.classList.remove("active");
+    }
+  });
 });

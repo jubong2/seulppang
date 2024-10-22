@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   $(".wonder").css({
-    "background-color": "#ffb16c", 
+    "background-color": "#ffb16c",
   });
 
   // 버튼 클릭 시 이벤트 처리
@@ -8,8 +8,9 @@ window.addEventListener("load", function () {
     // 모든 버튼을 원래 색상으로 초기화
     $(".wonder").css({
       "background-color": "",
-      color: "",})
+      color: "",
     });
+  });
   //  팁 게시판 데이터
   const tip = [
     { id: 1, name: "lsg0905", title: "소베 소금빵 맛있게 먹는 방법 공유합니다 !", date: "2024-10-01" },
