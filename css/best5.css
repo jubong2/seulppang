@@ -291,24 +291,12 @@
     font-size: 25px;
     margin-bottom: 25px;
   }
+
+  .best5-button > a > h3 {
+    font-size: 25px;
+  }
 }
 @media (max-width: 600px) {
-  .best5-product-warp {
-    flex-direction: column;
-  }
-
-  .best5-button {
-    width: 100%;
-    display: flex;
-    gap: 8px;
-  }
-  .best5-button > a {
-    width: calc(100% / 4);
-  }
-  .best5-button > a > h3 {
-    font-size: 15px;
-    margin-bottom: 25px;
-  }
   .best5-swiper {
     width: 100%;
   }
@@ -316,38 +304,12 @@
   .best5-title {
     margin-bottom: 25px;
   }
-  .best5-button > a > h3 {
-    text-align: center;
-    border-radius: 20px 20px 0 0;
-    transition: all 1s; /* 가상 요소의 트랜지션 */
-    /* background-color: #ffffff; */
-    background-color: #fff;
-  }
-  .best5-button > a.active h3 {
-    background-color: #ff8000;
-    color: #fff;
-    opacity: 1; /* 가시성 */
-  }
-
-  .best5-button > a > h3::after {
-    opacity: 0; /* 기본 상태에서 가리기 */
-  }
-
-  .best5-button > a.active h3::after {
-    opacity: 0; /* 가시성 */
-    width: 40%; /* 너비 설정 */
-  }
 }
 @media (max-width: 500px) {
   .best5-title {
     font-size: 19px;
   }
-  .best5-button > a > h3 {
-    font-size: 15px;
-  }
-  .best5-button > a > h3 {
-    border-radius: 10px 10px 0 0;
-  }
+
   .product-icon {
     width: 20px;
     height: 50px;
@@ -388,8 +350,6 @@
     height: 20px;
     font-size: 18px;
   }
-}
-@media (max-width: 500px) {
   .product-text > h3 {
     font-size: 15px;
     height: 15px;
@@ -399,7 +359,9 @@
     font-size: 15px;
     height: 15px;
   }
+}
+@media (max-width: 400px) {
   .best5-button > a > h3 {
-    font-size: 10px;
+    font-size: 20px;
   }
 }

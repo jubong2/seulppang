@@ -45,7 +45,7 @@
 }
 
 .gift-product {
-  width: calc(100% / 3.3);
+  width: calc(100% / 3.5);
   display: inline-block;
   margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
 }
@@ -58,7 +58,7 @@
 }
 
 .vegan-product {
-  width: calc(100% / 3.3);
+  width: calc(100% / 3.5);
   display: inline-block;
   margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
 }

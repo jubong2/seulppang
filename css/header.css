@@ -208,6 +208,12 @@
   background-color: rgba(255, 199, 164, 0.3);
 }
 
+.navi-gift > li,
+.navi-dessert,
+.navi-meal {
+  padding-left: 10%;
+}
+
 /* ul이 활성화되었을 때 표시되도록 설정 */
 .bakery-inner ul.active {
   opacity: 1;
