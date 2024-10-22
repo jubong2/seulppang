@@ -107,5 +107,23 @@
     { "id": 27, "name": "[베키아에누보]이탈리아 올리브 치아바타", "type": "치아바타", "image": "images/sub-meal-12.jpg", "info": "NEW 쫄깃한 식감으로 사로잡는 감자", "price": "4,700" },
     { "id": 28, "name": "[그녀의빵공장]쌀로 만든 식빵 3종(택1)", "type": "식빵", "image": "images/sub-meal-3.jpg", "info": "버터 없이 쫄깃한 식빵", "price": "4,630" },
     { "id": 29, "name": "[아우어베이커리]할라피뇨 치아바타(2개입)", "type": "치아바타", "image": "images/sub-meal-14.jpg", "info": "매콤함과 고소함의 조화", "price": "8,600" }
+  ],
+  "pet": [
+    { "id": 1, "name": "[독특수제간식]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 2, "name": "[어글어글]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 3, "name": "[독특수제간식]강아지 케이크 치킨 치즈볼 타르트 케이크 2종 택1", "image": "images/sub-pet2.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "17,900" },
+    { "id": 4, "name": "[어글어글]강아지용 유정란 케이크 2종(택1)", "image": "images/sub-pet4.jpg", "info": "반려견을 위한 건강한 서프라이즈 케이크", "price": "24,000" },
+    { "id": 5, "name": "[독특수제간식]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 6, "name": "[어글어글]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 7, "name": "[독특수제간식]강아지 케이크 치킨 치즈볼 타르트 케이크 2종 택1", "image": "images/sub-pet2.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "17,900" },
+    { "id": 8, "name": "[어글어글]강아지용 유정란 케이크 2종(택1)", "image": "images/sub-pet4.jpg", "info": "반려견을 위한 건강한 서프라이즈 케이크", "price": "24,000" },
+    { "id": 9, "name": "[독특수제간식]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 10, "name": "[어글어글]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 11, "name": "[독특수제간식]강아지 케이크 치킨 치즈볼 타르트 케이크 2종 택1", "image": "images/sub-pet2.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "17,900" },
+    { "id": 12, "name": "[어글어글]강아지용 유정란 케이크 2종(택1)", "image": "images/sub-pet4.jpg", "info": "반려견을 위한 건강한 서프라이즈 케이크", "price": "24,000" },
+    { "id": 13, "name": "[독특수제간식]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 14, "name": "[어글어글]강아지 사랑해 쿠키", "image": "images/sub-pet1.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "10,900" },
+    { "id": 15, "name": "[독특수제간식]강아지 케이크 치킨 치즈볼 타르트 케이크 2종 택1", "image": "images/sub-pet2.jpg", "info": "NO 첨가물 100% 휴먼그레이드 강아지 기념 간식", "price": "17,900" },
+    { "id": 16, "name": "[어글어글]강아지용 유정란 케이크 2종(택1)", "image": "images/sub-pet4.jpg", "info": "반려견을 위한 건강한 서프라이즈 케이크", "price": "24,000" }
   ]
 }
