@@ -1,6 +1,6 @@
 @charset "utf-8";
 .banner {
-  padding-top: 100px;
+  padding-top: 90px;
   width: 100%;
   margin-bottom: 300px;
 }
@@ -78,4 +78,9 @@
   position: absolute;
   right: 5%;
   bottom: 20%;
+}
+@media (max-width: 900px) {
+  .banner {
+    padding-top: 50px;
+  }
 }
