@@ -11,6 +11,7 @@
   margin-bottom: 280px;
 }
 .best5-inner {
+  overflow: hidden;
   position: relative;
   display: block;
   margin: 0 auto;
@@ -83,7 +84,6 @@
 
 .best5slide {
   position: relative;
-
   width: 100%;
 }
 .best5slide-img {
@@ -297,17 +297,13 @@
   }
 }
 @media (max-width: 600px) {
-  .best5-swiper {
-    width: 100%;
-  }
-
   .best5-title {
     margin-bottom: 25px;
   }
 }
 @media (max-width: 500px) {
   .best5-title {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .product-icon {

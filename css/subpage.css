@@ -50,7 +50,6 @@
   margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
 }
 .gift-button {
-  background-color: aqua;
   cursor: pointer;
 }
 .veganpage {
@@ -61,4 +60,15 @@
   width: calc(100% / 3.5);
   display: inline-block;
   margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
+}
+.subpage-dessert-button {
+  display: flex;
+}
+.dessert-product {
+  width: calc(100% / 3.5);
+  display: inline-block;
+  margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
+}
+.desset-button {
+  cursor: pointer;
 }
