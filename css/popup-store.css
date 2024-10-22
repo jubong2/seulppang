@@ -564,7 +564,36 @@
   .popup-title h2 {
     width: 50%;
     height: 20px;
-    font-size: 19px;
+    font-size: 18px;
+  }
+  .popup-title h4 {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+  .popup-count {
+    width: 110px;
+    height: 110px;
+    padding-top: 12px;
+  }
+  .popup-count p {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  .popup-count p span {
+    font-size: 22px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .popup-title h2 {
+    width: 50%;
+    height: 20px;
+    font-size: 16px;
   }
   .popup-title h4 {
     font-size: 9px;

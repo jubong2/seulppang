@@ -190,6 +190,11 @@
     font-size: 25px;
   }
 }
+@media screen and (max-width: 450px){
+  .community{
+    display: none;
+  }
+}
 @media screen and (max-width: 320px){
   .community{
     display: none;

@@ -159,20 +159,17 @@
 }
 @media screen and (max-width: 400px) {
   .miniBn-left {
-    margin-bottom: 30px;
-    padding-right: 2%;
+    margin-bottom: 20px;
+    padding-right: 0%;
   }
   .miniBn-rigth {
-    padding-left: 2%;
+    padding-left: 0%;
+  }
+  .minibn-img {
+    width: 100%;
   }
   .more-btn {
-    gap: 5px;
-  }
-  .more-btn > div {
-    width: 5px;
-  }
-  .more-btn > p {
-    font-size: 10px;
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {
