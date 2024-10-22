@@ -59,25 +59,115 @@
   </head>
   <body>
     <div class="warp">
-      <!-- 헤더 -->
-      <section class="header"></section>
+        <!-- 헤더 -->
+        <section class="header">
+          <div class="header-top">
+            <div class="header-logo">
+              <a href="index.html"><img src="images/logo.png" alt="로고" /></a>
+            </div>
+            <div class="search">
+              <div class="search-inner">
+                <input type="text" placeholder="검색하기" />
+                <p>search</p>
+              </div>
+            </div>
+            <div class="header-top-icon">
+              <div>
+                <img
+                  src="images/search.png"
+                  alt="검색하기"
+                  class="search-button"
+                />
+              </div>
+              <div>
+                <a href="#"><img src="images/log-in.png" alt="로그인" /></a>
+              </div>
+              <div>
+                <a href="#"><img src="images/heart-header.png" alt="찜하기" /></a>
+              </div>
+              <div>
+                <a href="#"><img src="images/cart-header.png" alt="로그인" /></a>
+              </div>
+            </div>
+            <div class="header-mb-bar">
+              <a href="#"><img src="images/mb-header.png" alt="햄버거바" /></a>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <ul class="header-navi">
+              <li>
+                <a href="#" class="header-navi-title"><h3>BAKERY</h3></a>
+                <div class="header-navi-submenu bakery-submenu">
+                  <div>
+                    <ul class="bakery-cate">
+                      <li><a href="#" class="bakery-cate-inner">선물용</a></li>
+                      <li><a href="#">비건</a></li>
+                      <li><a href="#" class="bakery-cate-inner">디저트류</a></li>
+                      <li><a href="#" class="bakery-cate-inner">식사류</a></li>
+                      <li><a href="#">PET 베이커리</a></li>
+                    </ul>
+                    <div class="bakery-inner">
+                      <ul class="navi-gift">
+                        <li><a href="#">생일케이크</a></li>
+                        <li><a href="#">롤케이크</a></li>
+                        <li><a href="#">선물세트</a></li>
+                      </ul>
+                      <ul></ul>
+                      <ul class="navi-dessert">
+                        <li><a href="#">구움과자</a></li>
+                        <li><a href="#">스콘</a></li>
+                        <li><a href="#">휘낭시에</a></li>
+                        <li><a href="#">쿠키</a></li>
+                        <li><a href="#">타르트</a></li>
+                      </ul>
+                      <ul class="navi-meal">
+                        <li><a href="#">식빵</a></li>
+                        <li><a href="#">베이글</a></li>
+                        <li><a href="#">바게트</a></li>
+                        <li><a href="#">치아바타</a></li>
+                        <li><a href="#">기타</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="header-navi-title"><h3>POPUP</h3></a>
+              </li>
+              <li>
+                <div>
+                  <a href="#" class="header-navi-title"><h3>HOT</h3></a>
+                  <ul class="header-navi-submenu">
+                    <li><a href="#">알뜰빵</a></li>
+                    <li><a href="#">신상빵</a></li>
+                    <li><a href="#">인기빵</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="header-navi-title"><h3>COMMUNITY</h3></a>
+              </li>
+              <li>
+                <a href="#" class="header-navi-title"><h3>C/S</h3></a>
+              </li>
+            </ul>
+          </div>
+        </section>
       <!-- 로그인 창 -->
       <section class="login">
         <div class="login-inner">
           <img src="images/login-bg.png" alt="" />
           <div class="login-main">
             <h2>로그인</h2>
-            <form method="post" id="login-form">
-              <input type="email" name="userName" placeholder="아이디" />
-              <input type="password" name="userPassword" placeholder="비밀번호" />
-              <label class="remember-check">
-                <a href="#">비밀번호를 잊어버리셨나요 ?</a>
-              </label>
-              <div class="btn">
-                <input type="button" value="로그인" onclick="alert(`로그인이 완료되었습니다.`)" />
-                <input type="button" value="회원가입" onclick="alert(`로그인이 완료되었습니다.`)" />
-              </div>
-            </form>
+            <input type="email" name="userName" placeholder="아이디" />
+            <input type="password" name="userPassword" placeholder="비밀번호" />
+            <label class="remember-check">
+              <a href="#">비밀번호를 잊어버리셨나요 ?</a>
+            </label>
+            <div class="btn">
+              <input type="button" value="로그인" onclick="alert(`로그인이 완료되었습니다.`)" />
+              <input type="button" value="회원가입" onclick="alert(`회원가입 페이지로 이동합니다.`)" />
+            </div>
           </div>
         </div>
       </section>

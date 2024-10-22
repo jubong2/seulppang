@@ -37,6 +37,7 @@
 
 .minibn-img {
   width: 80%;
+  cursor: pointer;
 }
 
 .minibn-img > img {
@@ -48,6 +49,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  cursor: pointer;
 }
 
 .more-btn > div {

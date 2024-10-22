@@ -34,6 +34,7 @@
 .notice-board td {
   padding: 10px;
   border-right: 1px solid #ddd;
+  cursor: pointer;
 }
 .notice-board td:last-child,
 .notice-board th:last-child {
