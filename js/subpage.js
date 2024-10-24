@@ -69,9 +69,11 @@ window.addEventListener("load", function () {
                 </a>
               </div>
               <div class="product-text">
+                <a href="#">
                 <h3>${gift.name}</h3>
                 <p>${gift.info}</p>
                 <p>${gift.price} WON</p>
+                </a>
               </div>
             `;
           catListDiv.appendChild(catCard);
@@ -149,9 +151,11 @@ window.addEventListener("load", function () {
                 </a>
               </div>
               <div class="product-text">
+                <a href="#">
                 <h3>${vegan.name}</h3>
                 <p>${vegan.info}</p>
                 <p>${vegan.price} WON</p>
+                </a>
               </div>
             `;
           veganListDiv.appendChild(veganCard);
@@ -220,9 +224,11 @@ window.addEventListener("load", function () {
                 </a>
               </div>
               <div class="product-text">
+               <a href="#">
                 <h3>${dessert.name}</h3>
                 <p>${dessert.info}</p>
                 <p>${dessert.price} WON</p>
+                </a>
               </div>
             `;
           dessertListDiv.appendChild(dessertCard);
@@ -301,9 +307,11 @@ window.addEventListener("load", function () {
                 </a>
               </div>
               <div class="product-text">
+              <a href="#">
                 <h3>${meal.name}</h3>
                 <p>${meal.info}</p>
                 <p>${meal.price} WON</p>
+               </a>
               </div>
             `;
           mealListDiv.appendChild(mealCard);
@@ -349,8 +357,8 @@ window.addEventListener("load", function () {
       displaymealInfo(currentPage, currentFilterType);
     });
   });
-  // 비건
-  // 비건 제품을 표시하는 함수
+  // 펫
+  // 펫 제품을 표시하는 함수
   function displaypetInfo(page) {
     fetch("json.json")
       .then((response) => response.json())
@@ -380,9 +388,11 @@ window.addEventListener("load", function () {
                   </a>
                 </div>
                 <div class="product-text">
-                  <h3>${pet.name}</h3>
+                   <a href="#">
+                   <h3>${pet.name}</h3>
                   <p>${pet.info}</p>
                   <p>${pet.price} WON</p>
+                 </a>
                 </div>
               `;
           petListDiv.appendChild(petCard);
