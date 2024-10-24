@@ -1,0 +1,148 @@
+@charset "UTF-8";
+.product {
+  position: relative;
+  width: 100%;
+  margin-bottom: 300px;
+  padding-top: 300px;
+  height: 700px;
+  z-index: 1;
+}
+.product-inner {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.product-cart {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.product-cart > .main-img-left {
+  width: 40%;
+}
+.product-cart > .main-img-left > img {
+  width: 100%;
+}
+.product-cart > .product-intro-right {
+  width: 45%;
+  margin: 0 auto;
+  /* background-color: rgb(255, 187, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-intro-right > .title {
+  /* margin-top: 100px; */
+  margin-bottom: 40px;
+}
+.product-intro-right > .title > h3 {
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+.product-intro-right > .title > h3 > span {
+  font-size: 40px;
+}
+.product-intro-right > .title > h4 {
+  font-size: 40px;
+}
+.product-intro-right > .option {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.product-intro-right > .option > label {
+  font-size: 25px;
+}
+.option > select {
+  width: 70%;
+  height: 50px;
+}
+.cart-btn > button {
+  width: 100%;
+  height: 50px;
+}
+/* 카테고리 버튼 */
+.category-btn {
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgba(133, 83, 51, 0.8);
+}
+.category-btn > ul {
+  display: flex;
+  justify-content: space-around;
+}
+.category-btn > ul > li {
+  width: calc(100% / 4);
+  text-align: center;
+  height: 40px;
+  color: #fff;
+  padding: 10px;
+}
+.category-btn > ul > li:hover {
+  background-color: rgba(107, 60, 30, 0.8);
+}
+/* 상품 상세 소개 영역 */
+/* 이미지 영역 초기 상태: 절반만 보이도록 설정 */
+/* 이미지 영역: 초기 상태에서는 절반만 표시 */
+#detail {
+    width: 100%;
+    height: 700px; /* 이미지 높이 제한 */
+    overflow: hidden; /* 넘치는 부분 숨김 */
+    position: relative; /* 자식 요소 정렬 */
+    transition: height 0.5s ease; /* 높이 전환 효과 */
+    margin-top: 100px;
+  }
+  
+  #detail > img {
+    width: 100%;
+  }
+  
+  /* 이미지 하단에 그라데이션 효과 */
+  #detail::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* 그라데이션 영역 높이 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none; /* 클릭 이벤트 차단 */
+    z-index: 1; /* 그라데이션이 이미지 위에 표시되도록 */
+  }
+  
+  /* '더보기' 클릭 시 전체 이미지 표시 */
+  #detail.show {
+    height: auto; /* 전체 이미지 표시 */
+  }
+  
+  /* 전체 이미지가 보일 때 그라데이션 제거 */
+  #detail.show::after {
+    display: none; /* 그라데이션 숨김 */
+  }
+  
+  /* 더보기 버튼 스타일 */
+  .detailMore {
+    width: 30%; /* 버튼 영역의 넓이를 전체의 30%로 설정 */
+    margin: 20px auto; /* 버튼을 가운데 정렬 */
+    text-align: center; /* 버튼 내부 텍스트 가운데 정렬 */
+  }
+  
+  .detailMore a {
+    display: inline-block;
+    width: 80%; /* 버튼의 넓이를 부모 컨테이너에 맞춤 */
+    padding: 10px 0; /* 버튼의 세로 여백 */
+    background-color:rgba(133, 83, 51, 0.8); /* 파란색 배경 (원하는 색으로 변경 가능) */
+    color: white; /* 텍스트 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 5px; /* 모서리를 둥글게 */
+    font-size: 20px;
+    font-weight: bold; /* 텍스트 굵게 */
+    transition: background-color 0.3s ease; /* 호버 효과 */
+  }
+  
+  /* 버튼 호버 시 색상 변경 */
+  .detailMore a:hover {
+    background-color: rgba(107, 60, 30, 0.8);
+  }
+  
