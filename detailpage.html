@@ -6,54 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>슬기로운 빵생활</title>
     <!-- SEO적용 -->
-    <meta
-      name="description"
-      content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! "
-    />
-    <meta
-      name="keywords"
-      content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송"
-    />
+    <meta name="description" content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! " />
+    <meta name="keywords" content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송" />
     <meta name="author" content="슬기로운빵생활" />
     <meta property="og:title" content="슬기로운빵생활" />
     <meta property="og:description" content="전국 빵집 모음! " />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="http://127.0.0.1:5500/main.html" />
+    <meta property="og:image" content="https://seulppang-t7we.vercel.app/images/logo.png" />
+    <meta property="og:url" content="https://seulppang-t7we.vercel.app/" />
     <meta property="og:site_name" content="seulppang[슬기로운빵생활]" />
     <meta property="og:type" content="website" />
     <!-- 파비콘 적용 -->
     <link rel="icon" href="images/favicon.png" />
     <!-- 폰트어썸 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- 구글 폰트 적용 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <!-- ---------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- AOS적용 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/normalize.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <!-- *제이쿼리 연결은 제일 위쪽* -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <!-- AOS적용 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+
     <script src="js/html5shiv.js"></script>
 
     <!--  prefixfree 주석했다가 나중에 풀기-->
@@ -62,24 +43,157 @@
 
     <!-- 스와이퍼 -->
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- js -->
-    <script src="js/js_hyun.js"></script>
-    <script src="js/js_ju.js"></script>
+
     <script src="js/loginpage.js"></script>
     <script src="js/subpage.js"></script>
     <script src="js/detailpage.js"></script>
+    <script src="js/best5.js"></script>
+    <script src="js/community.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/minibanner.js"></script>
   </head>
   <body>
+    <div class="mb-header-warp">
+      <div class="mb-header-top-icon">
+        <div>
+          <a href="loginpage.html"><img src="images/login-w.png" alt="로그인" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/heart-w.png" alt="찜하기" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/cart-w.png" alt="로그인" /></a>
+        </div>
+        <div class="closed"><img src="images/closed.png" alt="닫기" /></div>
+      </div>
+      <div class="mb-search">
+        <div class="search-inner">
+          <input type="text" placeholder="검색하기" />
+          <p>search</p>
+        </div>
+      </div>
+      <div class="mb-header">
+        <ul>
+          <li class="mb-header-navi-kind">
+            <a href="#">BEKERY</a>
+            <ul>
+              <li><a href="index.html">선물용</a></li>
+              <li><a href="index.html">비건</a></li>
+              <li><a href="index.html">디저트류</a></li>
+              <li><a href="index.html">PET 베이커리</a></li>
+            </ul>
+          </li>
+          <li class="mb-header-navi-kind">
+            <a href="#">POPUP</a>
+          </li>
+          <li class="mb-header-navi-kind">
+            <a href="#">HOT</a>
+            <ul>
+              <li><a href="#">알뜰빵</a></li>
+              <li><a href="#">신상빵</a></li>
+              <li><a href="#">인기빵</a></li>
+            </ul>
+          </li>
+          <li class="mb-header-navi-kind"><a href="#">COMMUNITY</a></li>
+          <li class="mb-header-navi-kind"><a href="#">C/S</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="warp">
-      <header></header>
+      <section class="header">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="index.html"><img src="images/logo.png" alt="로고" /></a>
+          </div>
+          <div class="search">
+            <div class="search-inner">
+              <input type="text" placeholder="검색하기" />
+              <p>search</p>
+            </div>
+          </div>
+          <div class="header-top-icon">
+            <div>
+              <img src="images/search.png" alt="검색하기" class="search-button" />
+            </div>
+            <div>
+              <a href="loginpage.html"><img src="images/log-in.png" alt="로그인" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="images/heart-header.png" alt="찜하기" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="images/cart-header.png" alt="로그인" /></a>
+            </div>
+          </div>
+          <div class="header-mb-bar">
+            <a href="#"><img src="images/mb-header.png" alt="햄버거바" /></a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <ul class="header-navi">
+            <li>
+              <a href="#" class="header-navi-title"><h3>BAKERY</h3></a>
+              <div class="header-navi-submenu bakery-submenu">
+                <div>
+                  <ul class="bakery-cate">
+                    <li><a href="subpage.html" class="bakery-cate-inner">선물용</a></li>
+                    <li><a href="subpage.html">비건</a></li>
+                    <li><a href="subpage.html" class="bakery-cate-inner">디저트류</a></li>
+                    <li><a href="subpage.html" class="bakery-cate-inner">식사류</a></li>
+                    <li><a href="subpage.html">PET 베이커리</a></li>
+                  </ul>
+                  <div class="bakery-inner">
+                    <ul class="navi-gift">
+                      <li><a href="subpage.html">생일케이크</a></li>
+                      <li><a href="subpage.html">롤케이크</a></li>
+                      <li><a href="subpage.html">선물세트</a></li>
+                    </ul>
+                    <ul></ul>
+                    <ul class="navi-dessert">
+                      <li><a href="subpage.html">스콘</a></li>
+                      <li><a href="subpage.html">휘낭시에</a></li>
+                      <li><a href="subpage.html">쿠키</a></li>
+                      <li><a href="subpage.html">타르트</a></li>
+                    </ul>
+                    <ul class="navi-meal">
+                      <li><a href="subpage.html">식빵</a></li>
+                      <li><a href="subpage.html">베이글</a></li>
+                      <li><a href="subpage.html">바게트</a></li>
+                      <li><a href="subpage.html">치아바타</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="header-navi-title"><h3>POPUP</h3></a>
+            </li>
+            <li>
+              <div>
+                <a href="#" class="header-navi-title"><h3>HOT</h3></a>
+                <ul class="header-navi-submenu">
+                  <li><a href="#">알뜰빵</a></li>
+                  <li><a href="#">신상빵</a></li>
+                  <li><a href="#">인기빵</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="header-navi-title"><h3>COMMUNITY</h3></a>
+            </li>
+            <li>
+              <a href="#" class="header-navi-title"><h3>C/S</h3></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </body>
 </html>
