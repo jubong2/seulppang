@@ -16,14 +16,14 @@ window.addEventListener("load", function () {
 
       subpagemenu[index].classList.add("active");
       subsectionKind[index].classList.add("active");
-
       currentPage = 1;
       displayCatInfo(currentPage, null); // 선물 페이지 초기화
       displayVeganInfo(currentPage); // 비건 페이지 초기화
       displayDessetInfo(currentPage, null); // 디저트 페이지 초기화
+      displaymealInfo(currentPage, null); // 식사빵 페이지 초기화
+      displaypetInfo(currentPage, null); // 펫 페이지 초기화
     });
   });
-
   let itemsPerPage = 6;
   let currentPage = 1;
   let currentFilterType = null; // 필터 타입을 저장하는 전역 변수
@@ -515,5 +515,22 @@ window.addEventListener("load", function () {
   displayDessetInfo(currentPage); /*디저트 페이지*/
   displaymealInfo(currentPage);
   displaypetInfo(currentPage);
-  displaypetInfo(currentPage, type); /*펫 페이지*/
+  displaypetInfo(currentPage, type);
+  /*펫 페이지*/ window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentPage = urlParams.get("page"); // "vegan" 값을 받아옴
+    if (currentPage) {
+      displayVeganInfo(currentPage); // 해당 페이지를 표시
+    }
+  };
+
+  // function displayVeganInfo(page) {
+  //   if (page === "vegan") {
+  //     // 비건 페이지를 표시하는 코드
+  //     console.log("비건 페이지 활성화");
+  //     document.getElementById("vegan-section").style.display = "block";
+  //     // 다른 섹션들은 숨김
+  //     document.getElementById("other-section").style.display = "none";
+  //   }
+  // }
 });
