@@ -6,10 +6,11 @@
   margin: 0 auto;
 }
 .subpage-banner {
+  /* padding-top: 150px; */
   width: 100%;
   height: 500px;
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 10%;
 }
 
 .subpage-banner > img {
@@ -26,16 +27,18 @@
   font-weight: bold;
 }
 .subpage-button-kind {
+  padding-bottom: 1%;
   position: relative; /* 자식 요소가 절대 위치를 가질 수 있도록 설정 */
   overflow: hidden;
   width: calc(100% / 4);
   color: #fff;
   aspect-ratio: 1;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
   border-radius: 200px;
   display: flex; /* 텍스트 중앙 정렬을 위한 flexbox */
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
 
 .subpage-button-kind:nth-child(1) {
@@ -100,12 +103,14 @@
 
 /* =========== */
 
-.subpage-section {
+.subpage-main {
+  margin-bottom: 20%;
 }
 .subpage-gift-button,
 .subpage-dessert-button,
 .subpage-meal-button {
   display: flex;
+  /* margin-bottom: 100px; */
 }
 
 .gift-product,
@@ -113,9 +118,10 @@
 .dessert-product,
 .meal-product,
 .pet-product {
-  width: calc(100% / 3.3);
+  padding: 2%;
+  width: calc(100% / 3);
   display: inline-block;
-  margin: 0 20px; /* 원하는 간격 설정 (예: 10px) */
+  margin: 0 auto; /* 원하는 간격 설정 (예: 10px) */
 }
 .gift-button,
 .desset-button,
@@ -124,23 +130,152 @@
 }
 .subpage-gift-button {
   position: relative;
-  margin-bottom: 100px;
 }
 
-.gift-button {
+.subbt {
+  text-align: center;
+  position: relative;
+  width: 20%;
   display: block;
-  padding: 20px 30px;
-  border-bottom: 2px solid saddlebrown;
+  height: 80px;
+  /* padding: 5% 10%; */
   margin: 0 auto;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
   transition: font-size 0.3s ease; /* 부드러운 전환 효과 추가 */
 }
 
-.gift-button:hover {
+.subbt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: 40%;
+  height: 5px;
+  background-color: saddlebrown;
+}
+.subbt:hover {
   font-size: 25px; /* 호버 시에만 해당 버튼의 크기 증가 */
 }
 
-.gift-button.active {
-  font-size: 25px;
+.subpage-vegan,
+.subpage-pet {
+  margin-top: 80px;
+}
+/* =========페이지 네이션 */
+
+.subpage-pagination {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  text-align: center;
+  /* display: flex; */
+  /* display: inline-block; */
+  margin: 0 auto;
+  margin-top: 10%;
+  /* gap: 50px; */
+  font-size: 18px;
+}
+
+.page-link {
+  width: 10%;
+}
+
+/* ==========반응형 */
+
+@media (max-width: 1000px) {
+  .subpage-button {
+    gap: 10px;
+  }
+  .subpage-button-kind {
+    font-size: 20px;
+    /* margin-bottom: 80px; */
+  }
+  .subpage-button-kind::after {
+    top: 70%; /* h3 아래에 위치 */
+    transform: translate(-50%, -70%); /* 중앙 정렬을 위한 변환 */
+  }
+}
+@media (max-width: 800px) {
+  .subpage-banner {
+    height: 300px;
+  }
+  .subbt {
+    width: 35%;
+    height: 50px;
+    font-size: 18px;
+  }
+  .subbt:hover {
+    font-size: 20px;
+  }
+  .subpage-button-kind {
+    margin-bottom: 15%;
+  }
+  .subpage-pagination {
+    width: 100%;
+  }
+
+  .subpage-pagination {
+    gap: 0;
+  }
+
+  .page-link {
+    width: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gift-product,
+  .vegan-product,
+  .dessert-product,
+  .meal-product,
+  .pet-product {
+    padding: 2%;
+    width: calc(100% / 2);
+    display: inline-block;
+    margin: 0 auto; /* 원하는 간격 설정 (예: 10px) */
+  }
+  .subpage-button {
+    text-align: center;
+    display: flex;
+    overflow-x: auto; /* 가로 스크롤 허용 */
+    white-space: nowrap; /* 버튼이 한 줄로 유지되도록 설정 */
+    scrollbar-width: none; /* 파이어폭스에서 스크롤바 숨김 */
+    -ms-overflow-style: none; /* IE에서 스크롤바 숨김 */
+  }
+
+  .subpage-button-kind {
+    font-size: 18px;
+    flex: 0 0 33.3333%; /* 3개의 버튼만 첫 화면에 보이도록 설정 */
+    margin-bottom: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .subpage-banner {
+    height: 200px;
+  }
+  .subpage-gift-button {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .subbt {
+    height: 60px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .subbt:hover {
+    font-size: 18px;
+  }
+  .subbt::after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 3px;
+  }
 }

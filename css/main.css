@@ -11,6 +11,7 @@
 @import url("loginpage.css");
 @import url("subpage.css");
 @import url("detailpage.css");
+@import url("signupPage.css");
 
 * {
   margin: 0;
@@ -40,6 +41,9 @@ img {
 .warp {
   width: 100%;
   position: relative;
+}
+.swpagination > span {
+  background-color: #855333;
 }
 @media (max-width: 1200px) {
   .banner {
@@ -90,9 +94,6 @@ img {
   .target-swiper {
     margin-bottom: 150px;
   }
-  .mini-banner {
-    margin-bottom: 150px;
-  }
 
   .pet-swiper {
     margin-bottom: 150px;
@@ -107,7 +108,7 @@ img {
     margin-bottom: 80px;
   }
   .best5 {
-    margin-bottom:60px;
+    margin-bottom: 60px;
   }
 
   .popup-store {
@@ -119,9 +120,6 @@ img {
   }
 
   .target-swiper {
-    margin-bottom: 80px;
-  }
-  .mini-banner {
     margin-bottom: 80px;
   }
 

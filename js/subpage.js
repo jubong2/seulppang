@@ -533,4 +533,28 @@ window.addEventListener("load", function () {
   //     document.getElementById("other-section").style.display = "none";
   //   }
   // }
+  const subpageButton = document.querySelector(".subpage-button");
+  let startX, scrollLeft;
+
+  subpageButton.addEventListener("mousedown", (e) => {
+    startX = e.pageX - subpageButton.offsetLeft;
+    scrollLeft = subpageButton.scrollLeft;
+    subpageButton.classList.add("active");
+  });
+
+  subpageButton.addEventListener("mouseleave", () => {
+    subpageButton.classList.remove("active");
+  });
+
+  subpageButton.addEventListener("mouseup", () => {
+    subpageButton.classList.remove("active");
+  });
+
+  subpageButton.addEventListener("mousemove", (e) => {
+    if (!subpageButton.classList.contains("active")) return;
+    e.preventDefault();
+    const x = e.pageX - subpageButton.offsetLeft;
+    const walk = (x - startX) * 3; // 슬라이더 속도 조절
+    subpageButton.scrollLeft = scrollLeft - walk;
+  });
 });

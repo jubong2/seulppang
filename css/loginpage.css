@@ -4,13 +4,13 @@
   padding-top: 300px;
 }
 .login-inner {
-  width: 70%;
+  width: 35%;
   display: block;
   margin: 0 auto;
   /* background-color: aquamarine; */
 }
 .login-inner > img {
-  width: 63%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -47,7 +47,10 @@
   margin: 0 auto;
   gap: 2%;
 }
-.login-main > .btn > input {
+.login-main > .btn > a {
+  width: 100%;
+}
+.login-main > .btn > a > input {
   background-color: #ff8f4e;
   color: #fff;
   font-size: 18px;

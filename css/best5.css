@@ -310,7 +310,7 @@
   .best5-button {
     display: flex; /* flexbox를 사용해 정렬 */
     flex-wrap: wrap; /* 요소가 한 줄에 두 개씩 배치되게 하기 위해 줄바꿈 */
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     gap: 10px; /* 버튼들 사이의 간격 설정 */
   }
   .best5-button > a {
@@ -319,9 +319,7 @@
   .best5-button > a > h3 {
     width: 100%;
     text-align: center;
-
     transition: all 1s; /* 가상 요소의 트랜지션 */
-
     background-color: #fff;
   }
   .best5-button > a > h3 {
@@ -349,9 +347,7 @@
   .best5-button > a > h3 {
     font-size: 15px;
   }
-  .best5-button > a > h3 {
-    border-radius: 10px 10px 0 0;
-  }
+
   .product-icon {
     width: 20px;
     height: 50px;

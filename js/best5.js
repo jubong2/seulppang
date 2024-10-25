@@ -1,24 +1,24 @@
 window.addEventListener("load", function () {
-  // 페이지가 로드되면 기본적으로 첫 번째 섹션만 보이도록 설정
-  const sections = document.querySelectorAll(".best5-swiper > div"); // 모든 섹션 선택
+  const sections = document.querySelectorAll(".best5-swiper > div");
 
   sections.forEach(function (section, index) {
-    section.style.display = "none"; // 모든 섹션 숨김
+    section.style.display = "none";
   });
 
-  // 첫 번째 섹션을 보이게 설정
-  sections[0].style.display = "block"; // 첫 번째 섹션 표시
+  sections[0].style.display = "block";
 
-  // 첫 번째 섹션의 스와이퍼 초기화
-  const firstSectionSwiper = sections[0].querySelector(".bestSwiper"); // 첫 번째 섹션의 스와이퍼 선택
+  const firstSectionSwiper = sections[0].querySelector(".bestSwiper");
   const swiperInstance = new Swiper(firstSectionSwiper, {
-    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+    slidesPerView: 1.5,
     spaceBetween: 10,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
-
     breakpoints: {
       1200: { slidesPerView: 2.5 },
       800: { slidesPerView: 2 },
@@ -29,44 +29,40 @@ window.addEventListener("load", function () {
     },
   });
 
-  // 버튼 클릭 시 해당 섹션만 표시하는 로직
   document.querySelectorAll(".best5-button > a").forEach(function (button) {
     button.addEventListener("click", function (event) {
-      event.preventDefault(); // 링크 이동 방지
+      event.preventDefault();
 
-      // 모든 섹션을 숨김
       sections.forEach(function (section) {
         section.style.display = "none";
       });
 
-      // 클릭한 버튼의 텍스트에 해당하는 섹션만 보임
       const sectionClass = button.textContent.toLowerCase();
       document.querySelector("." + sectionClass).style.display = "block";
 
-      // 모든 버튼의 스타일 초기화
       document.querySelectorAll(".best5-button a").forEach(function (btn) {
-        btn.classList.remove("active"); // active 클래스 제거
+        btn.classList.remove("active");
         btn.querySelector("h3").classList.remove("active");
       });
 
-      // 클릭한 버튼의 스타일 변경
       button.classList.add("active");
       button.querySelector("h3").classList.add("active");
 
-      // 새로 선택된 섹션의 스와이퍼 초기화
-      // 스와이퍼 인스턴스를 초기화하고 첫 번째 슬라이드로 이동
       const newSectionSwiper = document.querySelector("." + sectionClass + " .bestSwiper");
       if (newSectionSwiper.swiper) {
-        newSectionSwiper.swiper.slideTo(0); // 첫 번째 슬라이드로 이동
+        newSectionSwiper.swiper.slideTo(0);
       } else {
         new Swiper(newSectionSwiper, {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
           slidesPerView: 1,
           spaceBetween: 10,
           autoplay: {
             delay: 2500,
             disableOnInteraction: false,
           },
-
           breakpoints: {
             1200: { slidesPerView: 2.5 },
             800: { slidesPerView: 2 },
@@ -79,40 +75,40 @@ window.addEventListener("load", function () {
       }
     });
   });
-  // 기본 색상 변경 (Party 섹션이 보일 때)
+
+  // 기본 색상 변경 (Gift 섹션이 보일 때)
   document.querySelectorAll(".best5-button > a").forEach(function (btn) {
     if (btn.textContent.toLowerCase() === "gift") {
-      btn.classList.add("active"); // 기본적으로 active 클래스 추가
+      btn.classList.add("active");
       btn.querySelector("h3").classList.add("active");
     }
   });
-  // 찜하기
-  const hearts = document.querySelectorAll(".heart-icon img"); // 모든 찜하기 아이콘 선택
-  const carts = document.querySelectorAll(".cart-icon img"); // 모든 장바구니 아이콘 선택
 
-  // 각 heart 아이콘에 대해 클릭 이벤트 추가
-  hearts.forEach(function (하트) {
+  const hearts = document.querySelectorAll(".heart-icon img");
+  const carts = document.querySelectorAll(".cart-icon img");
+
+  hearts.forEach(function (heart) {
+    // 변수 이름 수정
     heart.addEventListener("click", function (event) {
-      event.preventDefault(); // 링크 이동 방지
+      event.preventDefault();
       if (heart.src.includes("images/heart.png")) {
-        heart.src = "images/heart-2.png"; // 찜한 이미지로 변경
+        heart.src = "images/heart-2.png";
         alert("찜목록에 저장했습니다.");
       } else {
-        heart.src = "images/heart.png"; // 원래 이미지로 변경
+        heart.src = "images/heart.png";
         alert("찜목록에서 해제하였습니다.");
       }
     });
   });
 
-  // 각 cart 아이콘에 대해 클릭 이벤트 추가
   carts.forEach(function (cart) {
     cart.addEventListener("click", function (event) {
-      event.preventDefault(); // 링크 이동 방지
+      event.preventDefault();
       if (cart.src.includes("images/cart.png")) {
-        cart.src = "images/cart-2.png"; // 장바구니 아이콘 변경
+        cart.src = "images/cart-2.png";
         alert("장바구니에 저장했습니다.");
       } else {
-        cart.src = "images/cart.png"; // 원래 아이콘으로 변경
+        cart.src = "images/cart.png";
         alert("장바구니에서 해제하였습니다.");
       }
     });
