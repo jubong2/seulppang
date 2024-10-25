@@ -399,7 +399,7 @@
   .popup-img-intro {
     flex-direction: column;
     gap: 3%;
-    height: 2000px;
+    /* height: 2000px; */
   }
   .left {
     width: 100%;
