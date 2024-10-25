@@ -27,7 +27,7 @@
   transform: translateX(-150px); /* 왼쪽 배너 초기 위치 */
   transition: all 0.8s ease-in-out;
 }
-.miniBn-left{
+.miniBn-left {
   padding-right: 10%;
 }
 .miniBn-rigth {
@@ -72,9 +72,6 @@
   opacity: 1; /* 보이게 설정 */
   transform: translateX(0); /* 원래 위치로 이동 */
 }
-
-
-
 
 /* 반응형============================================ */
 @media screen and (max-width: 1000px) {
@@ -159,13 +156,14 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .miniBn-left {
     margin-bottom: 20px;
     padding-right: 0%;
   }
   .miniBn-rigth {
     padding-left: 0%;
+    margin-bottom: 40px;
   }
   .minibn-img {
     width: 100%;
