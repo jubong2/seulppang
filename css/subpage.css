@@ -258,14 +258,18 @@
   .subpage-banner {
     height: 200px;
   }
-  .subpage-gift-button {
-    flex-direction: column;
+  /* .subpage-gift-button, */
+  .subpage-dessert-button,
+  .subpage-meal-button {
+    flex-wrap: wrap;
+
+    /* flex-direction: column; */
     gap: 0px;
   }
 
   .subbt {
     height: 60px;
-    width: 100%;
+    width: calc(100% / 2);
     font-size: 15px;
     margin-bottom: 0;
   }

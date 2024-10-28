@@ -58,21 +58,24 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* max-height: 560px !important; */
   margin-top: 30px;
   cursor: pointer;
-  background-color: bisque;
+  gap: 2%;
 }
 .left {
+  display: block;
+  position: relative;
   width: 40%;
+  height: 100%;
   max-width: 560px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: rgb(255, 127, 238);
+  /* background-color: rgb(255, 127, 238); */
 }
 .left img {
-  width: 100%;
+  width: 150%;
 }
 .right {
   width: 59%;
@@ -156,7 +159,7 @@
   display: none;
 }
 /* 부모 요소에 position: relative 추가 */
-.first-store,
+
 .second-store,
 .third-store {
   position: relative;
