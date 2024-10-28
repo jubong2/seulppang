@@ -12,6 +12,7 @@
 @import url("subpage.css");
 @import url("detailpage.css");
 @import url("signupPage.css");
+@import url("fixmenu.css");
 
 * {
   margin: 0;
@@ -62,6 +63,9 @@ img {
     margin-bottom: 200px;
   }
 
+  .mini-banner {
+    margin-bottom: 200px;
+  }
   .target-swiper {
     margin-bottom: 200px;
   }
@@ -70,9 +74,9 @@ img {
     margin-bottom: 200px;
   }
 
-  .community {
+  /* .community {
     margin-bottom: 200px;
-  }
+  } */
 }
 @media (max-width: 800px) {
   .banner {
@@ -90,7 +94,9 @@ img {
   .knotted-banner {
     margin-bottom: 150px;
   }
-
+  .mini-banner {
+    margin-bottom: 150px;
+  }
   .target-swiper {
     margin-bottom: 150px;
   }
@@ -103,31 +109,50 @@ img {
     margin-bottom: 150px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .banner {
     margin-bottom: 80px;
   }
   .best5 {
     margin-bottom: 60px;
   }
+  .best5-inner {
+    width: 80%;
+  }
 
   .popup-store {
     margin-bottom: 80px;
   }
 
+  .popup-inner {
+    width: 80%;
+  }
   .knotted-banner {
+    margin-bottom: 80px;
+  }
+  .mini-banner {
     margin-bottom: 80px;
   }
 
   .target-swiper {
     margin-bottom: 80px;
   }
+  .target-warp {
+    width: 80%;
+  }
 
   .pet-swiper {
     margin-bottom: 80px;
   }
 
+  .pet-warp {
+    width: 80%;
+  }
   .community {
     margin-bottom: 80px;
+  }
+
+  .subpage-inner {
+    width: 80%;
   }
 }

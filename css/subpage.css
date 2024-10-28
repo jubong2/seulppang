@@ -160,10 +160,6 @@
   font-size: 25px; /* 호버 시에만 해당 버튼의 크기 증가 */
 }
 
-.subpage-vegan,
-.subpage-pet {
-  margin-top: 80px;
-}
 /* =========페이지 네이션 */
 
 .subpage-pagination {
@@ -184,7 +180,14 @@
 .page-link {
   width: 10%;
 }
-
+.page-link.active-page {
+  width: 30px;
+  line-height: 30px;
+  color: white;
+  background-color: saddlebrown;
+  border-radius: 50%;
+  font-weight: bold;
+}
 /* ==========반응형 */
 
 @media (max-width: 1000px) {

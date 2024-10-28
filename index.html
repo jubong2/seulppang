@@ -89,6 +89,30 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXNJDZBK" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 헤더 -->
+    <div class="fix-menu">
+      <ul class="fix-list">
+        <li>
+          <a href="loginpage.html" class="fix-login">
+            <span class="logintext">로그인</span>
+            <img src="images/log-in.png" alt="로그인아이콘" />
+          </a>
+        </li>
+
+        <li>
+          <span>최근 본 물품</span>
+          <a href="#" class="good-recent">
+            <img src="images/cake-1.jpg" alt="케이크" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fix-qa">
+            <span>상담/문의</span>
+            <img src="images/call.png" alt="문의 아이콘" />
+          </a>
+        </li>
+      </ul>
+      <button class="fix-top">top</button>
+    </div>
     <div class="mb-header-warp">
       <div class="mb-header-top-icon">
         <div>
@@ -135,6 +159,7 @@
         </ul>
       </div>
     </div>
+
     <div class="warp">
       <!-- 헤더 -->
       <section class="header">
@@ -163,7 +188,7 @@
             </div>
           </div>
           <div class="header-mb-bar">
-            <a href="#"><img src="images/mb-header.png" alt="햄버거바" /></a>
+            <img src="images/mb-header.png" alt="햄버거바" />
           </div>
         </div>
         <div class="header-bottom">
@@ -251,7 +276,7 @@
             <div class="best5-product-warp">
               <div class="best5-button">
                 <a href="#"><h3>Gift</h3></a>
-                <a href="#"><h3>vegan</h3></a>
+                <a href="#"><h3>Vegan</h3></a>
                 <a href="#"><h3>Dessert</h3></a>
                 <a href="#"><h3>Meal</h3></a>
               </div>
@@ -374,7 +399,7 @@
                 </div>
                 <!-- 비건 -->
                 <div class="vegan">
-                  <div class="swiper bestSwiper">
+                  <div class="swiper bestSwiper veganSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide best5slide">
                         <div class="best5slide-img">
@@ -488,7 +513,7 @@
                 <!-- 홈카페 -->
                 <div class="dessert">
                   <!-- 소문자로 수정 -->
-                  <div class="swiper bestSwiper">
+                  <div class="swiper bestSwiper dessertSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide best5slide">
                         <div class="best5slide-img">
@@ -602,7 +627,7 @@
                 </div>
                 <!-- 식사빵 -->
                 <div class="meal">
-                  <div class="swiper bestSwiper">
+                  <div class="swiper bestSwiper mealSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide best5slide">
                         <div class="best5slide-img">
@@ -799,7 +824,10 @@
         <div class="target-warp">
           <div class="swipersection-title">
             <h4>
-              <span>oo</span>님,<br class="enter" />
+              <span class="taget-name">
+                회원
+                <!-- username출력 --></span
+              >님,<br class="enter" />
               이 빵은 <br class="enter2" />거부 할 수 없을걸요?
             </h4>
             <div class="more-btn swiper-more-button">
@@ -947,6 +975,8 @@
       <!-- 펫 추천 상품 -->
 
       <section class="pet-swiper">
+        <img src="images/pet-foot.png" alt="발바닥" class="petfoot-top" />
+        <img src="images/pet-foot.png" alt="발바닥" class="petfoot" />
         <div class="pet-warp">
           <div class="swipersection-title">
             <h4>반려동물과 <br class="enter3" />함께즐기는 빵파티!!</h4>
@@ -1174,6 +1204,44 @@
         // 페이지 로드 시 바로 타이머 표시
         updateTimer();
         // ===========================================
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // URL에서 username 파라미터 추출
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get("username");
+        const loginLink = document.querySelector(".fix-login"); // a 태그 선택
+
+        // .target-name 요소 가져오기
+        const targetNameElement = document.querySelector(".taget-name");
+        // 로그인
+        const logintext = document.querySelector(".logintext");
+        // username이 존재하면 username으로 설정
+        if (username) {
+          targetNameElement.textContent = username;
+          logintext.textContent = "로그아웃";
+        } else {
+          logintext.textContent = "로그인";
+        }
+        // 로그아웃 클릭 시 링크 이동 방지와 확인 창 띄우기
+        loginLink.addEventListener("click", function (event) {
+          if (logintext.textContent === "로그아웃") {
+            event.preventDefault(); // 기본 링크 이동 방지
+            const logoutConfirm = confirm("로그아웃하시겠습니까?");
+
+            if (logoutConfirm) {
+              // 로그아웃 처리: 로그인 상태 초기화
+              targetNameElement.textContent = "";
+              logintext.textContent = "로그인";
+              localStorage.removeItem("username"); // 저장된 username 제거
+            }
+          } else {
+            // 로그인 상태가 아닐 때만 이동
+            event.preventDefault();
+            alert("로그인이 필요합니다.");
+          }
+        });
       });
     </script>
   </body>

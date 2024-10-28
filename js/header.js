@@ -1,6 +1,12 @@
 window.addEventListener("load", function () {
   AOS.init();
-
+  const fixTopBt = this.document.querySelector(".fix-top");
+  fixTopBt.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   const cateItems = document.querySelectorAll(".bakery-cate li");
   const bakeryInnerLists = document.querySelectorAll(".bakery-inner ul");
   const bakerySubmenu = document.querySelector(".bakery-submenu");

@@ -37,6 +37,7 @@
   font-weight: bold;
 }
 .popup-title h2 {
+  overflow-wrap: break-word;
   font-size: 50px;
   margin-bottom: 50px;
 }
