@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="header-mb-bar">
-            <a href="#"><img src="images/mb-header.png" alt="햄버거바" /></a>
+            <img src="images/mb-header.png" alt="햄버거바" />
           </div>
         </div>
         <div class="header-bottom">
@@ -232,8 +232,29 @@
         </ul>
       </div>
     </section>
-
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginButton = document.querySelector(".login-main .btn input[type='button']");
+
+        loginButton.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          const username = document.getElementById("username").value.trim();
+          const password = document.getElementById("password").value.trim();
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+          const user = users.find((user) => user.userId === username && user.password === password);
+
+          if (user) {
+            alert(`${user.username}님 환영합니다. 로그인에 성공했습니다.`);
+            window.location.href = `index.html?username=${encodeURIComponent(user.username)}`;
+          } else {
+            alert("로그인 정보가 일치하지 않습니다.");
+          }
+        });
+      });
+    </script>
+    <!-- <script>
       const loginForm = document.querySelector(".login-main");
       loginForm.addEventListener("button", function (e) {
         e.preventDefault();
@@ -253,6 +274,6 @@
           loginForm.reset();
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>
