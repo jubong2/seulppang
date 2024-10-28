@@ -1,11 +1,13 @@
 @charset "utf-8";
 .footer {
+    
   position: relative;
   display: block;
   background-color: rgba(133, 83, 51, 0.8);
   padding: 60px 0;
 }
 .footer .inner {
+   
 }
 .footer-list {
   text-align: center;

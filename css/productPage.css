@@ -16,7 +16,6 @@
 .product-cart {
   width: 100%;
   display: flex;
-  /* justify-content: space-between; */
 }
 .product-cart > .main-img-left {
   width: 40%;
@@ -27,40 +26,115 @@
 .product-cart > .product-intro-right {
   width: 45%;
   margin: 0 auto;
-  /* background-color: rgb(255, 187, 0); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .product-intro-right > .title {
-  /* margin-top: 100px; */
   margin-bottom: 40px;
 }
 .product-intro-right > .title > h3 {
-  font-size: 55px;
+  font-size: 48px;
   margin-bottom: 50px;
 }
 .product-intro-right > .title > h3 > span {
   font-size: 40px;
 }
 .product-intro-right > .title > h4 {
-  font-size: 40px;
+  font-size: 50px;
+  color: #4e2e19;
 }
 .product-intro-right > .option {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
 }
 .product-intro-right > .option > label {
-  font-size: 25px;
+  font-size: 22px;
+  font-weight: 900;
 }
 .option > select {
   width: 70%;
   height: 50px;
+  border: 1px solid #a07153;
+  border-radius: 5px;
+  color: #5f3c25;
+  cursor: pointer;
 }
 .cart-btn > button {
   width: 100%;
   height: 50px;
+  background-color: #a07153;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-btn > button:hover {
+  background-color: #885332;
+}
+/* 옵션 박스 스타일 */
+.option-box {
+  width: 70%;
+  border: 1px solid rgba(133, 83, 51, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+}
+#selected-product-name,
+#selected-product-price,
+.quantity-selector > p {
+  font-weight: 600;
+}
+.option-box > #total-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e2e19;
+}
+.close-btn {
+  position: absolute;
+  background: none;
+  top: 10px;
+  right: 10px;
+  border: none;
+  color: rgba(97, 60, 37, 0.8);
+  font-size: 15px;
+  cursor: pointer;
+}
+.close-btn:hover {
+  font-weight: 900;
+}
+.quantity-selector {
+  display: flex;
+  text-align: right;
+  margin: 20px 0;
+}
+
+.quantity-selector button {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(133, 83, 51, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin: 0 5px;
+}
+
+.quantity-selector input {
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#quantity {
+  color: #885332;
+  font-weight: 800;
+  border: 1px solid #a07153;
 }
 /* 카테고리 버튼 */
 .category-btn {
@@ -74,10 +148,13 @@
 }
 .category-btn > ul > li {
   width: calc(100% / 4);
-  text-align: center;
   height: 40px;
-  color: #fff;
+  text-align: center;
   padding: 10px;
+}
+.category-btn > ul > li > a {
+  color: #fff;
+  cursor: pointer;
 }
 .category-btn > ul > li:hover {
   background-color: rgba(107, 60, 30, 0.8);
@@ -86,63 +163,275 @@
 /* 이미지 영역 초기 상태: 절반만 보이도록 설정 */
 /* 이미지 영역: 초기 상태에서는 절반만 표시 */
 #detail {
-    width: 100%;
-    height: 700px; /* 이미지 높이 제한 */
-    overflow: hidden; /* 넘치는 부분 숨김 */
-    position: relative; /* 자식 요소 정렬 */
-    transition: height 0.5s ease; /* 높이 전환 효과 */
-    margin-top: 100px;
-  }
-  
-  #detail > img {
-    width: 100%;
-  }
-  
-  /* 이미지 하단에 그라데이션 효과 */
-  #detail::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 200px; /* 그라데이션 영역 높이 */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    pointer-events: none; /* 클릭 이벤트 차단 */
-    z-index: 1; /* 그라데이션이 이미지 위에 표시되도록 */
-  }
-  
-  /* '더보기' 클릭 시 전체 이미지 표시 */
-  #detail.show {
-    height: auto; /* 전체 이미지 표시 */
-  }
-  
-  /* 전체 이미지가 보일 때 그라데이션 제거 */
-  #detail.show::after {
-    display: none; /* 그라데이션 숨김 */
-  }
-  
-  /* 더보기 버튼 스타일 */
-  .detailMore {
-    width: 30%; /* 버튼 영역의 넓이를 전체의 30%로 설정 */
-    margin: 20px auto; /* 버튼을 가운데 정렬 */
-    text-align: center; /* 버튼 내부 텍스트 가운데 정렬 */
-  }
-  
-  .detailMore a {
-    display: inline-block;
-    width: 80%; /* 버튼의 넓이를 부모 컨테이너에 맞춤 */
-    padding: 10px 0; /* 버튼의 세로 여백 */
-    background-color:rgba(133, 83, 51, 0.8); /* 파란색 배경 (원하는 색으로 변경 가능) */
-    color: white; /* 텍스트 색상 */
-    text-decoration: none; /* 밑줄 제거 */
-    border-radius: 5px; /* 모서리를 둥글게 */
-    font-size: 20px;
-    font-weight: bold; /* 텍스트 굵게 */
-    transition: background-color 0.3s ease; /* 호버 효과 */
-  }
-  
-  /* 버튼 호버 시 색상 변경 */
-  .detailMore a:hover {
-    background-color: rgba(107, 60, 30, 0.8);
-  }
-  
+  width: 100%;
+  height: 700px; /* 이미지 높이 제한 */
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  position: relative; /* 자식 요소 정렬 */
+  transition: height 0.5s ease; /* 높이 전환 효과 */
+  margin-top: 100px;
+}
+
+#detail > img {
+  width: 100%;
+}
+
+/* 이미지 하단에 그라데이션 효과 */
+#detail::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* 그라데이션 영역 높이 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none; /* 클릭 이벤트 차단 */
+  z-index: 1; /* 그라데이션이 이미지 위에 표시되도록 */
+}
+
+/* '더보기' 클릭 시 전체 이미지 표시 */
+#detail.show {
+  height: auto; /* 전체 이미지 표시 */
+}
+
+/* 전체 이미지가 보일 때 그라데이션 제거 */
+#detail.show::after {
+  display: none; /* 그라데이션 숨김 */
+}
+
+/* 더보기 버튼 스타일 */
+.detailMore {
+  width: 30%; /* 버튼 영역의 넓이를 전체의 30%로 설정 */
+  margin: 20px auto; /* 버튼을 가운데 정렬 */
+  text-align: center; /* 버튼 내부 텍스트 가운데 정렬 */
+}
+
+.detailMore a {
+  display: inline-block;
+  width: 80%; /* 버튼의 넓이를 부모 컨테이너에 맞춤 */
+  padding: 10px 0; /* 버튼의 세로 여백 */
+  background-color: rgba(133, 83, 51, 0.8); /* 파란색 배경 (원하는 색으로 변경 가능) */
+  color: white; /* 텍스트 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  border-radius: 5px; /* 모서리를 둥글게 */
+  font-size: 20px;
+  font-weight: bold; /* 텍스트 굵게 */
+  transition: background-color 0.3s ease; /* 호버 효과 */
+  margin-bottom: 100px;
+}
+
+/* 버튼 호버 시 색상 변경 */
+.detailMore a:hover {
+  background-color: rgba(107, 60, 30, 0.8);
+}
+/* 리뷰 영역================================================================ */
+/* 리뷰 슬라이더와 탭 스타일 */
+.review-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 150px;
+  padding-top: 300px;
+  height: auto;
+  /* background-color: #fff; */
+  padding: 20px;
+}
+
+/* 후기 이미지가 가로로 배치되도록 설정 */
+.review-container {
+  width: 100%;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+.review-imgs {
+  width: 100%;
+}
+.review-imgs img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* 더보기 버튼 스타일 */
+#btnMore2 {
+  background: url("../images/review-img/review-11.JPG") no-repeat center;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+.review-header {
+  /* text-align: center; */
+  margin: 60px 0 20px 0;
+  border-bottom: 1px solid rgba(207, 170, 146, 0.8);
+}
+.review-container h2 {
+  margin-bottom: 20px;
+}
+.review-header p {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.reviews {
+  margin-top: 20px;
+}
+
+.review-item {
+  width: 100%;
+  border-bottom: 1px solid rgba(207, 170, 146, 0.8);
+  padding: 20px 0;
+}
+.review-item h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: rgba(133, 83, 51, 0.8);
+}
+.review-item p {
+  color: rgba(133, 83, 51, 0.8);
+}
+.review-item > .review-date {
+  margin-bottom: 15px;
+}
+.review-item img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.review-author,
+.review-date {
+  color: #666;
+  font-size: 14px;
+}
+.modal {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* 반투명 배경 */
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%; /* 모달 너비 조절 */
+  text-align: center; /* 가운데 정렬 */
+}
+.modal-images {
+  white-space: normal;
+}
+.modal-images img {
+  width: 200px; /* 이미지 크기 조절 */
+  height: auto; /* 비율 유지 */
+  margin: 10px; /* 이미지 간격 */
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: rgba(133, 83, 51, 0.8);
+}
+#pagination button:hover {
+  font-weight: 900;
+  color: rgba(126, 70, 35, 0.8);
+}
+#pagination span {
+  align-self: center;
+  margin: 0 10px;
+}
+/* 문의게시판======================================== */
+.qnas {
+  width: 100%;
+  /* max-width: 600px; */
+  border-collapse: collapse;
+  /* background-color: #fff; */
+  margin-top: 10px;
+}
+.qnas tr,
+.qnas thead {
+  border-bottom: 1px solid rgba(207, 170, 146, 0.8);
+  border-top: 1px solid rgba(207, 170, 146, 0.8);
+}
+
+.qnas th,
+.qnas td {
+  padding: 10px;
+  cursor: pointer;
+}
+.qnas td:last-child,
+.qnas th:last-child {
+  border-right: none;
+}
+.qnas th {
+  font-size: 18px;
+  font-weight: 700;
+  color: #885332;
+}
+.qnas td {
+  text-align: center;
+}
+.qna-pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.qna-pagination li,
+.qna-pagination p {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #a07153;
+  margin-bottom: 300px;
+}
+.qna-pagination p:hover {
+  font-weight: 900;
+  color: rgba(126, 70, 35, 0.8);
+}
+.qna-pagination li.active,
+.qna-pagination li:hover,
+.qna-pagination li.active,
+.qna-pagination li:hover {
+  border-radius: 50%;
+  background-color: #a07153;
+  color: #fff;
+}
+.qna-inner h2 {
+  margin-bottom: 10px;
+}
+.qna-inner p {
+  font-size: 15px;
+  color: rgba(133, 83, 51, 0.8);
+}
