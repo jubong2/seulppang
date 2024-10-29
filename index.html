@@ -100,8 +100,8 @@
 
         <li>
           <span>최근 본 물품</span>
-          <a href="productPage.html" class="good-recent">
-            <img src="images/party1.jpg" alt="케이크" />
+          <a href="#" class="good-recent">
+            <img src="images/cake-1.jpg" alt="케이크" />
           </a>
         </li>
         <li>
@@ -758,7 +758,7 @@
             <!-- 왼쪽: 희와제과 -->
             <div class="left">
               <div class="first-store">
-                <img src="images/pop-left-hover.png" alt="희와제과" />
+                <img src="images/popup1.png" alt="희와제과" />
                 <div class="popup1-title">
                   <h2>1차</h2>
                   <p>11월 4일, 오전 11시 ~ <br />11월 6일, 오전 11시</p>
@@ -778,7 +778,7 @@
             <!-- 오른쪽: 크리미, 소베 세로 정렬 -->
             <div class="right">
               <div class="second-store">
-                <img src="images/pop-rigth-top.png" alt="크리미" />
+                <img src="images/popup2.png" alt="크리미" />
                 <div class="popup2-title">
                   <h2>2차</h2>
                   <p>11월 7일, 오전 11시 ~ <br />11월 9일, 오전 11시</p>
@@ -794,7 +794,7 @@
                 </div>
               </div>
               <div class="third-store">
-                <img src="images/pop-rigt-buttom.png" alt="소베" />
+                <img src="images/popup3.png" alt="소베" />
                 <div class="popup3-title">
                   <h2>3차</h2>
                   <p>11월 9일, 오전 11시 ~ <br />11월 11일, 오전 11시</p>
@@ -831,10 +831,8 @@
               이 빵은 <br class="enter2" />거부 할 수 없을걸요?
             </h4>
             <div class="more-btn swiper-more-button">
-              <a href="subpage.html" class="target-button a-more-btn">
-                <img src="images/Btn-right.png" alt="더보기버튼" />
-                <p>자세히 보기</p></a
-              >
+              <img src="images/Btn-right.png" alt="더보기버튼" />
+              <p><a href="#">자세히 보기</a></p>
             </div>
           </div>
           <div class="target">
@@ -983,10 +981,8 @@
           <div class="swipersection-title">
             <h4>반려동물과 <br class="enter3" />함께즐기는 빵파티!!</h4>
             <div class="more-btn swiper-more-button">
-              <a href="subpage.html" class="a-more-btn pet-btn">
-                <img src="images/Btn-right.png" alt="더보기버튼" />
-                <p>자세히 보기</p></a
-              >
+              <img src="images/Btn-right.png" alt="더보기버튼" />
+              <p><a href="#">자세히 보기</a></p>
             </div>
           </div>
           <div class="pet">
@@ -1134,7 +1130,7 @@
                 <!-- js출력 -->
               </ul>
             </div>
-
+            
             <!-- 궁금해요 -->
             <div class="wonder-container">
               <table class="notice-board">
@@ -1243,6 +1239,7 @@
             }
           } else {
             // 로그인 상태가 아닐 때만 이동
+            event.preventDefault();
             alert("로그인이 필요합니다.");
           }
         });
