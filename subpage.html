@@ -72,6 +72,7 @@
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/minibanner.js"></script>
+    <script src="js/script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
     <script>
@@ -97,8 +98,8 @@
 
         <li>
           <span>최근 본 물품</span>
-          <a href="#" class="good-recent">
-            <img src="images/cake-1.jpg" alt="케이크" />
+          <a href="productPage.html" class="good-recent">
+            <img src="images/party1.jpg" alt="케이크" />
           </a>
         </li>
         <li>
@@ -346,5 +347,22 @@
         </div>
       </section>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // const targetNameElement = document.querySelector(".taget-name"); // 클래스명 수정
+        const logintext = document.querySelector(".logintext");
+
+        // 로컬 스토리지에서 username 가져오기
+        const username = localStorage.getItem("username");
+        console.log(username);
+
+        if (username) {
+          // targetNameElement.textContent = username;
+          logintext.textContent = "로그아웃";
+        } else {
+          logintext.textContent = "로그인";
+        }
+      });
+    </script>
   </body>
 </html>
