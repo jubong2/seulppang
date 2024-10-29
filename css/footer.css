@@ -1,53 +1,62 @@
 @charset "utf-8";
 .footer {
-    
+  font-family: "Gapyeong Wave", sans-serif;
   position: relative;
   display: block;
   background-color: rgba(133, 83, 51, 0.8);
   padding: 60px 0;
 }
 .footer .inner {
-   
 }
 .footer-list {
   text-align: center;
   font-size: 15px;
-  color: #FFF6E5;
+  color: #fff6e5;
   line-height: 1.6;
 }
-.footer-list li{
-    padding: 5px 0;
+.footer-list li {
+  padding: 5px 0;
 }
-.footer-list li a{
-    color: #FFF6E5;
+.footer-list li a {
+  color: #fff6e5;
 }
-.footer-list li a:hover{
-color: #fff;
-text-decoration: underline;
+.footer-list li a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
-.footer-list p{
-    padding-top: 20px;
+.footer-list p {
+  padding-top: 20px;
 }
-.footer-bar{
-    position: relative;
-    display: inline-block;
-    padding: 0 18px;
+.footer-bar {
+  position: relative;
+  display: inline-block;
+  padding: 0 18px;
 }
-.footer-bar::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 10px;
-    background-color: #FFF6E5;
+.footer-bar::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 10px;
+  background-color: #fff6e5;
 }
 /* 반응형 */
-@media screen and (max-width:640px) {
-    .footer-list span{
-        display: block;
-    }
-    .footer-bar{
-        display: none;
-    }
+@media screen and (max-width: 640px) {
+  .footer-list span {
+    display: block;
+  }
+  .footer-bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer-list {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer-list {
+    font-size: 12px;
+  }
 }
