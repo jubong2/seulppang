@@ -3,9 +3,9 @@
 /* 고정메뉴 */
 .fix-menu {
   position: fixed;
-  bottom: 10%;
-  right: 0;
-  transform: translateY(-10%);
+  top: 50%;
+  right: 1%;
+  transform: translate(-1%, -50%);
   display: block;
   width: 85px;
   z-index: 99999;
