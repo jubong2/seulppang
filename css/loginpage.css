@@ -5,6 +5,7 @@
   width: 100%;
   padding: 200px 0;
 }
+
 .login-inner {
   position: relative;
   width: 35%;
@@ -28,7 +29,7 @@
 .login-main h2 {
   font-size: 60px;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 .login-main input {
   width: 100%;
@@ -47,17 +48,19 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
-  gap: 2%;
-}
-.btn {
-  justify-content: space-evenly;
-  display: flex;
-}
-.login-main > .btn > a {
-  width: 50%;
-}
-.login-main > .btn > a > input {
 
+  justify-content: space-evenly;
+}
+
+.btn > a {
+  margin: 10% auto;
+  width: 30%;
+}
+.logpagebutton {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  border: none;
   background-color: #ff8f4e;
   color: #fff;
   font-size: 18px;
@@ -71,7 +74,7 @@
   flex-direction: column;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 60px;
+  margin-top: 50px;
   border: none;
   border-radius: 5px;
 }
@@ -99,11 +102,22 @@
   }
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 700px) {
   .login {
     position: relative;
     width: 100%;
     padding: 150px 0;
+  }
+  .btn > a {
+    margin: 0;
+  }
+  .logpagebutton {
+    font-size: 15px;
+    height: 40px;
+  }
+  .login-main h2 {
+    margin-top: 0;
+    margin-bottom: 15%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -136,7 +150,6 @@
     height: 40px;
   }
   .login-main h2 {
-    margin-top: 10%;
     font-size: 30px;
   }
   .remember-check {
@@ -146,122 +159,3 @@
     font-size: 16px;
   }
 }
-/* @media screen and (max-width: 1000px) {
-  .login-main h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  .remember-check {
-    margin-top: 30px;
-  }
-  .login-main > .remember-check > a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .login-main {
-    width: 32%;
-  }
-  .login-main h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-  .remember-check {
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-  .login-main > .remember-check > a {
-    font-size: 10px;
-  }
-  .login-main input {
-    height: 40px;
-  }
-  .login-inner > img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .login-main {
-    width: 38%;
-  }
-  .login-main h2 {
-    font-size: 35px;
-    margin-bottom: 25px;
-  }
-  .remember-check {
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-  .login-main > .remember-check > a {
-    font-size: 10px;
-  }
-  .login-main input {
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  .login-inner > img {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .login {
-    padding-top: 100px;
-  }
-  .login-main {
-    width: 38%;
-    padding-top: 100px;
-  }
-  .login-main h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
-  }
-  .remember-check {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .login-main > .remember-check > a {
-    font-size: 9px;
-  }
-  .login-main input {
-    height: 30px;
-    margin-bottom: 10px;
-  }
-  .login-inner > img {
-    width: 90%;
-  }
-  .login-main input::placeholder {
-    font-size: 12px;
-  }
-  .login-main > .btn > input {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .login-main {
-    padding-top: 105px;
-  }
-  .login-main h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  .remember-check {
-    margin-top: 18px;
-    margin-bottom: 5px;
-  }
-  .login-main > .remember-check > a {
-    font-size: 8px;
-  }
-  .login-main input {
-    height: 30px;
-    margin-bottom: 10px;
-  }
-  .login-inner > img {
-    width: 90%;
-  }
-  .login-main input::placeholder {
-    font-size: 10px;
-  }
-  .login-main > .btn > input {
-    font-size: 10px;
-  }
-} */

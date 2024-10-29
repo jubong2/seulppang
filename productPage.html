@@ -2,9 +2,23 @@
 <html lang="ko">
   <head>
     <!-- 구글 애널리틱스  -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MXNJDZBK");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>미니 파스텔 초코케이크</title>
+    <title>슬기로운 빵생활</title>
     <!-- SEO적용 -->
     <meta name="description" content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! " />
     <meta name="keywords" content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송" />
@@ -48,7 +62,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/productPage.css" />
     <!-- js -->
 
     <script src="js/loginpage.js"></script>
@@ -59,7 +72,17 @@
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/minibanner.js"></script>
-    <script src="js/productPage.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-53RQ74E4K0");
+    </script>
   </head>
   <body>
     <div class="mb-header-warp">
@@ -399,9 +422,9 @@
             <ul class="footer-list">
               <li>
                 <span>상호 : ㈜슬기로운빵생활<em class="footer-bar"></em></span>
-  
+
                 <span>통신판매업신고번호 : 제2018-서울서대문-0301호<em class="footer-bar"></em></span>
-  
+
                 <span>사업자등록번호 : 121-81-66458</span>
               </li>
               <li>
@@ -415,7 +438,6 @@
       </div>
     </div>
   </body>
-
   <script>
     $(document).ready(function () {
       // 더보기/접기 버튼 기능
