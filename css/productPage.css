@@ -42,7 +42,7 @@
 }
 .product-intro-right > .title > h4 {
   font-size: 50px;
-  color: #4e2e19;
+  color: #744729;
 }
 .product-intro-right > .option {
   display: flex;
@@ -91,7 +91,7 @@
 .option-box > #total-price {
   font-size: 20px;
   font-weight: 700;
-  color: #4e2e19;
+  color: #744729;
 }
 .close-btn {
   position: absolute;
@@ -244,26 +244,23 @@
 .review-imgs {
   width: 100%;
 }
-.review-imgs img {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
+.review-imgs > img {
+  width: calc(100% / 11);
+  margin-right: 5px;
   border-radius: 5px;
   object-fit: cover;
 }
 
 /* 더보기 버튼 스타일 */
 #btnMore2 {
-  background: url("../images/review-img/review-11.JPG") no-repeat center;
+  background-color: #a07153;
   color: #fff;
   border: none;
-  padding: 5px 10px;
   font-size: 15px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
 }
 .review-header {
   /* text-align: center; */
@@ -286,6 +283,10 @@
   width: 100%;
   border-bottom: 1px solid rgba(207, 170, 146, 0.8);
   padding: 20px 0;
+}
+.review-item > h4{
+  width: 100%;
+  white-space: pre-line;
 }
 .review-item h3 {
   margin: 10px 0;
@@ -434,4 +435,151 @@
 .qna-inner p {
   font-size: 15px;
   color: rgba(133, 83, 51, 0.8);
+}
+/* 반응형==================================================================== */
+@media screen and (max-width: 900px) {
+  .product-cart > .product-intro-right {
+    width: 50%;
+  }
+  .product-intro-right > .title > h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .product-intro-right > .title > h3 > span {
+    font-size: 24px;
+  }
+  .product-intro-right > .title > h4 {
+    font-size: 37px;
+  }
+  .product-intro-right > .option > label {
+    font-size: 18px;
+  }
+
+  .option > select {
+    width: 70%;
+    height: 40px;
+  }
+  .cart-btn > button {
+    height: 50px;
+    font-size: 20px;
+  }
+  .option-box {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #selected-product-name,
+  #selected-product-price,
+  .quantity-selector > p {
+    font-size: 15px;
+  }
+  .option-box > #total-price {
+    font-size: 18px;
+  }
+  .quantity-selector {
+    margin: 10px 0;
+  }
+  .cart-btn > button {
+    height: 44px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-cart > .product-intro-right {
+    width: 50%;
+  }
+  .product-intro-right > .title > h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .product-intro-right > .title > h3 > span {
+    font-size: 20px;
+  }
+  .product-intro-right > .title > h4 {
+    font-size: 30px;
+  }
+  .product-intro-right > .option > label {
+    font-size: 15px;
+  }
+
+  .option > select {
+    height: 35px;
+  }
+  .option-box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #selected-product-name,
+  #selected-product-price,
+  .quantity-selector > p {
+    font-size: 12px;
+  }
+  .option-box > #total-price {
+    font-size: 15px;
+  }
+  .quantity-selector {
+    margin: 10px 0;
+  }
+  .cart-btn > button {
+    height: 40px;
+    font-size: 16px;
+  }
+  .quantity-selector button {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    margin: 0 4px;
+  }
+  
+  .quantity-selector input {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .product-intro-right > .title > h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .product-intro-right > .title > h3 > span {
+    font-size: 18px;
+  }
+  .product-intro-right > .title > h4 {
+    font-size: 28px;
+  }
+  .product-intro-right > .option > label {
+    font-size: 15px;
+  }
+
+  .option > select {
+    height: 35px;
+  }
+  .option-box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #selected-product-name,
+  #selected-product-price,
+  .quantity-selector > p {
+    font-size: 12px;
+  }
+  .option-box > #total-price {
+    font-size: 15px;
+  }
+  .quantity-selector {
+    margin: 10px 0;
+  }
+  .cart-btn > button {
+    height: 40px;
+    font-size: 16px;
+  }
+  .quantity-selector button {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    margin: 0 4px;
+  }
+  
+  .quantity-selector input {
+    font-size: 15px;
+  }
 }

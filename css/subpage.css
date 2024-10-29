@@ -24,14 +24,15 @@
   display: flex;
   gap: 100px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 600;
+  cursor: pointer;
 }
 .subpage-button-kind {
   padding-bottom: 1%;
   position: relative; /* 자식 요소가 절대 위치를 가질 수 있도록 설정 */
   overflow: hidden;
   width: calc(100% / 4);
-  color: #fff;
+  color: #ebebeb;
   aspect-ratio: 1;
   margin-bottom: 10%;
   border-radius: 200px;
@@ -43,30 +44,60 @@
 
 .subpage-button-kind:nth-child(1) {
   background: url("../images/menu1.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  transition: background-size .3s ease;
+    -moz-transition: background-size .3s ease;
+    -web-kit-transition: background-size .3s ease;
+}
+.subpage-button-kind:nth-child(1):hover {
+  background-size: 120%;
 }
 
 .subpage-button-kind:nth-child(2) {
   background: url("../images/menu2.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  transition: background-size .3s ease;
+  -moz-transition: background-size .3s ease;
+  -web-kit-transition: background-size .3s ease;
+}
+.subpage-button-kind:nth-child(2):hover {
+  background-size: 120%;
 }
 .subpage-button-kind:nth-child(3) {
   background: url("../images/menu3.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  transition: background-size .3s ease;
+  -moz-transition: background-size .3s ease;
+  -web-kit-transition: background-size .3s ease;
+}
+.subpage-button-kind:nth-child(3):hover {
+  background-size: 120%;
 }
 .subpage-button-kind:nth-child(4) {
   background: url("../images/menu4.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  transition: background-size .3s ease;
+  -moz-transition: background-size .3s ease;
+  -web-kit-transition: background-size .3s ease;
+}
+.subpage-button-kind:nth-child(4):hover {
+  background-size: 120%;
 }
 .subpage-button-kind:nth-child(5) {
   overflow: hidden;
   background: url("../images/menu5.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  transition: background-size .3s ease;
+  -moz-transition: background-size .3s ease;
+  -web-kit-transition: background-size .3s ease;
+}
+.subpage-button-kind:nth-child(5):hover {
+  background-size: 120%;
 }
 .subpage-button-kind::after {
   content: ""; /* 가상 요소에 내용 추가 */
@@ -75,7 +106,7 @@
   top: 65%; /* h3 아래에 위치 */
   transition: all 1s; /* 가상 요소의 트랜지션 */
   width: 0; /* 기본 너비 */
-  border-bottom: #fff solid 3px; /* 경계 스타일 */
+  border-bottom: #ebebeb solid 2px; /* 경계 스타일 */
   opacity: 0; /* 기본 상태에서 가리기 */
   transform: translate(-50%, -65%); /* 중앙 정렬을 위한 변환 */
 }
@@ -137,7 +168,7 @@
   position: relative;
   width: 20%;
   display: block;
-  height: 80px;
+  height: 55px;
   /* padding: 5% 10%; */
   margin: 0 auto;
   font-size: 20px;
@@ -153,7 +184,7 @@
   left: 50%;
   transform: translate(-50%, -70%);
   width: 40%;
-  height: 5px;
+  height: 3px;
   background-color: saddlebrown;
 }
 .subbt:hover {
@@ -166,8 +197,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 20px;
-  width: 80%;
+  gap: 25px;
   text-align: center;
   /* display: flex; */
   /* display: inline-block; */
@@ -177,17 +207,14 @@
   font-size: 18px;
 }
 
-.page-link {
-  width: 10%;
-}
 .page-link.active-page {
   width: 30px;
   line-height: 30px;
   color: white;
-  background-color: saddlebrown;
+  background-color: #a07153;
   border-radius: 50%;
-  font-weight: bold;
 }
+
 /* ==========반응형 */
 
 @media (max-width: 1000px) {

@@ -46,6 +46,8 @@ window.addEventListener("load", function () {
     { id: 32, name: "pahe393", title: "공지사항 10", date: "2024-09-22" },
     { id: 33, name: "sumsim980", title: "공지사항 11", date: "2024-09-21" },
     { id: 34, name: "mole333", title: "공지사항 12", date: "2024-09-20" },
+    { id: 35, name: "sumsim980", title: "공지사항 11", date: "2024-09-21" },
+    { id: 36, name: "mole333", title: "공지사항 12", date: "2024-09-20" },
   ];
   //   페이지당 표시할 항목수
   const itemsPerPage = 12;
@@ -179,6 +181,8 @@ window.addEventListener("load", function () {
     { id: 32, name: "pahe393", title: "공지사항 10", date: "2024-09-22" },
     { id: 33, name: "sumsim980", title: "공지사항 11", date: "2024-09-21" },
     { id: 34, name: "mole333", title: "공지사항 12", date: "2024-09-20" },
+    { id: 35, name: "sumsim980", title: "공지사항 11", date: "2024-09-21" },
+    { id: 36, name: "mole333", title: "공지사항 12", date: "2024-09-20" },
   ];
   //   페이지당 표시할 항목수
   const itemsPerPage2 = 12;
