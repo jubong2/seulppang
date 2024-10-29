@@ -46,9 +46,9 @@
   background: url("../images/menu1.png") no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-size .3s ease;
-    -moz-transition: background-size .3s ease;
-    -web-kit-transition: background-size .3s ease;
+  transition: background-size 0.3s ease;
+  -moz-transition: background-size 0.3s ease;
+  -web-kit-transition: background-size 0.3s ease;
 }
 .subpage-button-kind:nth-child(1):hover {
   background-size: 120%;
@@ -58,9 +58,9 @@
   background: url("../images/menu2.png") no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-size .3s ease;
-  -moz-transition: background-size .3s ease;
-  -web-kit-transition: background-size .3s ease;
+  transition: background-size 0.3s ease;
+  -moz-transition: background-size 0.3s ease;
+  -web-kit-transition: background-size 0.3s ease;
 }
 .subpage-button-kind:nth-child(2):hover {
   background-size: 120%;
@@ -69,9 +69,9 @@
   background: url("../images/menu3.png") no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-size .3s ease;
-  -moz-transition: background-size .3s ease;
-  -web-kit-transition: background-size .3s ease;
+  transition: background-size 0.3s ease;
+  -moz-transition: background-size 0.3s ease;
+  -web-kit-transition: background-size 0.3s ease;
 }
 .subpage-button-kind:nth-child(3):hover {
   background-size: 120%;
@@ -80,9 +80,9 @@
   background: url("../images/menu4.png") no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-size .3s ease;
-  -moz-transition: background-size .3s ease;
-  -web-kit-transition: background-size .3s ease;
+  transition: background-size 0.3s ease;
+  -moz-transition: background-size 0.3s ease;
+  -web-kit-transition: background-size 0.3s ease;
 }
 .subpage-button-kind:nth-child(4):hover {
   background-size: 120%;
@@ -92,9 +92,9 @@
   background: url("../images/menu5.png") no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-size .3s ease;
-  -moz-transition: background-size .3s ease;
-  -web-kit-transition: background-size .3s ease;
+  transition: background-size 0.3s ease;
+  -moz-transition: background-size 0.3s ease;
+  -web-kit-transition: background-size 0.3s ease;
 }
 .subpage-button-kind:nth-child(5):hover {
   background-size: 120%;
@@ -309,7 +309,27 @@
   .subbt::after {
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 10%;
-    height: 3px;
+    width: 40%;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .subpage-pagination {
+    width: 100%;
+    font-size: 13px;
+  }
+  .page-link.active-page {
+    width: 20px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .subpage-pagination {
+    width: 90%;
+    font-size: 11px;
+  }
+  .page-link.active-page {
+    width: 20px;
+    line-height: 20px;
   }
 }
