@@ -36,6 +36,11 @@
   border-right: 1px solid #ddd;
   cursor: pointer;
 }
+.notice-board td:hover{
+  text-decoration: underline;
+  text-decoration-color: #FF8D29;
+  color: #FF8D29;
+}
 .notice-board td:last-child,
 .notice-board th:last-child {
   border-right: none;
@@ -191,12 +196,7 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 450px) {
-  .community {
-    display: none;
-  }
-}
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .community {
     display: none;
   }

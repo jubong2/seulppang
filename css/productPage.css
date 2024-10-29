@@ -421,6 +421,11 @@
   font-weight: 900;
   color: rgba(126, 70, 35, 0.8);
 }
+.qnas td:hover{
+  text-decoration: underline;
+  text-decoration-color: #FF8D29;
+  color: #FF8D29;
+}
 .qna-pagination li.active,
 .qna-pagination li:hover,
 .qna-pagination li.active,

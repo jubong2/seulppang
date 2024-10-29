@@ -62,6 +62,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/productPage.css">
     <!-- js -->
 
     <script src="js/loginpage.js"></script>
@@ -72,6 +73,7 @@
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/minibanner.js"></script>
+    <script src="js/productPage.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
     <script>
@@ -684,6 +686,15 @@
 
       // 초기 리뷰 렌더링
       renderReviews(currentPage);
+      // ===============================================================
+      AOS.init();
+        const cartbtn = document.querySelectorAll("#add-to-cart");
+
+        cartbtn.forEach((button) => {
+          button.addEventListener("click", function () {
+            alert("장바구니에 담겼습니다.");
+          });
+        });
     });
   </script>
   <script>
