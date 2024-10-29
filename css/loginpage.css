@@ -49,12 +49,12 @@
   display: flex;
   margin: 0 auto;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .btn > a {
-  margin: 10% auto;
-  width: 30%;
+  width: 49%;
+  
 }
 .logpagebutton {
   border-radius: 5px;
@@ -108,9 +108,6 @@
     width: 100%;
     padding: 150px 0;
   }
-  .btn > a {
-    margin: 0;
-  }
   .logpagebutton {
     font-size: 15px;
     height: 40px;
@@ -128,9 +125,7 @@
     margin-top: 0;
   }
 
-  .login-main > .btn > a {
-    width: 40%;
-  }
+
 }
 
 @media screen and (max-width: 500px) {

@@ -124,8 +124,8 @@
 }
 .header-navi-title > h3 {
   position: relative;
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
 }
 .header-navi-title > h3::after {
   content: "";
@@ -221,17 +221,14 @@
   height: auto; /* 높이를 자동으로 맞춤 */
 }
 .header-navi-submenu > li > a {
-  font-weight: bold;
   color: #ffff;
 }
 
 .bakery-cate > li > a {
-  font-weight: bold;
   color: #ffff;
 }
 
 .bakery-inner > ul > li > a {
-  font-weight: bold;
   color: #ffff;
 }
 /* 모바일 헤더------------------- */
