@@ -246,7 +246,7 @@
     margin-bottom: 15%;
   }
   .subpage-pagination {
-    width: 100%;
+    width: 80%;
   }
 
   .subpage-pagination {
@@ -254,10 +254,22 @@
   }
 
   .page-link {
-    width: 15%;
+    width: 30px;
+  }
+
+  .page-link:first-of-type {
+    width: 100px;
+  }
+  .page-link:last-of-type {
+    width: 100px;
   }
 }
 
+@media (max-width: 650px) {
+  .subpage-pagination {
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .gift-product,
   .vegan-product,
@@ -315,21 +327,19 @@
 }
 @media screen and (max-width: 400px) {
   .subpage-pagination {
-    width: 100%;
     font-size: 13px;
   }
   .page-link.active-page {
-    width: 20px;
+    width: 25px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 320px) {
   .subpage-pagination {
-    width: 90%;
     font-size: 11px;
   }
-  .page-link.active-page {
+  /* .page-link.active-page {
     width: 20px;
     line-height: 20px;
-  }
+  } */
 }
