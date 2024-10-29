@@ -62,10 +62,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/productPage.css">
     <!-- js -->
 
-    <script src="js/loginpage.js"></script>
     <script src="js/subpage.js"></script>
     <script src="js/detailpage.js"></script>
     <script src="js/best5.js"></script>
@@ -73,7 +71,9 @@
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/minibanner.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/productPage.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
     <script>
@@ -322,7 +322,9 @@
               <img src="images/review-img/review-7.JPG" alt="상품 후기 7" />
               <img src="images/review-img/review-8.JPG" alt="상품 후기 4" />
               <img src="images/review-img/review-9.JPG" alt="상품 후기 5" />
-              <button id="btnMore2">+</button>
+              <button id="btnMore2">
+                <img src="images/review-img/reviewMore-btn.png" alt="" />
+              </button>
             </div>
 
             <!-- 모달창 -->
@@ -335,18 +337,18 @@
                   <img src="images/review-img/review-10.JPG" alt="상품 후기 3" />
                   <img src="images/review-img/review-11.JPG" alt="상품 후기 4" />
                   <img src="images/review-img/review-12.JPG" alt="상품 후기 5" />
-                  <img src="images/review-img/review-13.JPG" alt="상품 후기 6" />
+                  <img src="images/review-img/review-15.JPG" alt="상품 후기 6" />
                   <img src="images/review-img/review-14.JPG" alt="상품 후기 7" />
                   <img src="images/review-img/review-8.JPG" alt="상품 후기 1" />
                   <img src="images/review-img/review-9.JPG" alt="상품 후기 2" />
                   <img src="images/review-img/review-10.JPG" alt="상품 후기 3" />
                   <img src="images/review-img/review-11.JPG" alt="상품 후기 4" />
                   <img src="images/review-img/review-12.JPG" alt="상품 후기 5" />
-                  <img src="images/review-img/review-13.JPG" alt="상품 후기 6" />
+                  <img src="images/review-img/review-15.JPG" alt="상품 후기 6" />
                   <img src="images/review-img/review-14.JPG" alt="상품 후기 7" />
                   <img src="images/review-img/review-11.JPG" alt="상품 후기 4" />
                   <img src="images/review-img/review-12.JPG" alt="상품 후기 5" />
-                  <img src="images/review-img/review-13.JPG" alt="상품 후기 6" />
+                  <img src="images/review-img/review-15.JPG" alt="상품 후기 6" />
                   <img src="images/review-img/review-14.JPG" alt="상품 후기 7" />
                 </div>
               </div>
@@ -688,13 +690,13 @@
       renderReviews(currentPage);
       // ===============================================================
       AOS.init();
-        const cartbtn = document.querySelectorAll("#add-to-cart");
+      const cartbtn = document.querySelectorAll("#add-to-cart");
 
-        cartbtn.forEach((button) => {
-          button.addEventListener("click", function () {
-            alert("장바구니에 담겼습니다.");
-          });
+      cartbtn.forEach((button) => {
+        button.addEventListener("click", function () {
+          alert("장바구니에 담겼습니다.");
         });
+      });
     });
   </script>
   <script>
