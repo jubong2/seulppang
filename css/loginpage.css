@@ -57,10 +57,13 @@
   width: 50%;
 }
 .login-main > .btn > a > input {
+
   background-color: #ff8f4e;
   color: #fff;
   font-size: 18px;
+  text-align: center;
   font-weight: 700;
+  /* line-height: 1; */
 }
 .remember-check {
   width: 100%;
