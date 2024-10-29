@@ -130,10 +130,6 @@
   margin-bottom: 10px;
 }
 /* 첫번째 */
-
-.left:hover .first-store > img {
-  content: url("../images/popup-left.png"); /* 새로운 이미지 경로 */
-}
 .first-store:hover .popup1-title-hover {
   display: block;
 }
@@ -144,9 +140,6 @@
   display: none;
 }
 /* 두번쨰 */
-.second-store:hover > img {
-  content: url("../images/right-top-hover.png");
-}
 .second-store:hover .popup1-title-hover {
   display: block;
 }
@@ -157,9 +150,6 @@
   display: none;
 }
 /* 세번쨰 */
-.third-store:hover > img {
-  content: url("../images/pop-rigth-bottom-hover.png");
-}
 .third-store:hover .popup1-title-hover {
   display: block;
 }

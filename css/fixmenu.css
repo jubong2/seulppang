@@ -3,9 +3,9 @@
 /* 고정메뉴 */
 .fix-menu {
   position: fixed;
-  top: 50%;
-  right: 1%;
-  transform: translate(-1%, -50%);
+  bottom: 10%;
+  right: 0;
+  transform: translateY(-10%);
   display: block;
   width: 85px;
   z-index: 99999;
@@ -76,4 +76,14 @@
   background-color: #855333;
   color: #fff;
   text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  .fix-menu {
+    width: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .fix-menu {
+    display: none;
+  }
 }
