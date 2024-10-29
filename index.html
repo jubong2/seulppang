@@ -72,6 +72,8 @@
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/minibanner.js"></script>
+    <script src="js/script.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
     <script>
@@ -100,8 +102,8 @@
 
         <li>
           <span>최근 본 물품</span>
-          <a href="#" class="good-recent">
-            <img src="images/cake-1.jpg" alt="케이크" />
+          <a href="productPage.html" class="good-recent">
+            <img src="images/party1.jpg" alt="케이크" />
           </a>
         </li>
         <li>
@@ -831,8 +833,10 @@
               이 빵은 <br class="enter2" />거부 할 수 없을걸요?
             </h4>
             <div class="more-btn swiper-more-button">
-              <img src="images/Btn-right.png" alt="더보기버튼" />
-              <p><a href="#">자세히 보기</a></p>
+              <a href="subpage.html" class="target-button a-more-btn">
+                <img src="images/Btn-right.png" alt="더보기버튼" />
+                <p>자세히 보기</p></a
+              >
             </div>
           </div>
           <div class="target">
@@ -981,8 +985,10 @@
           <div class="swipersection-title">
             <h4>반려동물과 <br class="enter3" />함께즐기는 빵파티!!</h4>
             <div class="more-btn swiper-more-button">
-              <img src="images/Btn-right.png" alt="더보기버튼" />
-              <p><a href="#">자세히 보기</a></p>
+              <a href="subpage.html" class="a-more-btn pet-btn">
+                <img src="images/Btn-right.png" alt="더보기버튼" />
+                <p>자세히 보기</p></a
+              >
             </div>
           </div>
           <div class="pet">
@@ -1130,7 +1136,7 @@
                 <!-- js출력 -->
               </ul>
             </div>
-            
+
             <!-- 궁금해요 -->
             <div class="wonder-container">
               <table class="notice-board">
@@ -1175,7 +1181,6 @@
       </section>
       <!-- 커뮤니티 -->
     </div>
-
     <script>
       $(document).ready(function () {
         AOS.init();
@@ -1207,43 +1212,37 @@
         // ===========================================
       });
     </script>
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // URL에서 username 파라미터 추출
-        const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get("username");
-        const loginLink = document.querySelector(".fix-login"); // a 태그 선택
-
-        // .target-name 요소 가져오기
-        const targetNameElement = document.querySelector(".taget-name");
-        // 로그인
+        const loginLink = document.querySelector(".fix-login");
+        const targetNameElement = document.querySelector(".taget-name"); // 오타 수정: 'taget-name' -> 'target-name'
         const logintext = document.querySelector(".logintext");
-        // username이 존재하면 username으로 설정
+
+        // 로컬 스토리지에서 username 가져오기
+        const username = localStorage.getItem("username");
+        console.log("Username from local storage:", username);
+
         if (username) {
           targetNameElement.textContent = username;
           logintext.textContent = "로그아웃";
         } else {
           logintext.textContent = "로그인";
         }
-        // 로그아웃 클릭 시 링크 이동 방지와 확인 창 띄우기
+
         loginLink.addEventListener("click", function (event) {
           if (logintext.textContent === "로그아웃") {
-            event.preventDefault(); // 기본 링크 이동 방지
+            event.preventDefault();
             const logoutConfirm = confirm("로그아웃하시겠습니까?");
-
             if (logoutConfirm) {
-              // 로그아웃 처리: 로그인 상태 초기화
               targetNameElement.textContent = "";
               logintext.textContent = "로그인";
-              localStorage.removeItem("username"); // 저장된 username 제거
+              localStorage.removeItem("username"); // 로컬 스토리지에서 username 제거
             }
           } else {
-            // 로그인 상태가 아닐 때만 이동
-            event.preventDefault();
             alert("로그인이 필요합니다.");
           }
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>

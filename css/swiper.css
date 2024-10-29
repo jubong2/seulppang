@@ -31,19 +31,24 @@
 .enter3 {
   display: none;
 }
-.swiper-more-button > p {
-  width: 80%;
-  padding-top: 5px;
-  font-size: 25px;
-  font-weight: bold;
-}
-.swiper-more-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* width: 12%; */
 
-  /* gap: 5%; */
+.swiper-more-button {
+  width: 12%;
+}
+.a-more-btn {
+  width: 100%;
+  gap: 5%;
+  align-items: center;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.a-more-btn > p {
+  text-align: center;
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: bold;
 }
 .swipersection-title .more-btn img {
   width: 15px;
@@ -87,12 +92,20 @@
 }
 
 /* 반응형 */
+@media (max-width: 1600px) {
+  .swiper-more-button {
+    width: 15%;
+  }
+}
 @media (max-width: 1500px) {
   .enter {
     display: block;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .swiper-more-button {
+    width: 20%;
+  }
   .swiper-more-button > p {
     font-size: 18px;
   }
@@ -116,6 +129,11 @@
     display: block;
   }
 }
+@media (max-width: 900px) {
+  .swiper-more-button {
+    width: 25%;
+  }
+}
 @media (max-width: 800px) {
   .swipersection-title > h4 {
     font-size: 25px;
@@ -129,32 +147,51 @@
     display: block;
   }
 }
+
+@media (max-width: 700px) {
+  .swiper-more-button {
+    width: 30%;
+  }
+}
 @media (max-width: 650px) {
   .swiper-more-button {
+    /* width: 30%; */
     position: absolute;
     top: 30%;
     right: 0;
     transform: translateY(-30%);
   }
-  .swiper-more-button > p {
-    width: 100%;
-  }
+
   .swipersection-title .more-btn img {
     width: 5px;
+  }
+
+  .a-more-btn > p {
+    font-size: 15px;
   }
 }
 @media (max-width: 500px) {
   .swipersection-title > h4 {
     font-size: 18px;
   }
-  .swiper-more-button > p {
-    font-size: 10px;
-  }
+
   .petfoot-top {
     width: 30%;
   }
   .petfoot {
     width: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-more-button {
+    width: 25%;
+  }
+  .swiper-more-button {
+    display: block;
+  }
+  .a-more-btn > p {
+    font-size: 10px;
   }
 }
 /*  {
