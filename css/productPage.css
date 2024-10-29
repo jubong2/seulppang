@@ -253,14 +253,14 @@
 
 /* 더보기 버튼 스타일 */
 #btnMore2 {
-  background-color: #a07153;
-  color: #fff;
+  width: calc(100% / 11);
+  background: none;
   border: none;
-  font-size: 15px;
+}
+#btnMore2 > img {
   cursor: pointer;
   border-radius: 5px;
-  width: 30px;
-  height: 30px;
+  width: 100%;
 }
 .review-header {
   /* text-align: center; */
@@ -421,10 +421,10 @@
   font-weight: 900;
   color: rgba(126, 70, 35, 0.8);
 }
-.qnas td:hover{
+.qnas td:hover {
   text-decoration: underline;
-  text-decoration-color: #FF8D29;
-  color: #FF8D29;
+  text-decoration-color: #ff8d29;
+  color: #ff8d29;
 }
 .qna-pagination li.active,
 .qna-pagination li:hover,
@@ -495,10 +495,13 @@
     display: none;
   }
   .review-imgs > img {
-    width: calc(100% / 9);
+    width: calc(100% / 10);
     margin-right: 5px;
     border-radius: 5px;
     object-fit: cover;
+  }
+  #btnMore2 {
+    width: calc(100% / 10);
   }
   .qna-inner p {
     font-size: 14px;
@@ -572,10 +575,13 @@
     display: none;
   }
   .review-imgs > img {
-    width: calc(100% / 6);
+    width: calc(100% / 7);
     margin-right: 5px;
     border-radius: 5px;
     object-fit: cover;
+  }
+  #btnMore2 {
+    width: calc(100% / 7);
   }
   .qna-inner p {
     font-size: 12px;
@@ -659,10 +665,13 @@
     display: none;
   }
   .review-imgs > img {
-    width: calc(100% / 5);
+    width: calc(100% / 6);
     margin-right: 5px;
     border-radius: 5px;
     object-fit: cover;
+  }
+  #btnMore2 {
+    width: calc(100% / 6);
   }
   .qnas th,
   .qnas td {
