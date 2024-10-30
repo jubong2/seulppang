@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 999999;
 }
 
 /* 팝업 본체 */
@@ -27,25 +27,25 @@
 /* 팝업 닫기(X) 버튼 */
 .close-btn {
   position: absolute;
-  top: 4px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 22px;
   cursor: pointer;
-  color: rgb(129, 62, 21);
+  color: rgb(163, 63, 0);
 }
 
 /* 이미지 스타일 */
 .popup-image {
   width: 100%;
   height: auto;
-  border-radius: px;
 }
 
 /* 체크박스 컨테이너 */
 .checkbox-container {
+  font-weight: 200;
   padding: 0 10px;
   text-align: left;
-  margin-top: 15px
+  margin-top: 15px;
 }
