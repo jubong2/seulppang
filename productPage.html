@@ -406,6 +406,13 @@
                   <img src="images/review-img/review-7.JPG" alt="후기 이미지 2" />
                 </div>
               </div>
+              <!-- 확대된 이미지 및 닫기 버튼을 위한 구조 -->
+              <!-- <div id="overlay" class="overlay">
+                <div class="gallery-wrapper">
+                  <img id="overlayImg" class="overlay-img" src="" alt="확대된 이미지" />
+                  <span id="closeBtn">&times;</span>
+                </div>
+              </div> -->
 
               <div id="pagination">
                 <button id="prevBtn" disabled>이전</button>
@@ -658,7 +665,6 @@
                     <p class="review-date">${review.date}</p>
                     <h4 class="review-content">${review.content}</h4>
                     <p class="review-author">아이디: ${review.author}</p>
-                    
                     <img src="${review.img}" alt="후기 이미지 ${i + 1}" />
                 </div>
             `);
