@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
       loop: true,
     },
   });
-  var besttSwiper = new Swiper(".dessertSwiper", {
+  var dessertSwiper = new Swiper(".dessertSwiper", {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
@@ -39,7 +39,7 @@ window.addEventListener("load", function () {
       loop: true,
     },
   });
-  var besttSwiper = new Swiper(".mealSwiper", {
+  var mealSwiper = new Swiper(".mealSwiper", {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
     },
   });
 
-  var besttSwiper = new Swiper(".mealSwiper", {
+  var veganSwiper = new Swiper(".veganSwiper", {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,

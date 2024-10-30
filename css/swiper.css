@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 /* target */
 
@@ -155,7 +156,7 @@
 }
 @media (max-width: 650px) {
   .swiper-more-button {
-    /* width: 30%; */
+    width: 25%;
     position: absolute;
     top: 30%;
     right: 0;
