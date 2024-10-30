@@ -41,7 +41,7 @@
 .best5-button > a {
   width: 100%;
   line-height: 2;
-  font-family: "Gelasio", serif;
+  font-family: "Tenada";
   font-size: 40px;
 }
 
@@ -129,16 +129,15 @@
 
 .product-text > a > h3 {
   height: 50px;
-
   font-size: 25px;
-  margin-bottom: 20px;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .product-text > a > p {
   height: 50px;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -146,6 +145,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   /* word-break: keep-all; */
+}
+
+.product-text > a > p:nth-child(3) {
+  font-size: 30px;
 }
 /* best content 랭킹 번호 */
 .best5slide:nth-child(1)::after {
@@ -221,10 +224,14 @@
 }
 @media (max-width: 1400px) {
   .product-text > a > h3 {
-    height: 25px;
+    height: 40px;
   }
   .product-text > a > p {
-    height: 25px;
+    height: 20px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 30px;
+    height: 50px;
   }
 }
 
@@ -233,7 +240,7 @@
     font-size: 35px;
   }
   .product-text > a > h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .best5-button > a {
@@ -244,6 +251,10 @@
   .best5-title {
     font-size: 30px;
     margin-bottom: 25px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 25px;
+    height: 30px;
   }
 }
 
@@ -279,11 +290,15 @@
   }
   .product-text > a > h3 {
     font-size: 18px;
-    height: 20px;
+    height: 30px;
   }
   .product-text > a > p {
+    font-size: 15px;
+    height: 15px;
+  }
+  .product-text > a > p:nth-child(3) {
     font-size: 18px;
-    height: 20px;
+    height: 30px;
   }
 }
 @media (max-width: 800px) {
@@ -296,6 +311,7 @@
     font-size: 25px;
   }
 }
+
 @media (max-width: 600px) {
   .best5-product-warp {
     flex-direction: column;
@@ -338,6 +354,20 @@
   .best5-button > a.active h3::after {
     opacity: 0; /* 가시성 */
     width: 40%; /* 너비 설정 */
+  }
+
+  .product-text > a > h3 {
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 2줄로 제한 */
+    -webkit-box-orient: vertical;
+    white-space: normal; /* 줄바꿈이 가능하도록 설정 */
+    word-break: keep-all;
+  }
+  .product-text > a > p:nth-child(2) {
+    display: none;
   }
 }
 @media (max-width: 500px) {
