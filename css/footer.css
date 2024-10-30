@@ -41,6 +41,11 @@
   background-color: #fff6e5;
 }
 /* 반응형 */
+@media screen and (max-width: 678px) {
+  .footer{
+    background-color: rgba(94, 50, 22, 0.938);
+  }
+}
 @media screen and (max-width: 640px) {
   .footer-list span {
     display: block;
