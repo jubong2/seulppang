@@ -289,17 +289,18 @@
 .review-item > h4 {
   width: 100%;
   white-space: pre-line;
+  margin-bottom: 10px;
 }
 .review-item h3 {
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   font-size: 16px;
   color: rgba(133, 83, 51, 0.8);
 }
 .review-item p {
   color: rgba(133, 83, 51, 0.8);
 }
-.review-item > .review-date {
-  margin-bottom: 15px;
+.review-item > .review-date{
+  margin-bottom: 10px;
 }
 .review-item img {
   width: 100px;

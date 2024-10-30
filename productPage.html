@@ -655,9 +655,10 @@
           $("#reviewsContainer").append(`
                 <div class="review-item">
                     <h3>${review.title}</h3>
-                    <p class="review-author">작성자 : ${review.author}</p>
-                    <p class="review-date">작성일 : ${review.date}</p>
+                    <p class="review-date">${review.date}</p>
                     <h4 class="review-content">${review.content}</h4>
+                    <p class="review-author">아이디: ${review.author}</p>
+                    
                     <img src="${review.img}" alt="후기 이미지 ${i + 1}" />
                 </div>
             `);

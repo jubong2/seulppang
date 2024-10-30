@@ -14,6 +14,7 @@
 @import url("signupPage.css");
 @import url("fixmenu.css");
 @import url("productPage.css");
+@import url("popupModal.css");
 
 * {
   margin: 0;
