@@ -191,6 +191,9 @@
   font-size: 25px; /* 호버 시에만 해당 버튼의 크기 증가 */
 }
 
+.active-filter {
+  font-size: 25px; /* 호버 시에만 해당 버튼의 크기 증가 */
+}
 /* =========페이지 네이션 */
 
 .subpage-pagination {
@@ -241,6 +244,9 @@
   }
   .subbt:hover {
     font-size: 20px;
+  }
+  .active-filter {
+    font-size: 205px; /* 호버 시에만 해당 버튼의 크기 증가 */
   }
   .subpage-button-kind {
     margin-bottom: 15%;
@@ -317,6 +323,9 @@
   }
   .subbt:hover {
     font-size: 18px;
+  }
+  .active-filter {
+    font-size: 18px; /* 호버 시에만 해당 버튼의 크기 증가 */
   }
   .subbt::after {
     top: 50%;

@@ -418,15 +418,6 @@
     height: 20px;
     font-size: 18px;
   }
-  .product-text > a > h3 {
-    font-size: 15px;
-    height: 15px;
-  }
-
-  .product-text > a > p {
-    font-size: 15px;
-    height: 15px;
-  }
 }
 @media (max-width: 400px) {
   .best5-button > a > h3 {
