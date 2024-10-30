@@ -357,7 +357,8 @@
   }
 
   .product-text > a > h3 {
-    height: 50px;
+    height: 30px;
+    margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -418,9 +419,18 @@
     height: 20px;
     font-size: 18px;
   }
+  .product-text > a > h3 {
+    font-size: 15px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 17px;
+  }
 }
 @media (max-width: 400px) {
   .best5-button > a > h3 {
     font-size: 20px;
+  }
+  .a-more-btn {
+    width: 120% !important;
   }
 }
