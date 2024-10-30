@@ -114,6 +114,9 @@ window.addEventListener("load", function () {
   const giftButtons = document.querySelectorAll(".gift-button");
   giftButtons.forEach((button) => {
     button.addEventListener("click", function () {
+      giftButtons.forEach((btn) => btn.classList.remove("active-filter")); // 기존 활성화 클래스를 제거
+      button.classList.add("active-filter"); // 현재 클릭된 버튼에 클래스 추가
+
       const type = button.textContent;
       currentFilterType = type; // 필터 타입 저장
       currentPage = 1;
@@ -264,17 +267,20 @@ window.addEventListener("load", function () {
       });
   }
   // 디저트 필터링
+
   const dessetButtons = document.querySelectorAll(".desset-button");
   dessetButtons.forEach((button) => {
-    console.log(button);
-
     button.addEventListener("click", function () {
+      dessetButtons.forEach((btn) => btn.classList.remove("active-filter")); // 기존 활성화 클래스를 제거
+      button.classList.add("active-filter"); // 현재 클릭된 버튼에 클래스 추가
+
       const type = button.textContent;
       currentFilterType = type; // 필터 타입 저장
       currentPage = 1;
-      displayDessetInfo(currentPage, currentFilterType);
+      displayCatInfo(currentPage, currentFilterType);
     });
   });
+
   // 식사빵
   function displaymealInfo(page, type = null) {
     fetch("json.json")
@@ -347,16 +353,20 @@ window.addEventListener("load", function () {
       });
   }
   // 식사빵 필터링
+
   const mealButtons = document.querySelectorAll(".meal-button");
   mealButtons.forEach((button) => {
-    // console.log(button);
     button.addEventListener("click", function () {
+      mealButtons.forEach((btn) => btn.classList.remove("active-filter")); // 기존 활성화 클래스를 제거
+      button.classList.add("active-filter"); // 현재 클릭된 버튼에 클래스 추가
+
       const type = button.textContent;
       currentFilterType = type; // 필터 타입 저장
       currentPage = 1;
-      displaymealInfo(currentPage, currentFilterType);
+      displayCatInfo(currentPage, currentFilterType);
     });
   });
+
   // 펫
   // 펫 제품을 표시하는 함수
   function displaypetInfo(page) {
@@ -434,18 +444,19 @@ window.addEventListener("load", function () {
     const targetPaginationDiv = category === "gift" ? paginationDiv : category === "vegan" ? veganpaginationDiv : category === "dessert" ? dessertpaginationDiv : category === "meal" ? mealpaginationDiv : petpaginationDiv;
     targetPaginationDiv.innerHTML = "";
     const totalPages = Math.ceil(totalItems / itemsPerPage);
-  
+
     // 한 번에 표시할 페이지 링크 개수 설정
     const maxPageLinks = 5;
     const currentPageGroup = Math.floor((currentPage - 1) / maxPageLinks);
     const startPage = currentPageGroup * maxPageLinks + 1;
     const endPage = Math.min(totalPages, startPage + maxPageLinks - 1);
-  
+
     // 이전 버튼
     const prevBtn = document.createElement("a");
     prevBtn.className = "page-link";
     prevBtn.textContent = "이전";
-    if (currentPageGroup > 0) { // 이전 그룹이 존재하는 경우만 활성화
+    if (currentPageGroup > 0) {
+      // 이전 그룹이 존재하는 경우만 활성화
       prevBtn.href = `#`;
     } else {
       prevBtn.classList.add("disabled");
@@ -455,7 +466,7 @@ window.addEventListener("load", function () {
       if (currentPageGroup > 0) {
         currentPage = startPage - maxPageLinks;
         pagination(totalItems, type, category);
-  
+
         if (category === "gift") {
           displayCatInfo(currentPage, type);
         } else if (category == "vegan") {
@@ -470,7 +481,7 @@ window.addEventListener("load", function () {
       }
     });
     targetPaginationDiv.appendChild(prevBtn);
-  
+
     // startPage부터 endPage까지만 페이지 링크 생성
     for (let i = startPage; i <= endPage; i++) {
       const pageLink = document.createElement("a");
@@ -481,7 +492,7 @@ window.addEventListener("load", function () {
         event.preventDefault();
         currentPage = i;
         pagination(totalItems, type, category);
-  
+
         if (category === "gift") {
           displayCatInfo(currentPage, type);
         } else if (category == "vegan") {
@@ -499,12 +510,13 @@ window.addEventListener("load", function () {
       }
       targetPaginationDiv.appendChild(pageLink);
     }
-  
+
     // 다음 버튼
     const nextBtn = document.createElement("a");
     nextBtn.className = "page-link";
     nextBtn.textContent = "다음";
-    if (endPage < totalPages) { // 다음 그룹이 존재하는 경우만 활성화
+    if (endPage < totalPages) {
+      // 다음 그룹이 존재하는 경우만 활성화
       nextBtn.href = `#`;
     } else {
       nextBtn.classList.add("disabled");
@@ -514,7 +526,7 @@ window.addEventListener("load", function () {
       if (endPage < totalPages) {
         currentPage = endPage + 1;
         pagination(totalItems, type, category);
-  
+
         if (category === "gift") {
           displayCatInfo(currentPage, type);
         } else if (category == "vegan") {
@@ -530,9 +542,8 @@ window.addEventListener("load", function () {
     });
     targetPaginationDiv.appendChild(nextBtn);
   }
-  
-  
-``
+
+  ``;
   displayCatInfo(currentPage);
   displayVeganInfo(currentPage);
   displayDessetInfo(currentPage); /*디저트 페이지*/
