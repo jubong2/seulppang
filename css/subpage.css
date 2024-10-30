@@ -330,16 +330,16 @@
     font-size: 13px;
   }
   .page-link.active-page {
-    width: 25px;
+    width: 22px;
     line-height: 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .subpage-pagination {
     font-size: 11px;
   }
-  /* .page-link.active-page {
-    width: 20px;
+  .page-link.active-page {
+    width: 25px;
     line-height: 20px;
-  } */
+  }
 }
