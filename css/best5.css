@@ -130,7 +130,6 @@
 .product-text > a > h3 {
   height: 50px;
   font-size: 25px;
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
