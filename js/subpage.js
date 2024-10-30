@@ -270,14 +270,14 @@ window.addEventListener("load", function () {
 
   const dessetButtons = document.querySelectorAll(".desset-button");
   dessetButtons.forEach((button) => {
+    console.log(button);
     button.addEventListener("click", function () {
       dessetButtons.forEach((btn) => btn.classList.remove("active-filter")); // 기존 활성화 클래스를 제거
       button.classList.add("active-filter"); // 현재 클릭된 버튼에 클래스 추가
-
       const type = button.textContent;
       currentFilterType = type; // 필터 타입 저장
       currentPage = 1;
-      displayCatInfo(currentPage, currentFilterType);
+      displayDessetInfo(currentPage, currentFilterType);
     });
   });
 
@@ -363,7 +363,7 @@ window.addEventListener("load", function () {
       const type = button.textContent;
       currentFilterType = type; // 필터 타입 저장
       currentPage = 1;
-      displayCatInfo(currentPage, currentFilterType);
+      displaymealInfo(currentPage, currentFilterType);
     });
   });
 
