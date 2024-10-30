@@ -382,11 +382,10 @@
   /* background-color: #fff; */
   margin-top: 10px;
 }
-.qnas tr{
+.qnas tr {
   border-bottom: 1px solid rgba(207, 170, 146, 0.8);
- 
 }
-.qnas thead > tr{
+.qnas thead > tr {
   border-top: 1px solid #885332;
   border-bottom: 1px solid #885332;
 }
@@ -603,6 +602,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .product-inner {
+    width: 80%;
+  }
   .product {
     padding-top: 80px;
   }
@@ -779,7 +781,7 @@
   }
   .qnas th,
   .qnas td {
-    padding: 8px 10px;
+    padding: 8px;
     font-size: 12px;
   }
 }
