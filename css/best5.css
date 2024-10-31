@@ -420,6 +420,7 @@
   }
   .product-text > a > h3 {
     font-size: 15px;
+    height: 40px;
   }
   .product-text > a > p:nth-child(3) {
     font-size: 17px;

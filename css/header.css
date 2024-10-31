@@ -48,10 +48,12 @@
   width: 0%;
   height: 40px;
   background-color: #fff;
+
   transition: all 0.5s;
 }
 
 .search.active {
+  overflow: hidden;
   opacity: 1;
   width: 15%;
   margin-right: 20px;
@@ -78,10 +80,13 @@
   right: 5%;
   transform: translate(-5%, -50%);
   width: 9%;
+  overflow: hidden;
+  background-color: #fff6e5;
 }
 .header-top-icon > div {
   width: calc(100% / 4);
 }
+
 .header-top-icon > div > img {
   width: 100%;
 }
